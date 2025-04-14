@@ -3,6 +3,10 @@ from gymnasium.spaces import Discrete, Box, Dict, MultiDiscrete
 import numpy as np
 import random
 
+
+from utils.settings import channelFreqs as FREQUENCY
+from utils.settings import n_leo, n_geo, n_leo_users, n_geo_users
+
 import geointeference
 import leointeference
 import pathloss
@@ -23,52 +27,18 @@ class CogSatDSAEnv(gymnasium.Env):
         # Actions
         # Channel Freq - 10 frequencies with 0 as None
         self.action_space = MultiDiscrete([11]*4)
+        
 
         # Observation space
         self.observation_space = Dict({
-            "time_step": Box(low=0, high=500, shape=(1,), dtype=np.int64),
-            "beam_positions": Box(low=-1000, high=1000, shape=(28,), dtype=np.float64),
-            "previous_actions": Box(low=0, high=9, shape=(14,), dtype=np.int64)
+            "time_step": Box(low=-np.inf, high=np.inf, shape=(1,), dtype=np.int64),
+            "leo_pos": Box(low=-np.inf, high=np.inf, shape=(n_leo,), dtype=np.float64),
+            "leo_rssi": Box(low=-np.inf, high=np.inf, shape=(n_leo*n_leo_users,), dtype=np.float64),
+            "leo_sinr": Box(low=-np.inf, high=np.inf, shape=(n_leo*n_leo_users,), dtype=np.float64),
+            "geo_rssi": Box(low=-np.inf, high=np.inf, shape=(n_geo*n_geo_users,), dtype=np.float64),            
+            "geo_sinr": Box(low=-np.inf, high=np.inf, shape=(n_geo*n_geo_users,), dtype=np.float64),
         })
 
-        self.leo_speed = 1.508
-        self.leo_step = 0  # to define an angular movement
-
-        # define interacting screen size & variables related to screen
-        self.screen = turtle.Screen()
-        self.screen.setup(800, 800)
-        self.screen.title("LEO GEO CoExisting Use Case")
-        # self.screen.tracer(0)
-        self.screen_edge = 450  # to stop the simulation from moving beyond the define edge
-
-        # geo users
-        self.geo_system = GeoBeams()
-
-        # LEOs
-        self.leo1_direction = 90
-        self.leo1 = LEOTurtle(x=-285, y=285, direction=self.leo1_direction)
-        self.leo1_xy = self.leo1.get_coordinates()
-
-        self.leo2_direction = 0
-        self.leo2 = LEOTurtle(x=-285, y=-285, direction=self.leo2_direction)
-        self.leo2_xy = self.leo2.get_coordinates()
-
-        # LEOs
-        self.leo3_direction = 90
-        self.leo3 = LEOTurtle(x=-525, y=525, direction=self.leo3_direction)
-        self.leo3_xy = self.leo3.get_coordinates()
-
-        self.leo4_direction = 0
-        self.leo4 = LEOTurtle(x=-525, y=-525, direction=self.leo4_direction)
-        self.leo4_xy = self.leo4.get_coordinates()
-
-        # LEO users
-        self.leo_users = LeoUserConfig(l1_all_turtles=self.leo1.all_turtles, l2_all_turtles=self.leo2.all_turtles,\
-                                       l3_all_turtles=self.leo3.all_turtles, l4_all_turtles=self.leo4.all_turtles)
-        self.leo1_users = len(self.leo_users.LEO_A_USER_COORDINATES)
-        self.leo2_users = len(self.leo_users.LEO_B_USER_COORDINATES)
-
-        self.time_step = 0
 
         self.terminated = False
 
@@ -76,8 +46,6 @@ class CogSatDSAEnv(gymnasium.Env):
         if seed is not None:
             np.random.seed(seed)
 
-        self.leo_step = 0  # to define an angular movement
-        self.time_step = 0 # reset the time counter
         self.terminated = False
 
         # Observation space
@@ -88,30 +56,6 @@ class CogSatDSAEnv(gymnasium.Env):
             "previous_actions": np.random.randint(low=0, high=9, size=(14,), dtype=np.int64)
         }
 
-        for leo_beam in range(7):
-            for beam, l1_xy in zip(range(7), self.leo1_xy):
-                self.leo1.all_turtles[beam].penup()
-                self.leo1.all_turtles[beam].goto(l1_xy)
-                self.leo1.all_turtles[leo_beam].setheading(self.leo1_direction)
-                self.leo1.all_turtles[leo_beam].pendown()
-
-            for beam, l2_xy in zip(range(7), self.leo2_xy):
-                self.leo2.all_turtles[beam].penup()
-                self.leo2.all_turtles[beam].goto(l2_xy)
-                self.leo2.all_turtles[leo_beam].setheading(self.leo2_direction)
-                self.leo2.all_turtles[leo_beam].pendown()
-
-            for beam, l3_xy in zip(range(7), self.leo3_xy):
-                self.leo3.all_turtles[beam].penup()
-                self.leo3.all_turtles[beam].goto(l3_xy)
-                self.leo3.all_turtles[leo_beam].setheading(self.leo3_direction)
-                self.leo3.all_turtles[leo_beam].pendown()
-
-            for beam, l4_xy in zip(range(7), self.leo4_xy):
-                self.leo4.all_turtles[beam].penup()
-                self.leo4.all_turtles[beam].goto(l4_xy)
-                self.leo4.all_turtles[leo_beam].setheading(self.leo4_direction)
-                self.leo4.all_turtles[leo_beam].pendown()
 
         return observation, {}
 

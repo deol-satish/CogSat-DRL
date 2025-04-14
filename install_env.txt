@@ -1,0 +1,4 @@
+conda install -c conda-forge stable-baselines3
+conda install -c conda-forge gymnasium
+conda install -c conda-forge tensorboard 
+pip install geohash
