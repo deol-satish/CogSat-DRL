@@ -1,0 +1,1 @@
+leo_transmit_power = 20
