@@ -1,21 +1,20 @@
 import gymnasium
 from gymnasium.spaces import Discrete, Box, Dict, MultiDiscrete
 import numpy as np
+import pandas as pd
 import random
+import logging
 
 
 from utils.settings import channelFreqs as FREQUENCY
 from utils.settings import n_leo, n_geo, n_leo_users, n_geo_users
 
-import geointeference
-import leointeference
-import pathloss
-from leo import *
-from geo import *
-from leouser import *
-import turtle
 import math
 
+from utils.df_preprocess import get_df_processed
+
+
+global df_obs_space = pd.Dataframe()
 
 class CogSatDSAEnv(gymnasium.Env):
     # env_config=None, render_mode=None added to match with SB3 configurations
@@ -27,18 +26,16 @@ class CogSatDSAEnv(gymnasium.Env):
         # Actions
         # Channel Freq - 10 frequencies with 0 as None
         self.action_space = MultiDiscrete([11]*4)
-        
 
         # Observation space
         self.observation_space = Dict({
-            "time_step": Box(low=-np.inf, high=np.inf, shape=(1,), dtype=np.int64),
+            "utc_time": Box(low=-np.inf, high=np.inf, shape=(1,), dtype=np.int64),
             "leo_pos": Box(low=-np.inf, high=np.inf, shape=(n_leo,), dtype=np.float64),
             "leo_rssi": Box(low=-np.inf, high=np.inf, shape=(n_leo*n_leo_users,), dtype=np.float64),
             "leo_sinr": Box(low=-np.inf, high=np.inf, shape=(n_leo*n_leo_users,), dtype=np.float64),
             "geo_rssi": Box(low=-np.inf, high=np.inf, shape=(n_geo*n_geo_users,), dtype=np.float64),            
             "geo_sinr": Box(low=-np.inf, high=np.inf, shape=(n_geo*n_geo_users,), dtype=np.float64),
         })
-
 
         self.terminated = False
 
@@ -50,8 +47,16 @@ class CogSatDSAEnv(gymnasium.Env):
 
         # Observation space
         # Apply actions for each agent, return observations, rewards, dones, and optional info
+        # observation = {
+        #     "utc_time": np.array([self.utc_time], dtype=np.int64),
+        #     "beam_positions": np.random.uniform(low=-1000, high=1000, size=(28,)),
+        #     "previous_actions": np.random.randint(low=0, high=9, size=(14,), dtype=np.int64)
+        # }
+
+        df_obs_space = get_df_processed()
+        
         observation = {
-            "time_step": np.array([self.time_step], dtype=np.int64),
+            "utc_time": np.array([df_obs_space['Time'].iloc[0]], dtype=np.int64),
             "beam_positions": np.random.uniform(low=-1000, high=1000, size=(28,)),
             "previous_actions": np.random.randint(low=0, high=9, size=(14,), dtype=np.int64)
         }
@@ -61,7 +66,7 @@ class CogSatDSAEnv(gymnasium.Env):
 
     def save_env_state(self):
         state = {
-            'time_step': self.time_step,
+            'utc_time': self.utc_time,
             'leo1_positions': [(turtle.xcor(), turtle.ycor()) for turtle in self.leo1.all_turtles],
             'leo2_positions': [(turtle.xcor(), turtle.ycor()) for turtle in self.leo2.all_turtles],
             'leo3_positions': [(turtle.xcor(), turtle.ycor()) for turtle in self.leo3.all_turtles],
@@ -84,7 +89,7 @@ class CogSatDSAEnv(gymnasium.Env):
         return state
 
     def restore_env_state(self, state):
-        self.time_step = state['time_step']
+        self.utc_time = state['utc_time']
 
         for turtle, pos, heading, pen in zip(self.leo1.all_turtles, state['leo1_positions'], state['leo1_directions'],
                                              state['leo1_pen']):
@@ -132,7 +137,7 @@ class CogSatDSAEnv(gymnasium.Env):
 
         self.leo1.move(distance, angle=(-45+self.leo_step))
         self.leo2.move(distance, angle=(45-self.leo_step))
-        if self.time_step > 225:
+        if self.utc_time > 225:
             self.leo3.move(distance, angle=(-45+self.leo_step))
             self.leo4.move(distance, angle=(45-self.leo_step))
         else:
@@ -150,11 +155,11 @@ class CogSatDSAEnv(gymnasium.Env):
             self.terminated = True
 
         self.leo_step += 0.005   # define the intensity of angle
-        self.time_step += 1
-        # print(f'env time step {self.time_step}')
+        self.utc_time += 1
+        # print(f'env time step {self.utc_time}')
 
         observation = {
-        "time_step": np.array([self.time_step], dtype=np.int64),
+        "utc_time": np.array([self.utc_time], dtype=np.int64),
         "beam_positions":np.array(leo_beam_positions, dtype=np.float64),
         "previous_actions": np.array(actions,dtype=np.int64)
         }
