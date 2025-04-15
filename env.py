@@ -14,7 +14,8 @@ import math
 from utils.df_preprocess import get_df_processed
 
 
-global df_obs_space = pd.Dataframe()
+global df_obs_space 
+df_obs_space = pd.Dataframe()
 
 class CogSatDSAEnv(gymnasium.Env):
     # env_config=None, render_mode=None added to match with SB3 configurations
@@ -36,6 +37,7 @@ class CogSatDSAEnv(gymnasium.Env):
             "geo_rssi": Box(low=-np.inf, high=np.inf, shape=(n_geo*n_geo_users,), dtype=np.float64),            
             "geo_sinr": Box(low=-np.inf, high=np.inf, shape=(n_geo*n_geo_users,), dtype=np.float64),
         })
+        
 
         self.terminated = False
 

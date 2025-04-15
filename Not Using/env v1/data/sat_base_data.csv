@@ -1,0 +1,32 @@
+Parameter,Value,Channel,Start Frequency (GHz),End Frequency (GHz),Mid Frequency (GHz)
+Frequency,1.5 GHz,Channel 1,1.498775,1.498975,1.498875
+Noise temperature of user antenna,293 K,Channel 2,1.500025,1.500225,1.500125
+Antenna efficiency,65.00%,Channel 3,1.500275,1.500475,1.500375
+LEO antenna diameter,0.5 m,Channel 4,1.500525,1.500725,1.500625
+GEO antenna diameter,3 m,Channel 5,1.500775,1.500975,1.500875
+Ground user antenna diameter,0.3 m,Channel 6,1.501025,1.501225,1.501125
+GEO altitude,"35,786 km",Channel 7,1.501275,1.501475,1.501375
+LEO altitude (min),600 km,Channel 8,1.501525,1.501725,1.501625
+LEO altitude (max),700 km,Channel 9,1.501775,1.501975,1.501875
+GEO beam transmit power,300 W,Channel 10,1.502025,1.502225,1.502125
+LEO beam transmit power,20 W,,,,
+Mean rain rate,0.074 mm/hr,,,,
+Attenuation coefficient,0.01 (dB/km)/(g/m³),,,,
+LEO satellite beam coverage width,600 km,,,,
+GEO satellite beam coverage width,500 km,,,,
+LEO satellite speed,7.54 km/s,,,,
+,,,,,
+Carrier Frequency:,1.5 GHz,,,,
+Number of Channels: ,10,,,,
+Channel Bandwidth: ,200 kHz,,,,
+Channel,Mid Frequency (GHz),,,,
+Channel 1,1.498875,,,,
+Channel 2,1.500125,,,,
+Channel 3,1.500375,,,,
+Channel 4,1.500625,,,,
+Channel 5,1.500875,,,,
+Channel 6,1.501125,,,,
+Channel 7,1.501375,,,,
+Channel 8,1.501625,,,,
+Channel 9,1.501875,,,,
+Channel 10,1.502125,,,,

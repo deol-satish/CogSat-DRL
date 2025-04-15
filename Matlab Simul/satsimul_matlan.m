@@ -245,6 +245,8 @@ for i = 1:leoNum
     logData.LEO(i).RSSI = NaN(validSamples, numel(gsList));
 end
 
+
+
 %% Simulation Loop with Selective Logging
 fprintf('Starting main simulation loop...\n');
 sampleCount = 0;
