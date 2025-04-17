@@ -295,6 +295,73 @@ for tIdx = 1:length(ts)
 
 
 
+        fprintf(' Sending inital state to py function ...\n');
+
+
+        % Initialize a struct to store the LEO satellite data
+        snd_state = struct;
+
+        % Add base frequency or frequency of GEO to the state
+        snd_state.GeobaseFreq = baseFreq;
+        snd_state.time = datestr(t)
+
+        for i = 1:leoNum
+            % Get position in geographic coordinates (Latitude, Longitude)
+            [pos, ~] = states(leoSats{i}, t, 'CoordinateFrame', 'geographic');
+            
+            % Initialize a struct to hold the satellite data for this LEO
+            satellite_data = struct;
+            satellite_data.LEO_Num = i;
+            satellite_data.Latitude = pos(1);
+            satellite_data.Longitude = pos(2);
+            
+            % Create a struct for access status
+            accessStatusStruct = struct;
+            
+            % For each ground station, check if the satellite has access
+            for gsIdx = 1:numel(gsList)
+                gsName = strrep(gsList{gsIdx}.Name, ' ', '_');
+                accObj = access(leoSats{i}, gsList{gsIdx});
+                accessStatusStruct.(gsName) = accessStatus(accObj, t);
+            end
+            
+            % Add AccessStatus to the satellite data
+            satellite_data.AccessStatus = accessStatusStruct;
+            
+            % Store the satellite data
+            fieldName = sprintf("LEO_%d", i);
+            snd_state.(fieldName) = satellite_data;
+        end
+
+        % Convert MATLAB struct to Python dict
+        py_state = py.dict(snd_state);
+
+        display(py_state)
+
+        % Call Python function without checking return value
+        try
+            if tIdx == 1
+                fprintf('reset_env being called \n');
+                py.a2c_dsa.reset_env(py_state);                
+            else
+                fprintf('get_action being called \n');
+                py.a2c_dsa.get_action(py_state);
+                
+            end
+    
+            
+            fprintf('State save attempted (no return value checked)\n');
+        catch e
+            fprintf('Error calling Python function:\n%s\n', e.message);
+        end
+
+
+
+
+
+
+
+
         % Update LEO satellite data
         for i = 1:leoNum
             [pos, ~] = states(leoSats{i}, t, 'CoordinateFrame', 'geographic');
