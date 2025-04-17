@@ -1,9 +1,10 @@
+
 obs_last = py.a2c_agent.reset_env()
 display("obs_last-----")
 disp(obs_last);
-
-
 for i = 1:10
+
+
     action = py.a2c_agent.get_action(obs_last)
 
     display("action-----")
@@ -19,6 +20,8 @@ for i = 1:10
     done = py_tuple{3};      % Python bool
     
     py.a2c_agent.store_transition(reward, done, next_obs)
+
+    obs_last = next_obs
     
     display(py.a2c_agent.step_count)
 end

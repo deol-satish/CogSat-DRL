@@ -245,8 +245,6 @@ for i = 1:leoNum
     logData.LEO(i).RSSI = NaN(validSamples, numel(gsList));
 end
 
-
-
 %% Simulation Loop with Selective Logging
 fprintf('Starting main simulation loop...\n');
 sampleCount = 0;
@@ -286,7 +284,7 @@ for tIdx = 1:length(ts)
     end
     
     % Only process if at least one LEO has access (GEOs can be added later)
-    if leoAccess
+    if leoAccess | geoAccess
         sampleCount = sampleCount + 1;
         logData.Time(sampleCount) = t;
         fprintf('  Processing sample %d (valid sample %d)\n', tIdx, sampleCount);
@@ -294,6 +292,8 @@ for tIdx = 1:length(ts)
         % Update LEO frequencies (random channel selection)
         currentLEOFreqs = channelFreqs(randi([1 10], 1, leoNum));
         fprintf('  Selected LEO frequencies: %s MHz\n', mat2str(currentLEOFreqs/1e6));
+
+
 
         % Update LEO satellite data
         for i = 1:leoNum
@@ -312,20 +312,6 @@ for tIdx = 1:length(ts)
                 logData.LEO(i).Access(sampleCount, gsIdx) = acc;
                 
                 if acc
-                    % Update LEO frequencies (random channel selection using Python)
-                    % Ensure Python is available and the script is in the path or current directory
-                    try
-                        % Call the Python function
-                        py_indices = pyrun(sprintf("import random_generator; indices = random_generator.generate_random_indices(%d, 1, %d)", 10, leoNum), "indices");
-                        % Convert Python list (which comes back as a cell array of doubles) to a MATLAB array
-                        matlab_indices = cellfun(@double, cell(py_indices));
-                        currentLEOFreqs = channelFreqs(matlab_indices);
-                    catch ME
-                        warning('Python execution failed: %s. Falling back to MATLAB randi.', ME.message);
-                        % Fallback to MATLABs randi if Python call fails
-                        currentLEOFreqs = channelFreqs(randi([1 10], 1, leoNum));
-                    end
-                    tx.Frequency = currentLEOFreqs(i);
 
                     % Calculate link metrics
                     linkLEO = link(tx, rxReceivers_LEO(gsList{gsIdx}.Name));

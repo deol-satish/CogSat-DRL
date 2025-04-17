@@ -49,6 +49,32 @@ def my_step(action):
     done = terminated or truncated
     return next_obs, reward, done
 
+def compute_a2c_loss(policy, rollout_data, value_coef=0.5, entropy_coef=0.01):
+    observations = rollout_data.observations
+    actions = rollout_data.actions
+    returns = rollout_data.returns
+    advantages = rollout_data.advantages
+    old_log_probs = rollout_data.old_log_prob
+
+    # Get action distribution and value predictions
+    dist = policy.get_distribution(observations)
+    value_preds = policy.predict_values(observations)
+
+    # Log probs and entropy from the current policy
+    new_log_probs = dist.log_prob(actions)
+    entropy = dist.entropy().mean()
+
+    # Actor loss
+    policy_loss = -(advantages * new_log_probs).mean()
+
+    # Critic loss
+    value_loss = torch.nn.functional.mse_loss(returns, value_preds)
+
+    # Total loss
+    total_loss = policy_loss + value_coef * value_loss - entropy_coef * entropy
+    return total_loss
+
+
 def store_transition(reward, done, next_obs):
     global step_count, obs_last, action_last, value_last, log_prob_last
     reward = np.array([reward], dtype=np.float32)
@@ -60,8 +86,19 @@ def store_transition(reward, done, next_obs):
     if step_count % n_steps == 0:
         with torch.no_grad():
             last_val = model.policy.predict_values(torch.tensor(next_obs).float().to(model.device))
+
         buffer.compute_returns_and_advantage(last_val, dones=done)
-        model.train()
+
+        # Manual A2C training loop
+        model.policy.train()
+        model.policy.optimizer.zero_grad()
+        for rollout_data in buffer.get(batch_size=None):
+            loss = compute_a2c_loss(model.policy, rollout_data)
+            loss.backward()
+        model.policy.optimizer.step()
+
+        buffer.reset()
+
 
 def save_model(path="a2c_pendulum"):
     model.save(path)

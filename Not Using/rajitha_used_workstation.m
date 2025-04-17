@@ -23,7 +23,7 @@ end
 fprintf('Initializing simulation parameters...\n');
 startTime = datetime(2025,4,10,12,0,0);
 duration_sec = 60 * 30;     % simulation duration in seconds
-sampleTime = 1;            % second sampling time
+sampleTime = 10;            % second sampling time
 stopTime = startTime + seconds(duration_sec);
 
 % Frequencies (GHz)
@@ -284,7 +284,7 @@ for tIdx = 1:length(ts)
     end
     
     % Only process if at least one LEO has access (GEOs can be added later)
-    if leoAccess
+    if leoAccess | geoAccess
         sampleCount = sampleCount + 1;
         logData.Time(sampleCount) = t;
         fprintf('  Processing sample %d (valid sample %d)\n', tIdx, sampleCount);

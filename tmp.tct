@@ -1,0 +1,33 @@
+% Initialize a struct to store the LEO satellite data
+snd_state = struct;
+
+% Add base frequency or frequency of GEO to the state
+snd_state.GeobaseFreq = baseFreq;
+
+for i = 1:leoNum
+    % Get position in geographic coordinates (Latitude, Longitude)
+    [pos, ~] = states(leoSats{i}, t, 'CoordinateFrame', 'geographic');
+    
+    % Initialize a struct to hold the satellite data for this LEO
+    satellite_data = struct;
+    satellite_data.LEO_Num = i;
+    satellite_data.Latitude = pos(1);
+    satellite_data.Longitude = pos(2);
+    
+    % Create a struct for access status
+    accessStatusStruct = struct;
+    
+    % For each ground station, check if the satellite has access
+    for gsIdx = 1:numel(gsList)
+        gsName = strrep(gsList{gsIdx}.Name, ' ', '_');
+        accObj = access(leoSats{i}, gsList{gsIdx});
+        accessStatusStruct.(gsName) = accessStatus(accObj, t);
+    end
+    
+    % Add AccessStatus to the satellite data
+    satellite_data.AccessStatus = accessStatusStruct;
+    
+    % Store the satellite data
+    fieldName = sprintf("LEO_%d", i);
+    snd_state.(fieldName) = satellite_data;
+end

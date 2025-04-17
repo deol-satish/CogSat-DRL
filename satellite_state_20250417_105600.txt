@@ -1,0 +1,32 @@
+Satellite State at 20250417_105600
+========================================
+{
+    "GeobaseFreq": 1500000000.0,
+    "LEO_1": {
+        "LEO_Num": 1.0,
+        "Latitude": -64.02845652716644,
+        "Longitude": 131.1212399996478,
+        "AccessStatus": {
+            "Melbourne": false,
+            "Sydney": false
+        }
+    },
+    "LEO_2": {
+        "LEO_Num": 2.0,
+        "Latitude": -64.03919285514107,
+        "Longitude": 141.16620421790708,
+        "AccessStatus": {
+            "Melbourne": false,
+            "Sydney": false
+        }
+    },
+    "LEO_3": {
+        "LEO_Num": 3.0,
+        "Latitude": -64.04593303184946,
+        "Longitude": 151.2143340213967,
+        "AccessStatus": {
+            "Melbourne": false,
+            "Sydney": false
+        }
+    }
+}

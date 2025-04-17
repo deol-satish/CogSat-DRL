@@ -1,0 +1,54 @@
+2025-04-17 10:53:44,588 - INFO - Received Initial State:
+2025-04-17 10:53:44,588 - INFO - GeobaseFreq :
+2025-04-17 10:53:44,588 - INFO -   1500000000.0
+2025-04-17 10:53:44,588 - INFO - LEO_1 :
+2025-04-17 10:53:44,588 - INFO -   LEO_Num : 1.0
+2025-04-17 10:53:44,588 - INFO -   Latitude : -65.25349692661547
+2025-04-17 10:53:44,588 - INFO -   Longitude : 131.1964150359908
+2025-04-17 10:53:44,588 - INFO -   AccessStatus : {'Melbourne': False, 'Sydney': False}
+2025-04-17 10:53:44,588 - INFO - LEO_2 :
+2025-04-17 10:53:44,588 - INFO -   LEO_Num : 2.0
+2025-04-17 10:53:44,588 - INFO -   Latitude : -65.26423381451286
+2025-04-17 10:53:44,588 - INFO -   Longitude : 141.24393291499436
+2025-04-17 10:53:44,588 - INFO -   AccessStatus : {'Melbourne': False, 'Sydney': False}
+2025-04-17 10:53:44,636 - INFO - LEO_3 :
+2025-04-17 10:53:44,636 - INFO -   LEO_Num : 3.0
+2025-04-17 10:53:44,636 - INFO -   Latitude : -65.2709744633676
+2025-04-17 10:53:44,636 - INFO -   Longitude : 151.294798696656
+2025-04-17 10:53:44,636 - INFO -   AccessStatus : {'Melbourne': False, 'Sydney': False}
+2025-04-17 10:53:46,339 - INFO - Received Initial State:
+2025-04-17 10:53:46,339 - INFO - GeobaseFreq :
+2025-04-17 10:53:46,339 - INFO -   1500000000.0
+2025-04-17 10:53:46,339 - INFO - LEO_1 :
+2025-04-17 10:53:46,339 - INFO -   LEO_Num : 1.0
+2025-04-17 10:53:46,339 - INFO -   Latitude : -64.6410076737912
+2025-04-17 10:53:46,339 - INFO -   Longitude : 131.15892197593672
+2025-04-17 10:53:46,339 - INFO -   AccessStatus : {'Melbourne': False, 'Sydney': False}
+2025-04-17 10:53:46,339 - INFO - LEO_2 :
+2025-04-17 10:53:46,339 - INFO -   LEO_Num : 2.0
+2025-04-17 10:53:46,339 - INFO -   Latitude : -64.65174424162525
+2025-04-17 10:53:46,339 - INFO -   Longitude : 141.20513431992123
+2025-04-17 10:53:46,339 - INFO -   AccessStatus : {'Melbourne': False, 'Sydney': False}
+2025-04-17 10:53:46,339 - INFO - LEO_3 :
+2025-04-17 10:53:46,339 - INFO -   LEO_Num : 3.0
+2025-04-17 10:53:46,339 - INFO -   Latitude : -64.6584846278651
+2025-04-17 10:53:46,339 - INFO -   Longitude : 151.2546013199499
+2025-04-17 10:53:46,339 - INFO -   AccessStatus : {'Melbourne': False, 'Sydney': False}
+2025-04-17 10:53:48,240 - INFO - Received Initial State:
+2025-04-17 10:53:48,240 - INFO - GeobaseFreq :
+2025-04-17 10:53:48,241 - INFO -   1500000000.0
+2025-04-17 10:53:48,241 - INFO - LEO_1 :
+2025-04-17 10:53:48,241 - INFO -   LEO_Num : 1.0
+2025-04-17 10:53:48,241 - INFO -   Latitude : -64.02845652716644
+2025-04-17 10:53:48,241 - INFO -   Longitude : 131.1212399996478
+2025-04-17 10:53:48,241 - INFO -   AccessStatus : {'Melbourne': False, 'Sydney': False}
+2025-04-17 10:53:48,241 - INFO - LEO_2 :
+2025-04-17 10:53:48,241 - INFO -   LEO_Num : 2.0
+2025-04-17 10:53:48,241 - INFO -   Latitude : -64.03919285514107
+2025-04-17 10:53:48,241 - INFO -   Longitude : 141.16620421790708
+2025-04-17 10:53:48,241 - INFO -   AccessStatus : {'Melbourne': False, 'Sydney': False}
+2025-04-17 10:53:48,241 - INFO - LEO_3 :
+2025-04-17 10:53:48,241 - INFO -   LEO_Num : 3.0
+2025-04-17 10:53:48,241 - INFO -   Latitude : -64.04593303184946
+2025-04-17 10:53:48,241 - INFO -   Longitude : 151.2143340213967
+2025-04-17 10:53:48,241 - INFO -   AccessStatus : {'Melbourne': False, 'Sydney': False}
