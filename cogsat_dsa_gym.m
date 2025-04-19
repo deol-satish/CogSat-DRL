@@ -251,15 +251,13 @@ function InitSatSc = initializeScenario()
     %% Simulation Loop with Selective Logging
     fprintf('Starting main simulation loop...\n');
     sampleCount = 0;
+    startIndex = 1;
+    endIndex = length(ts);
+    tIdx = 1;
 
 end
 
 function currentLEOFreqs = stepScenario(leoTx, channelFreqs)
-end
-
-
-
-for tIdx = 1:length(ts)
     t = ts(tIdx);
     fprintf('\nProcessing time step %d/%d: %s\n', tIdx, length(ts), datestr(t));
     
@@ -497,67 +495,78 @@ for tIdx = 1:length(ts)
     else
         fprintf('  No LEO access detected - skipping this time step\n');
     end
-end
-fprintf('\nMain simulation loop completed. Processed %d valid samples.\n', sampleCount);
-
-
-
-%% Save Data to CSV (only valid samples)
-fprintf('\nPreparing data for CSV export...\n');
-% Prepare data for CSV export
-csvData = table();
-csvData.Time = logData.Time;
-
-% Add GEO data
-for i = 1:geoNum
-    fprintf('  Adding GEO-%d data to CSV structure\n', i);
-    csvData.(sprintf('GEO%d_Name', i)) = repmat(logData.GEO(i).Name, validSamples, 1);
-    csvData.(sprintf('GEO%d_Lat', i)) = logData.GEO(i).Latitude;
-    csvData.(sprintf('GEO%d_Lon', i)) = logData.GEO(i).Longitude;
-    csvData.(sprintf('GEO%d_Freq_Hz', i)) = logData.GEO(i).Frequency;
-    
-    for gsIdx = 1:numel(gsList)
-        gsName = strrep(gsList{gsIdx}.Name, ' ', '_');
-        csvData.(sprintf('GEO%d_%s_Access', i, gsName)) = logData.GEO(i).Access(:, gsIdx);
-        csvData.(sprintf('GEO%d_%s_SNR_dB', i, gsName)) = logData.GEO(i).SNR(:, gsIdx);
-        csvData.(sprintf('GEO%d_%s_RSSI_dBm', i, gsName)) = logData.GEO(i).RSSI(:, gsIdx);
+    if tIdx < length(ts)
+        tIdx = tIdx + 1;
+    else
+        fprintf('  End of simulation loop\n');
+        fprintf('\nMain simulation loop completed. Processed %d valid samples.\n', sampleCount);
     end
 end
 
-% Add LEO data
-for i = 1:leoNum
-    fprintf('  Adding LEO-%d data to CSV structure\n', i);
-    csvData.(sprintf('LEO%d_Name', i)) = repmat(logData.LEO(i).Name, validSamples, 1);
-    csvData.(sprintf('LEO%d_Lat', i)) = logData.LEO(i).Latitude;
-    csvData.(sprintf('LEO%d_Lon', i)) = logData.LEO(i).Longitude;
-    csvData.(sprintf('LEO%d_Freq_Hz', i)) = logData.LEO(i).Frequency;
-    
-    for gsIdx = 1:numel(gsList)
-        gsName = strrep(gsList{gsIdx}.Name, ' ', '_');
-        csvData.(sprintf('LEO%d_%s_Access', i, gsName)) = logData.LEO(i).Access(:, gsIdx);
-        csvData.(sprintf('LEO%d_%s_SNR_dB', i, gsName)) = logData.LEO(i).SNR(:, gsIdx);
-        csvData.(sprintf('LEO%d_%s_RSSI_dBm', i, gsName)) = logData.LEO(i).RSSI(:, gsIdx);
+
+
+function saveData()
+    %% Save Data to CSV (only valid samples)
+    fprintf('\nPreparing data for CSV export...\n');
+    % Prepare data for CSV export
+    csvData = table();
+    csvData.Time = logData.Time;
+
+    % Add GEO data
+    for i = 1:geoNum
+        fprintf('  Adding GEO-%d data to CSV structure\n', i);
+        csvData.(sprintf('GEO%d_Name', i)) = repmat(logData.GEO(i).Name, validSamples, 1);
+        csvData.(sprintf('GEO%d_Lat', i)) = logData.GEO(i).Latitude;
+        csvData.(sprintf('GEO%d_Lon', i)) = logData.GEO(i).Longitude;
+        csvData.(sprintf('GEO%d_Freq_Hz', i)) = logData.GEO(i).Frequency;
+        
+        for gsIdx = 1:numel(gsList)
+            gsName = strrep(gsList{gsIdx}.Name, ' ', '_');
+            csvData.(sprintf('GEO%d_%s_Access', i, gsName)) = logData.GEO(i).Access(:, gsIdx);
+            csvData.(sprintf('GEO%d_%s_SNR_dB', i, gsName)) = logData.GEO(i).SNR(:, gsIdx);
+            csvData.(sprintf('GEO%d_%s_RSSI_dBm', i, gsName)) = logData.GEO(i).RSSI(:, gsIdx);
+        end
     end
+
+    % Add LEO data
+    for i = 1:leoNum
+        fprintf('  Adding LEO-%d data to CSV structure\n', i);
+        csvData.(sprintf('LEO%d_Name', i)) = repmat(logData.LEO(i).Name, validSamples, 1);
+        csvData.(sprintf('LEO%d_Lat', i)) = logData.LEO(i).Latitude;
+        csvData.(sprintf('LEO%d_Lon', i)) = logData.LEO(i).Longitude;
+        csvData.(sprintf('LEO%d_Freq_Hz', i)) = logData.LEO(i).Frequency;
+        
+        for gsIdx = 1:numel(gsList)
+            gsName = strrep(gsList{gsIdx}.Name, ' ', '_');
+            csvData.(sprintf('LEO%d_%s_Access', i, gsName)) = logData.LEO(i).Access(:, gsIdx);
+            csvData.(sprintf('LEO%d_%s_SNR_dB', i, gsName)) = logData.LEO(i).SNR(:, gsIdx);
+            csvData.(sprintf('LEO%d_%s_RSSI_dBm', i, gsName)) = logData.LEO(i).RSSI(:, gsIdx);
+        end
+    end
+
+    % Write to CSV
+    fprintf('Writing data to CSV file...\n');
+    writetable(csvData, 'Satellite_Australia_Simulation_Log.csv');
+    fprintf('CSV saved with %d valid samples: Satellite_Australia_Simulation_Log.csv\n', validSamples);
+
+
+    function overlapFactor = getOverlapFactor(txFreq, txBW, intfFreq, intfBW)
+        txRange = [txFreq - txBW/2, txFreq + txBW/2];
+        intfRange = [intfFreq - intfBW/2, intfFreq + intfBW/2];
+        overlap = max(0, min(txRange(2), intfRange(2)) - max(txRange(1), intfRange(1)));
+        overlapFactor = overlap / intfBW;
+    end
+
+    save('mySatelliteScenario.mat', 'sc');
+
+    %% Play Simulation
+    fprintf('\nStarting visualization...\n');
+    v = satelliteScenarioViewer(sc);
+    v.ShowDetails = true;
+    play(sc, 'PlaybackSpeedMultiplier', 100);
+    fprintf('=== Simulation Complete ===\n');
 end
 
-% Write to CSV
-fprintf('Writing data to CSV file...\n');
-writetable(csvData, 'Satellite_Australia_Simulation_Log.csv');
-fprintf('CSV saved with %d valid samples: Satellite_Australia_Simulation_Log.csv\n', validSamples);
-
-%% Play Simulation
-fprintf('\nStarting visualization...\n');
-v = satelliteScenarioViewer(sc);
-v.ShowDetails = true;
-play(sc, 'PlaybackSpeedMultiplier', 100);
-fprintf('=== Simulation Complete ===\n');
 
 
-function overlapFactor = getOverlapFactor(txFreq, txBW, intfFreq, intfBW)
-    txRange = [txFreq - txBW/2, txFreq + txBW/2];
-    intfRange = [intfFreq - intfBW/2, intfFreq + intfBW/2];
-    overlap = max(0, min(txRange(2), intfRange(2)) - max(txRange(1), intfRange(1)));
-    overlapFactor = overlap / intfBW;
-end
 
-save('mySatelliteScenario.mat', 'sc');

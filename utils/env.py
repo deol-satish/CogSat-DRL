@@ -18,7 +18,7 @@ class CogSatEnv(gym.Env):
         self._init_matlab_env()
  
         # Define action and observation space (example setup)
-        self.action_space = gym.spaces.Discrete(10)  # Select a channel index for one LEO (for example)
+        self.action_space = gym.spaces.Discrete(11)  # Select a channel index for one LEO (for example)
         self.observation_space = gym.spaces.Box(low=0.0, high=1.0, shape=(6,), dtype=np.float32)
  
     def _init_matlab_env(self):
