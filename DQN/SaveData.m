@@ -45,10 +45,10 @@ fprintf('CSV saved with %d valid samples: Satellite_Australia_Simulation_Log.csv
 save('mySatelliteScenario.mat', 'sc');
 
 %% Play Simulation
-fprintf('\nStarting visualization...\n');
-v = satelliteScenarioViewer(sc);
-v.ShowDetails = true;
-play(sc, 'PlaybackSpeedMultiplier', 100);
-fprintf('=== Simulation Complete ===\n');
+%fprintf('\nStarting visualization...\n');
+%v = satelliteScenarioViewer(sc);
+%v.ShowDetails = true;
+%play(sc, 'PlaybackSpeedMultiplier', 100);
+%fprintf('=== Simulation Complete ===\n');
 
 fprintf('=== End of Script ===\n');

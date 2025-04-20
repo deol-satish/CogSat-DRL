@@ -12,6 +12,8 @@ fprintf('Starting main simulation loop...\n');
 
 done = false;
 
+reward = struct;
+
 tIdx = tIdx + 1;
 
 endIndex = length(ts);
@@ -138,6 +140,10 @@ if leoAccess | geoAccess
         % Update transmitter frequency for this LEO
         tx = leoTx{i};
         tx.Frequency = currentLEOFreqs(i);
+
+        reward_data_leo = struct;
+        reward_data_leo_gs = struct;
+        reward_data_leo.LEO_Num = i;
         
         % Check access and calculate metrics for each ground station
         for gsIdx = 1:numel(gsList)
@@ -170,11 +176,27 @@ if leoAccess | geoAccess
                 
                 logData.LEO(i).RSSI(sampleCount, gsIdx) = rssi;
                 logData.LEO(i).SNR(sampleCount, gsIdx) = snr;
+
+                
+
+                
+
+
+                fieldName = sprintf("LEO_%d", i);
+                gsName = strrep(gsList{gsIdx}.Name, ' ', '_');
+                reward_temp = struct;
+                reward_temp.rssi = rssi;
+                reward_temp.snr = snr;
+                reward_data_leo_gs.(gsName) = reward_temp;
                 
                 fprintf('    LEO-%d to %s (%.6f GHz): RSSI=%.2f dBm, SNR=%.2f dB\n', ...
                     i, gsList{gsIdx}.Name, currentLEOFreqs(i)/1e9, rssi, snr);
             end
         end
+        reward_data_leo.reward = reward_data_leo_gs;
+        % *** CORRECTED LINE: Assign the LEO reward data to the main reward struct ***
+        fieldName = sprintf("LEO_%d", i);
+        reward.(fieldName) = reward_data_leo;
     end
     
     % Update GEO satellite data
@@ -182,6 +204,11 @@ if leoAccess | geoAccess
         [pos, ~] = states(geoSats{i}, t, 'CoordinateFrame', 'geographic');
         logData.GEO(i).Latitude(sampleCount) = pos(1);
         logData.GEO(i).Longitude(sampleCount) = pos(2);
+
+        reward_data_geo = struct;
+        reward_data_geo_gs = struct;
+        reward_data_geo.GEO_Num = i;
+        
         
         % Check access and calculate metrics for each ground station
         for gsIdx = 1:numel(gsList)
@@ -241,6 +268,13 @@ if leoAccess | geoAccess
                 % Store
                 logData.GEO(i).RSSI(sampleCount, gsIdx) = 10 * log10(signalPwr_W);
                 logData.GEO(i).SNR(sampleCount, gsIdx) = SINR_dB;
+
+                fieldName = sprintf("GEO_%d", i);
+                gsName = strrep(gsList{gsIdx}.Name, ' ', '_');
+                reward_temp = struct;
+                reward_temp.rssi = 10 * log10(signalPwr_W);
+                reward_temp.snr = SINR_dB;
+                reward_data_geo_gs.(gsName) = reward_temp;
                 
                 fprintf('GEO-%d to %s | SINR: %.2f dB | Signal: %.2f dBm | Intf: %.2f dBW\n', ...
                     i, gsList{gsIdx}.Name, SINR_dB, 10*log10(signalPwr_W)+30, 10*log10(intfPowerSum_W));
@@ -248,12 +282,21 @@ if leoAccess | geoAccess
 
             end
         end
+        reward_data_geo.reward = reward_data_geo_gs;
+        % *** CORRECTED LINE: Assign the GEO reward data to the main reward struct ***
+        fieldName = sprintf("GEO_%d", i);
+        reward.(fieldName) = reward_data_geo;
+        
     end
     
 else
     fprintf('  No LEO access detected - skipping this time step\n');
 end
 fprintf('\nMain simulation loop completed. Processed %d valid samples.\n', sampleCount);
+
+display(reward);
+
+py_reward = py.dict(reward);
 
 if tIdx == endIndex
     done = true;
