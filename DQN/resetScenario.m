@@ -101,7 +101,7 @@ end
 
 %% Create LEO Satellites
 fprintf('Creating LEO satellites...\n');
-leoNum = 3;
+leoNum = 1;
 leoInclination = 90;  % Inclination for coverage
 %leoRAANs = [170, 180, 190];
 leoRAANs = [150, 160, 170];
@@ -343,5 +343,5 @@ if leoAccess | geoAccess
     % Convert MATLAB struct to Python dict
     py_state = py.dict(snd_state);
 
-    display(py_state)
+    display(py_state);
 end

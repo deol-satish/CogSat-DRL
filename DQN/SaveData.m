@@ -41,6 +41,9 @@ fprintf('Writing data to CSV file...\n');
 writetable(csvData, 'Satellite_Australia_Simulation_Log.csv');
 fprintf('CSV saved with %d valid samples: Satellite_Australia_Simulation_Log.csv\n', validSamples);
 
+
+save('mySatelliteScenario.mat', 'sc');
+
 %% Play Simulation
 fprintf('\nStarting visualization...\n');
 v = satelliteScenarioViewer(sc);
