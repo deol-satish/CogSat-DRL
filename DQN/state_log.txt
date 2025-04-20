@@ -1,5 +1,5 @@
-2025-04-20 19:14:33,903 [INFO] === Current State ===
-2025-04-20 19:14:33,903 [INFO] {
+2025-04-21 09:54:32,196 [INFO] === Current State ===
+2025-04-21 09:54:32,196 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:00:00",
   "LEO_1": {
@@ -12,8 +12,8 @@
     }
   }
 }
-2025-04-20 19:14:55,936 [INFO] === Current State ===
-2025-04-20 19:14:55,936 [INFO] {
+2025-04-21 09:55:16,271 [INFO] === Current State ===
+2025-04-21 09:55:16,271 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:00:00",
   "LEO_1": {
@@ -26,8 +26,8 @@
     }
   }
 }
-2025-04-20 19:15:03,316 [INFO] === Current State ===
-2025-04-20 19:15:03,316 [INFO] {
+2025-04-21 09:55:24,112 [INFO] === Current State ===
+2025-04-21 09:55:24,112 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:00:00",
   "LEO_1": {
@@ -40,11 +40,25 @@
     }
   }
 }
-2025-04-20 19:15:03,321 [INFO] === Action Taken === 8
-2025-04-20 19:15:03,322 [INFO] === currentLEOFreqs === 1501125000.0
-2025-04-20 19:15:03,322 [INFO] === currentLEOFreqs === 1501125000.0
-2025-04-20 19:15:05,189 [INFO] === Current State ===
-2025-04-20 19:15:05,189 [INFO] {
+2025-04-21 09:55:32,115 [INFO] === Current State ===
+2025-04-21 09:55:32,115 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -65.25349692661547,
+    "Longitude": 131.1964150359908,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:55:32,128 [INFO] === Action Taken === 6
+2025-04-21 09:55:32,128 [INFO] === currentLEOFreqs === 1501125000.0
+2025-04-21 09:55:32,128 [INFO] === currentLEOFreqs === 1501125000.0
+2025-04-21 09:55:34,663 [INFO] === Current State ===
+2025-04-21 09:55:34,663 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:00:10",
   "LEO_1": {
@@ -57,8 +71,8 @@
     }
   }
 }
-2025-04-20 19:15:12,791 [INFO] === Current State ===
-2025-04-20 19:15:12,791 [INFO] {
+2025-04-21 09:55:43,385 [INFO] === Current State ===
+2025-04-21 09:55:43,385 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:00:00",
   "LEO_1": {
@@ -71,11 +85,11 @@
     }
   }
 }
-2025-04-20 19:15:12,795 [INFO] === Action Taken === 5
-2025-04-20 19:15:12,795 [INFO] === currentLEOFreqs === 1502125000.0
-2025-04-20 19:15:12,795 [INFO] === currentLEOFreqs === 1502125000.0
-2025-04-20 19:15:13,943 [INFO] === Current State ===
-2025-04-20 19:15:13,943 [INFO] {
+2025-04-21 09:55:43,387 [INFO] === Action Taken === 3
+2025-04-21 09:55:43,387 [INFO] === currentLEOFreqs === 1502125000.0
+2025-04-21 09:55:43,387 [INFO] === currentLEOFreqs === 1502125000.0
+2025-04-21 09:55:44,564 [INFO] === Current State ===
+2025-04-21 09:55:44,564 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:00:10",
   "LEO_1": {
@@ -88,11 +102,11 @@
     }
   }
 }
-2025-04-20 19:15:13,950 [INFO] === Action Taken === 7
-2025-04-20 19:15:13,950 [INFO] === currentLEOFreqs === 1501125000.0
-2025-04-20 19:15:13,950 [INFO] === currentLEOFreqs === 1501125000.0
-2025-04-20 19:15:15,045 [INFO] === Current State ===
-2025-04-20 19:15:15,045 [INFO] {
+2025-04-21 09:55:44,578 [INFO] === Action Taken === 1
+2025-04-21 09:55:44,578 [INFO] === currentLEOFreqs === 1500625000.0
+2025-04-21 09:55:44,578 [INFO] === currentLEOFreqs === 1500625000.0
+2025-04-21 09:55:45,759 [INFO] === Current State ===
+2025-04-21 09:55:45,759 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:00:20",
   "LEO_1": {
@@ -105,11 +119,11 @@
     }
   }
 }
-2025-04-20 19:15:15,049 [INFO] === Action Taken === 8
-2025-04-20 19:15:15,051 [INFO] === currentLEOFreqs === 1501625000.0
-2025-04-20 19:15:15,051 [INFO] === currentLEOFreqs === 1501625000.0
-2025-04-20 19:15:16,059 [INFO] === Current State ===
-2025-04-20 19:15:16,059 [INFO] {
+2025-04-21 09:55:45,774 [INFO] === Action Taken === 3
+2025-04-21 09:55:45,774 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:55:45,774 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:55:46,771 [INFO] === Current State ===
+2025-04-21 09:55:46,771 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:00:30",
   "LEO_1": {
@@ -122,11 +136,11 @@
     }
   }
 }
-2025-04-20 19:15:16,066 [INFO] === Action Taken === 5
-2025-04-20 19:15:16,066 [INFO] === currentLEOFreqs === 1501875000.0
-2025-04-20 19:15:16,066 [INFO] === currentLEOFreqs === 1501875000.0
-2025-04-20 19:15:17,112 [INFO] === Current State ===
-2025-04-20 19:15:17,112 [INFO] {
+2025-04-21 09:55:46,795 [INFO] === Action Taken === 4
+2025-04-21 09:55:46,795 [INFO] === currentLEOFreqs === 1500625000.0
+2025-04-21 09:55:46,795 [INFO] === currentLEOFreqs === 1500625000.0
+2025-04-21 09:55:47,856 [INFO] === Current State ===
+2025-04-21 09:55:47,856 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:00:40",
   "LEO_1": {
@@ -139,11 +153,11 @@
     }
   }
 }
-2025-04-20 19:15:17,120 [INFO] === Action Taken === 6
-2025-04-20 19:15:17,120 [INFO] === currentLEOFreqs === 1501125000.0
-2025-04-20 19:15:17,120 [INFO] === currentLEOFreqs === 1501125000.0
-2025-04-20 19:15:18,144 [INFO] === Current State ===
-2025-04-20 19:15:18,144 [INFO] {
+2025-04-21 09:55:47,871 [INFO] === Action Taken === 4
+2025-04-21 09:55:47,871 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:55:47,871 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:55:48,881 [INFO] === Current State ===
+2025-04-21 09:55:48,881 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:00:50",
   "LEO_1": {
@@ -156,11 +170,11 @@
     }
   }
 }
-2025-04-20 19:15:18,150 [INFO] === Action Taken === 4
-2025-04-20 19:15:18,150 [INFO] === currentLEOFreqs === 1501375000.0
-2025-04-20 19:15:18,150 [INFO] === currentLEOFreqs === 1501375000.0
-2025-04-20 19:15:19,218 [INFO] === Current State ===
-2025-04-20 19:15:19,218 [INFO] {
+2025-04-21 09:55:48,891 [INFO] === Action Taken === 3
+2025-04-21 09:55:48,891 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:55:48,891 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:55:49,910 [INFO] === Current State ===
+2025-04-21 09:55:49,910 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:01:00",
   "LEO_1": {
@@ -173,11 +187,11 @@
     }
   }
 }
-2025-04-20 19:15:19,226 [INFO] === Action Taken === 4
-2025-04-20 19:15:19,226 [INFO] === currentLEOFreqs === 1500875000.0
-2025-04-20 19:15:19,226 [INFO] === currentLEOFreqs === 1500875000.0
-2025-04-20 19:15:20,249 [INFO] === Current State ===
-2025-04-20 19:15:20,249 [INFO] {
+2025-04-21 09:55:49,926 [INFO] === Action Taken === 2
+2025-04-21 09:55:49,926 [INFO] === currentLEOFreqs === 1500625000.0
+2025-04-21 09:55:49,926 [INFO] === currentLEOFreqs === 1500625000.0
+2025-04-21 09:55:51,365 [INFO] === Current State ===
+2025-04-21 09:55:51,365 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:01:10",
   "LEO_1": {
@@ -190,11 +204,11 @@
     }
   }
 }
-2025-04-20 19:15:20,255 [INFO] === Action Taken === 9
-2025-04-20 19:15:20,255 [INFO] === currentLEOFreqs === 1500875000.0
-2025-04-20 19:15:20,255 [INFO] === currentLEOFreqs === 1500875000.0
-2025-04-20 19:15:21,614 [INFO] === Current State ===
-2025-04-20 19:15:21,615 [INFO] {
+2025-04-21 09:55:51,383 [INFO] === Action Taken === 5
+2025-04-21 09:55:51,383 [INFO] === currentLEOFreqs === 1500375000.0
+2025-04-21 09:55:51,383 [INFO] === currentLEOFreqs === 1500375000.0
+2025-04-21 09:55:52,761 [INFO] === Current State ===
+2025-04-21 09:55:52,761 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:01:20",
   "LEO_1": {
@@ -207,11 +221,11 @@
     }
   }
 }
-2025-04-20 19:15:21,621 [INFO] === Action Taken === 3
-2025-04-20 19:15:21,621 [INFO] === currentLEOFreqs === 1502125000.0
-2025-04-20 19:15:21,621 [INFO] === currentLEOFreqs === 1502125000.0
-2025-04-20 19:15:22,996 [INFO] === Current State ===
-2025-04-20 19:15:22,996 [INFO] {
+2025-04-21 09:55:52,773 [INFO] === Action Taken === 2
+2025-04-21 09:55:52,773 [INFO] === currentLEOFreqs === 1501125000.0
+2025-04-21 09:55:52,773 [INFO] === currentLEOFreqs === 1501125000.0
+2025-04-21 09:55:54,215 [INFO] === Current State ===
+2025-04-21 09:55:54,215 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:01:30",
   "LEO_1": {
@@ -224,11 +238,11 @@
     }
   }
 }
-2025-04-20 19:15:23,001 [INFO] === Action Taken === 2
-2025-04-20 19:15:23,001 [INFO] === currentLEOFreqs === 1500625000.0
-2025-04-20 19:15:23,001 [INFO] === currentLEOFreqs === 1500625000.0
-2025-04-20 19:15:24,432 [INFO] === Current State ===
-2025-04-20 19:15:24,432 [INFO] {
+2025-04-21 09:55:54,225 [INFO] === Action Taken === 6
+2025-04-21 09:55:54,225 [INFO] === currentLEOFreqs === 1500375000.0
+2025-04-21 09:55:54,225 [INFO] === currentLEOFreqs === 1500375000.0
+2025-04-21 09:55:55,683 [INFO] === Current State ===
+2025-04-21 09:55:55,683 [INFO] {
   "GeobaseFreq": 1500000000.0,
   "time": "10-Apr-2025 12:01:40",
   "LEO_1": {
@@ -241,3 +255,713 @@
     }
   }
 }
+2025-04-21 09:56:22,205 [INFO] === Current State ===
+2025-04-21 09:56:22,205 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -65.25349692661547,
+    "Longitude": 131.1964150359908,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:29,918 [INFO] === Current State ===
+2025-04-21 09:56:29,918 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -65.25349692661547,
+    "Longitude": 131.1964150359908,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:29,918 [INFO] === Action Taken === 9
+2025-04-21 09:56:29,918 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:56:29,918 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:56:30,930 [INFO] === Current State ===
+2025-04-21 09:56:30,930 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:10",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -64.6410076737912,
+    "Longitude": 131.15892197593672,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:38,795 [INFO] === Current State ===
+2025-04-21 09:56:38,795 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -65.25349692661547,
+    "Longitude": 131.1964150359908,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:38,795 [INFO] === Action Taken === 1
+2025-04-21 09:56:38,795 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:56:38,795 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:56:39,926 [INFO] === Current State ===
+2025-04-21 09:56:39,926 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:10",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -64.6410076737912,
+    "Longitude": 131.15892197593672,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:39,932 [INFO] === Action Taken === 9
+2025-04-21 09:56:39,932 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:56:39,932 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:56:40,996 [INFO] === Current State ===
+2025-04-21 09:56:40,996 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:20",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -64.02845652716644,
+    "Longitude": 131.1212399996478,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:41,007 [INFO] === Action Taken === 5
+2025-04-21 09:56:41,007 [INFO] === currentLEOFreqs === 1502125000.0
+2025-04-21 09:56:41,007 [INFO] === currentLEOFreqs === 1502125000.0
+2025-04-21 09:56:42,065 [INFO] === Current State ===
+2025-04-21 09:56:42,065 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:30",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -63.41584242738945,
+    "Longitude": 131.08338252253174,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:42,065 [INFO] === Action Taken === 7
+2025-04-21 09:56:42,065 [INFO] === currentLEOFreqs === 1501125000.0
+2025-04-21 09:56:42,065 [INFO] === currentLEOFreqs === 1501125000.0
+2025-04-21 09:56:43,116 [INFO] === Current State ===
+2025-04-21 09:56:43,116 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:40",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -62.8031643104829,
+    "Longitude": 131.04536128046678,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:43,124 [INFO] === Action Taken === 7
+2025-04-21 09:56:43,124 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:56:43,124 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:56:44,149 [INFO] === Current State ===
+2025-04-21 09:56:44,149 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:50",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -62.19042117778287,
+    "Longitude": 131.00718696337805,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:44,164 [INFO] === Action Taken === 8
+2025-04-21 09:56:44,164 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:56:44,164 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:56:45,240 [INFO] === Current State ===
+2025-04-21 09:56:45,240 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -61.57761203812181,
+    "Longitude": 130.96886983208833,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:45,249 [INFO] === Action Taken === 4
+2025-04-21 09:56:45,249 [INFO] === currentLEOFreqs === 1501875000.0
+2025-04-21 09:56:45,249 [INFO] === currentLEOFreqs === 1501875000.0
+2025-04-21 09:56:46,700 [INFO] === Current State ===
+2025-04-21 09:56:46,700 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:10",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -60.96473593381865,
+    "Longitude": 130.93041880809687,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:46,709 [INFO] === Action Taken === 8
+2025-04-21 09:56:46,709 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:56:46,709 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:56:48,307 [INFO] === Current State ===
+2025-04-21 09:56:48,307 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:20",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -60.351791936641035,
+    "Longitude": 130.89184206403826,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:48,323 [INFO] === Action Taken === 9
+2025-04-21 09:56:48,323 [INFO] === currentLEOFreqs === 1501875000.0
+2025-04-21 09:56:48,323 [INFO] === currentLEOFreqs === 1501875000.0
+2025-04-21 09:56:50,267 [INFO] === Current State ===
+2025-04-21 09:56:50,267 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:30",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -59.73877914830025,
+    "Longitude": 130.85314760368988,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:56:50,283 [INFO] === Action Taken === 5
+2025-04-21 09:56:50,283 [INFO] === currentLEOFreqs === 1502125000.0
+2025-04-21 09:56:50,283 [INFO] === currentLEOFreqs === 1502125000.0
+2025-04-21 09:56:51,879 [INFO] === Current State ===
+2025-04-21 09:56:51,879 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:40",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -59.12569670246764,
+    "Longitude": 130.81434232011253,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:57:40,547 [INFO] === Current State ===
+2025-04-21 09:57:40,547 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -65.25349692661547,
+    "Longitude": 131.1964150359908,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:57:47,413 [INFO] === Current State ===
+2025-04-21 09:57:47,413 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -65.25349692661547,
+    "Longitude": 131.1964150359908,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:57:47,413 [INFO] === Action Taken === 9
+2025-04-21 09:57:47,413 [INFO] === currentLEOFreqs === 1502125000.0
+2025-04-21 09:57:47,413 [INFO] === currentLEOFreqs === 1502125000.0
+2025-04-21 09:57:48,397 [INFO] === Current State ===
+2025-04-21 09:57:48,397 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:10",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -64.6410076737912,
+    "Longitude": 131.15892197593672,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:57:55,199 [INFO] === Current State ===
+2025-04-21 09:57:55,199 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -65.25349692661547,
+    "Longitude": 131.1964150359908,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:57:55,199 [INFO] === Action Taken === 6
+2025-04-21 09:57:55,199 [INFO] === currentLEOFreqs === 1498875000.0
+2025-04-21 09:57:55,199 [INFO] === currentLEOFreqs === 1498875000.0
+2025-04-21 09:57:56,181 [INFO] === Current State ===
+2025-04-21 09:57:56,181 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:10",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -64.6410076737912,
+    "Longitude": 131.15892197593672,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:57:56,189 [INFO] === Action Taken === 2
+2025-04-21 09:57:56,189 [INFO] === currentLEOFreqs === 1501375000.0
+2025-04-21 09:57:56,189 [INFO] === currentLEOFreqs === 1501375000.0
+2025-04-21 09:57:57,181 [INFO] === Current State ===
+2025-04-21 09:57:57,181 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:20",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -64.02845652716644,
+    "Longitude": 131.1212399996478,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:57:57,197 [INFO] === Action Taken === 0
+2025-04-21 09:57:57,197 [INFO] === currentLEOFreqs === 1500375000.0
+2025-04-21 09:57:57,197 [INFO] === currentLEOFreqs === 1500375000.0
+2025-04-21 09:57:58,197 [INFO] === Current State ===
+2025-04-21 09:57:58,197 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:30",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -63.41584242738945,
+    "Longitude": 131.08338252253174,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:57:58,197 [INFO] === Action Taken === 1
+2025-04-21 09:57:58,197 [INFO] === currentLEOFreqs === 1498875000.0
+2025-04-21 09:57:58,197 [INFO] === currentLEOFreqs === 1498875000.0
+2025-04-21 09:57:59,281 [INFO] === Current State ===
+2025-04-21 09:57:59,281 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:40",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -62.8031643104829,
+    "Longitude": 131.04536128046678,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:57:59,299 [INFO] === Action Taken === 4
+2025-04-21 09:57:59,299 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:57:59,299 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:58:00,356 [INFO] === Current State ===
+2025-04-21 09:58:00,356 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:50",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -62.19042117778287,
+    "Longitude": 131.00718696337805,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:00,363 [INFO] === Action Taken === 7
+2025-04-21 09:58:00,363 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:58:00,363 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:58:01,398 [INFO] === Current State ===
+2025-04-21 09:58:01,398 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -61.57761203812181,
+    "Longitude": 130.96886983208833,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:01,398 [INFO] === Action Taken === 7
+2025-04-21 09:58:01,398 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:58:01,398 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:58:02,712 [INFO] === Current State ===
+2025-04-21 09:58:02,712 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:10",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -60.96473593381865,
+    "Longitude": 130.93041880809687,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:02,719 [INFO] === Action Taken === 5
+2025-04-21 09:58:02,719 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:58:02,719 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:58:04,031 [INFO] === Current State ===
+2025-04-21 09:58:04,031 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:20",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -60.351791936641035,
+    "Longitude": 130.89184206403826,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:04,031 [INFO] === Action Taken === 1
+2025-04-21 09:58:04,031 [INFO] === currentLEOFreqs === 1501125000.0
+2025-04-21 09:58:04,031 [INFO] === currentLEOFreqs === 1501125000.0
+2025-04-21 09:58:05,452 [INFO] === Current State ===
+2025-04-21 09:58:05,452 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:30",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -59.73877914830025,
+    "Longitude": 130.85314760368988,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:05,463 [INFO] === Action Taken === 2
+2025-04-21 09:58:05,463 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:58:05,463 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:58:07,809 [INFO] === Current State ===
+2025-04-21 09:58:07,809 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:40",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -59.12569670246764,
+    "Longitude": 130.81434232011253,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:27,214 [INFO] === Current State ===
+2025-04-21 09:58:27,214 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -65.25349692661547,
+    "Longitude": 131.1964150359908,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:27,214 [INFO] === Action Taken === 0
+2025-04-21 09:58:27,214 [INFO] === currentLEOFreqs === 1502125000.0
+2025-04-21 09:58:27,214 [INFO] === currentLEOFreqs === 1502125000.0
+2025-04-21 09:58:28,167 [INFO] === Current State ===
+2025-04-21 09:58:28,167 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:10",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -64.6410076737912,
+    "Longitude": 131.15892197593672,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:28,180 [INFO] === Action Taken === 7
+2025-04-21 09:58:28,180 [INFO] === currentLEOFreqs === 1498875000.0
+2025-04-21 09:58:28,180 [INFO] === currentLEOFreqs === 1498875000.0
+2025-04-21 09:58:29,147 [INFO] === Current State ===
+2025-04-21 09:58:29,147 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:20",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -64.02845652716644,
+    "Longitude": 131.1212399996478,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:29,166 [INFO] === Action Taken === 1
+2025-04-21 09:58:29,166 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:58:29,166 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:58:30,237 [INFO] === Current State ===
+2025-04-21 09:58:30,237 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:30",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -63.41584242738945,
+    "Longitude": 131.08338252253174,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:30,247 [INFO] === Action Taken === 4
+2025-04-21 09:58:30,247 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:58:30,247 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:58:31,265 [INFO] === Current State ===
+2025-04-21 09:58:31,265 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:40",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -62.8031643104829,
+    "Longitude": 131.04536128046678,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:31,271 [INFO] === Action Taken === 0
+2025-04-21 09:58:31,271 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:58:31,271 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:58:32,363 [INFO] === Current State ===
+2025-04-21 09:58:32,363 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:50",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -62.19042117778287,
+    "Longitude": 131.00718696337805,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:32,363 [INFO] === Action Taken === 3
+2025-04-21 09:58:32,363 [INFO] === currentLEOFreqs === 1498875000.0
+2025-04-21 09:58:32,363 [INFO] === currentLEOFreqs === 1498875000.0
+2025-04-21 09:58:33,464 [INFO] === Current State ===
+2025-04-21 09:58:33,464 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -61.57761203812181,
+    "Longitude": 130.96886983208833,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:33,470 [INFO] === Action Taken === 8
+2025-04-21 09:58:33,470 [INFO] === currentLEOFreqs === 1500625000.0
+2025-04-21 09:58:33,470 [INFO] === currentLEOFreqs === 1500625000.0
+2025-04-21 09:58:34,802 [INFO] === Current State ===
+2025-04-21 09:58:34,802 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:10",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -60.96473593381865,
+    "Longitude": 130.93041880809687,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:34,804 [INFO] === Action Taken === 7
+2025-04-21 09:58:34,804 [INFO] === currentLEOFreqs === 1501875000.0
+2025-04-21 09:58:34,804 [INFO] === currentLEOFreqs === 1501875000.0
+2025-04-21 09:58:36,082 [INFO] === Current State ===
+2025-04-21 09:58:36,082 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:20",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -60.351791936641035,
+    "Longitude": 130.89184206403826,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:36,098 [INFO] === Action Taken === 4
+2025-04-21 09:58:36,098 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:58:36,098 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:58:37,410 [INFO] === Current State ===
+2025-04-21 09:58:37,410 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:30",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -59.73877914830025,
+    "Longitude": 130.85314760368988,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:37,419 [INFO] === Action Taken === 1
+2025-04-21 09:58:37,420 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:58:37,420 [INFO] === currentLEOFreqs === 1500875000.0
+2025-04-21 09:58:40,312 [INFO] === Current State ===
+2025-04-21 09:58:40,312 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:40",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -59.12569670246764,
+    "Longitude": 130.81434232011253,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:41,087 [INFO] === Action Taken === 8
+2025-04-21 09:58:41,087 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:58:41,087 [INFO] === currentLEOFreqs === 1500125000.0
+2025-04-21 09:58:44,423 [INFO] === Current State ===
+2025-04-21 09:58:44,423 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:01:50",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -58.51254375883333,
+    "Longitude": 130.7754325588776,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:44,444 [INFO] === Action Taken === 8
+2025-04-21 09:58:44,444 [INFO] === currentLEOFreqs === 1501875000.0
+2025-04-21 09:58:44,444 [INFO] === currentLEOFreqs === 1501875000.0
+2025-04-21 09:58:47,275 [INFO] === Current State ===
+2025-04-21 09:58:47,275 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:02:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -57.89931951347996,
+    "Longitude": 130.73642467455448,
+    "AccessStatus": {
+      "Melbourne": true,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:55,983 [INFO] === Current State ===
+2025-04-21 09:58:55,983 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:00",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -65.25349692661547,
+    "Longitude": 131.1964150359908,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:55,983 [INFO] === Action Taken === 8
+2025-04-21 09:58:55,983 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:58:55,983 [INFO] === currentLEOFreqs === 1501625000.0
+2025-04-21 09:58:56,951 [INFO] === Current State ===
+2025-04-21 09:58:56,951 [INFO] {
+  "GeobaseFreq": 1500000000.0,
+  "time": "10-Apr-2025 12:00:10",
+  "LEO_1": {
+    "LEO_Num": 1.0,
+    "Latitude": -64.6410076737912,
+    "Longitude": 131.15892197593672,
+    "AccessStatus": {
+      "Melbourne": false,
+      "Sydney": false
+    }
+  }
+}
+2025-04-21 09:58:56,967 [INFO] === Action Taken === 8
+2025-04-21 09:58:56,967 [INFO] === currentLEOFreqs === 1501875000.0
+2025-04-21 09:58:56,967 [INFO] === currentLEOFreqs === 1501875000.0
