@@ -252,3 +252,5 @@ function overlapFactor = getOverlapFactor(txFreq, txBW, intfFreq, intfBW)
     overlap = max(0, min(txRange(2), intfRange(2)) - max(txRange(1), intfRange(1)));
     overlapFactor = overlap / intfBW;
 end
+
+sampleCount = 0;

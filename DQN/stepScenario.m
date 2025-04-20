@@ -8,7 +8,7 @@ end
 
 %% Simulation Loop with Selective Logging
 fprintf('Starting main simulation loop...\n');
-sampleCount = 0;
+
 
 for tIdx = 1:length(ts)
     t = ts(tIdx);

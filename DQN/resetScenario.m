@@ -253,6 +253,8 @@ function overlapFactor = getOverlapFactor(txFreq, txBW, intfFreq, intfBW)
     overlapFactor = overlap / intfBW;
 end
 
+sampleCount = 0;
+
 %% Get State Data from time t=1
 
 tIdx = 1
@@ -342,3 +344,4 @@ if leoAccess | geoAccess
     py_state = py.dict(snd_state);
 
     display(py_state)
+end
