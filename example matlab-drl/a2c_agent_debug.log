@@ -1,9 +1,0 @@
-2025-04-16 12:32:50 - a2c_agent - INFO - --- Logger initialized ---
-2025-04-16 12:32:50 - a2c_agent - DEBUG - --- get_action called ---
-2025-04-16 12:32:50 - a2c_agent - DEBUG - Received obs type: <class 'list'>
-2025-04-16 12:32:50 - a2c_agent - DEBUG - Received obs value: [0.998752236366272, 0.04993963986635208, 0.6207534670829773]
-2025-04-16 12:32:50 - a2c_agent - DEBUG - obs converted to numpy: [[0.99875224 0.04993964 0.62075347]], Shape: (1, 3), Dtype: float32
-2025-04-16 12:32:50 - a2c_agent - DEBUG - obs converted to tensor: tensor([[0.9988, 0.0499, 0.6208]]), Shape: torch.Size([1, 3]), Device: cpu
-2025-04-16 12:32:50 - a2c_agent - DEBUG - Policy output -> action: tensor([[-2.0963]]), value: tensor([[0.1117]]), log_prob: tensor([-3.1226])
-2025-04-16 12:32:50 - a2c_agent - DEBUG - Action to return (numpy): [-2.0962627], Type: <class 'numpy.ndarray'>
-2025-04-16 12:32:50 - a2c_agent - DEBUG - --- get_action finished successfully ---
