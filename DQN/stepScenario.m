@@ -9,8 +9,12 @@ end
 %% Simulation Loop with Selective Logging
 fprintf('Starting main simulation loop...\n');
 
+% Update LEO frequencies (random channel selection)
+%currentLEOFreqs = channelFreqs(randi([1 10], 1, leoNum));
+%fprintf('  Selected LEO frequencies: %s MHz\n', mat2str(currentLEOFreqs/1e6));
 
-done = false;
+
+
 
 reward = struct;
 
@@ -24,6 +28,9 @@ fprintf('\nProcessing time step %d/%d: %s\n', tIdx, length(ts), datestr(t));
 leoAccess = false;
 geoAccess = false;
 accessDetails = '';
+
+
+
 
 % First check if any LEO has access to any ground station
 for i = 1:leoNum
@@ -57,9 +64,7 @@ if leoAccess | geoAccess
     logData.Time(sampleCount) = t;
     fprintf('  Processing sample %d (valid sample %d)\n', tIdx, sampleCount);
     
-    % Update LEO frequencies (random channel selection)
-    currentLEOFreqs = channelFreqs(randi([1 10], 1, leoNum));
-    fprintf('  Selected LEO frequencies: %s MHz\n', mat2str(currentLEOFreqs/1e6));
+
 
 
 
@@ -125,11 +130,6 @@ if leoAccess | geoAccess
 
 
 
-
-
-
-
-
     % Update LEO satellite data
     for i = 1:leoNum
         [pos, ~] = states(leoSats{i}, t, 'CoordinateFrame', 'geographic');
@@ -185,8 +185,8 @@ if leoAccess | geoAccess
                 fieldName = sprintf("LEO_%d", i);
                 gsName = strrep(gsList{gsIdx}.Name, ' ', '_');
                 reward_temp = struct;
-                reward_temp.rssi = rssi;
-                reward_temp.snr = snr;
+                reward_temp.rssi = Pwr_dBW - atmosLoss;
+                reward_temp.snr = rssi - 10*log10(kb*tempK*channelBW);
                 reward_data_leo_gs.(gsName) = reward_temp;
                 
                 fprintf('    LEO-%d to %s (%.6f GHz): RSSI=%.2f dBm, SNR=%.2f dB\n', ...

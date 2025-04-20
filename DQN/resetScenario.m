@@ -64,6 +64,16 @@ cities = {
     %'Darwin',    -12.4634, 130.8456;
 };
 
+cities_py = {
+    {'Melbourne', -37.8136, 144.9631}, 
+    {'Sydney',    -33.8688, 151.2093},
+    % {'Perth',     -31.9505, 115.8605},
+    % {'Brisbane',  -27.4698, 153.0251},
+    % {'Adelaide',  -34.9285, 138.6007},
+    % {'Darwin',    -12.4634, 130.8456},
+};
+
+
 gsList = [];
 for i = 1:size(cities,1)
     fprintf('  Creating ground station: %s\n', cities{i,1});
@@ -101,7 +111,7 @@ end
 
 %% Create LEO Satellites
 fprintf('Creating LEO satellites...\n');
-leoNum = 3;
+leoNum = 1;
 leoInclination = 90;  % Inclination for coverage
 %leoRAANs = [170, 180, 190];
 leoRAANs = [150, 160, 170];
@@ -345,3 +355,8 @@ if leoAccess | geoAccess
 
     display(py_state);
 end
+
+% Update LEO frequencies (random channel selection)
+currentLEOFreqs = channelFreqs(randi([1 10], 1, leoNum));
+done = false;
+fprintf('  Selected LEO frequencies: %s MHz\n', mat2str(currentLEOFreqs/1e6));

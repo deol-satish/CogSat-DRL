@@ -11,13 +11,13 @@ from utils.env import CogSatEnv  # Assuming it's in cogsat_env.py
 seed = 42
 
 gym.register(
-    id='CogSatEnv',  # Use the same ID here as you used in the script
+    id='CogSatEnv-v1',  # Use the same ID here as you used in the script
     entry_point='env:CogSatEnv',
 )
 
 
 # Initialize the environment
-env_id = "CogSatEnv"
+env_id = "CogSatEnv-v1"
 env = make_vec_env(env_id, n_envs=1, seed=seed)
 
 epoch_length = 884 ## got through experiment

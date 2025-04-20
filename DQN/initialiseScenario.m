@@ -254,3 +254,4 @@ function overlapFactor = getOverlapFactor(txFreq, txBW, intfFreq, intfBW)
 end
 
 sampleCount = 0;
+done = false;
