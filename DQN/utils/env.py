@@ -4,6 +4,7 @@ import matlab.engine
 from gymnasium.spaces import MultiDiscrete, Dict, Box
 import logging
 import json
+import math
 
 # Configure the logger
 logging.basicConfig(
@@ -131,9 +132,26 @@ class CogSatEnv(gymnasium.Env):
         # Reset the observation
         next_observation = self.convert_matlab_state_to_py_state(state)
         terminated = self.eng.workspace['done']
-        reward = self.eng.workspace['reward']
+        reward_matlab = self.eng.workspace['reward']
 
-        reward = 0.0  # Placeholder reward logic
+        reward = 0.0
+
+        calc_reward = 0.0
+
+        state['LEO_1']['AccessStatus']['Melbourne']
+        if (state['LEO_1']['AccessStatus']['Melbourne'] and state['LEO_1']['AccessStatus']['Sydney']):
+            reward = reward_matlab["LEO_1"]['reward']['Melbourne']['snr'] + reward_matlab["LEO_1"]['reward']['Sydney']['snr']
+            reward = reward /2
+        elif (state['LEO_1']['AccessStatus']['Melbourne'] and not state['LEO_1']['AccessStatus']['Sydney']):
+            reward = reward_matlab["LEO_1"]['reward']['Melbourne']['snr']
+        elif (not state['LEO_1']['AccessStatus']['Melbourne'] and state['LEO_1']['AccessStatus']['Sydney']):
+            reward = reward_matlab["LEO_1"]['reward']['Sydney']['snr']
+
+        # reward = math.log(reward)
+
+        print("Reward: ", reward)
+        logging.info("=== Reward === %s", reward)
+
         
  
         # Action: e.g., select a new frequency for one LEO
@@ -147,6 +165,11 @@ class CogSatEnv(gymnasium.Env):
         terminated = False
         truncated = False
         info = {"frequencies": np.array(self.currentLEOFreqs)}
+
+        if terminated:
+            print("Episode terminated.")
+            logging.info("=== Episode Terminated ===")
+            self.eng.eval("SaveData", nargout=0)
  
         return next_observation, reward, terminated, truncated, info
  
