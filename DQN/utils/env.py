@@ -109,6 +109,10 @@ class CogSatEnv(gymnasium.Env):
         Apply action and return (observation, reward, terminated, truncated, info)
         """
 
+         
+        terminated = False
+        truncated = False
+
         self.currentLEOFreqs = self.eng.workspace['currentLEOFreqs']
         self.channelFreqs = self.eng.workspace['channelFreqs']
 
@@ -126,6 +130,8 @@ class CogSatEnv(gymnasium.Env):
 
 
         self.eng.eval("stepScenario", nargout=0)
+
+        print("Step Scenario",self.eng.workspace['tIdx'])
         
         state = self.eng.workspace['snd_state']
 
@@ -134,7 +140,7 @@ class CogSatEnv(gymnasium.Env):
         terminated = self.eng.workspace['done']
         reward_matlab = self.eng.workspace['reward']
 
-        reward = 0.0
+        reward = -32.4115512468957
 
         calc_reward = 0.0
 
@@ -161,15 +167,19 @@ class CogSatEnv(gymnasium.Env):
         
  
         # Reward: simplified; in practice, reward could be SINR or channel access success
- 
-        terminated = False
-        truncated = False
+
         info = {"frequencies": np.array(self.currentLEOFreqs)}
 
-        if terminated:
+        if terminated or self.eng.workspace['tIdx'] > 179:
             print("Episode terminated.")
             logging.info("=== Episode Terminated ===")
             self.eng.eval("SaveData", nargout=0)
+
+        if self.eng.workspace['tIdx'] % 100 == 0:
+            print("Saving Data every 100 steps")
+            logging.info("=== Saving Data every 5 epochs ===")
+            self.eng.eval("SaveData", nargout=0)
+            truncated = True
  
         return next_observation, reward, terminated, truncated, info
  
@@ -194,6 +204,7 @@ class CogSatEnv(gymnasium.Env):
         # Reset the observation
 
         observation = self.convert_matlab_state_to_py_state(state)
+        print("++++===== ENV RESET+++===")
  
         return observation, {}
  
@@ -201,4 +212,8 @@ class CogSatEnv(gymnasium.Env):
         print("Rendering is handled in MATLAB viewer.")
  
     def close(self):
+        print("Saving MATLAB Data.")
+        logging.info("=== Saving MATLAB Data ===")
+        self.eng.eval("SaveData", nargout=0)
         self.eng.quit()
+    
