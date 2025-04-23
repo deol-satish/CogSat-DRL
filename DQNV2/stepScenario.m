@@ -18,7 +18,12 @@ fprintf('Starting main simulation loop...\n');
 
 reward = struct;
 
-tIdx = tIdx + 1;
+leoIndex = leoIndex + 1;
+
+if leoIndex > leoNum
+    tIdx = tIdx + 1;
+    leoIndex = 1;
+end
 
 endIndex = length(ts);
 

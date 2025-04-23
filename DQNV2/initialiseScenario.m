@@ -101,7 +101,7 @@ end
 
 %% Create LEO Satellites
 fprintf('Creating LEO satellites...\n');
-leoNum = 1;
+leoNum = 3;
 leoInclination = 90;  % Inclination for coverage
 %leoRAANs = [170, 180, 190];
 leoRAANs = [150, 160, 170];

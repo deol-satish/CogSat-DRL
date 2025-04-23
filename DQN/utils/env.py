@@ -147,7 +147,8 @@ class CogSatEnv(gymnasium.Env):
         state['LEO_1']['AccessStatus']['Melbourne']
         if (state['LEO_1']['AccessStatus']['Melbourne'] and state['LEO_1']['AccessStatus']['Sydney']):
             reward = reward_matlab["LEO_1"]['reward']['Melbourne']['snr'] + reward_matlab["LEO_1"]['reward']['Sydney']['snr']
-            reward = reward /2
+            reward = reward / 2
+            # reward = math.max(reward_matlab["LEO_1"]['reward']['Melbourne']['snr'], reward_matlab["LEO_1"]['reward']['Sydney']['snr'])
         elif (state['LEO_1']['AccessStatus']['Melbourne'] and not state['LEO_1']['AccessStatus']['Sydney']):
             reward = reward_matlab["LEO_1"]['reward']['Melbourne']['snr']
         elif (not state['LEO_1']['AccessStatus']['Melbourne'] and state['LEO_1']['AccessStatus']['Sydney']):

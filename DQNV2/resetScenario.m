@@ -111,7 +111,7 @@ end
 
 %% Create LEO Satellites
 fprintf('Creating LEO satellites...\n');
-leoNum = 1;
+leoNum = 3;
 leoInclination = 90;  % Inclination for coverage
 %leoRAANs = [170, 180, 190];
 leoRAANs = [150, 160, 170];
@@ -350,13 +350,12 @@ if leoAccess | geoAccess
         snd_state.(fieldName) = satellite_data;
     end
 
-    % Convert MATLAB struct to Python dict
-    py_state = py.dict(snd_state);
-
-    display(py_state);
 end
 
 % Update LEO frequencies (random channel selection)
 currentLEOFreqs = channelFreqs(randi([1 10], 1, leoNum));
 done = false;
+
+leoIndex = 0;
+
 fprintf('  Selected LEO frequencies: %s MHz\n', mat2str(currentLEOFreqs/1e6));

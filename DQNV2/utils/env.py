@@ -118,6 +118,8 @@ class CogSatEnv(gymnasium.Env):
 
         action = int(action)
 
+        self.leoIndex = self.eng.workspace['leoIndex']
+
 
         if type(self.currentLEOFreqs) == type(float(0)):
             print("Action taken: ", action)
@@ -125,6 +127,18 @@ class CogSatEnv(gymnasium.Env):
             logging.info("=== currentLEOFreqs === %s",self.currentLEOFreqs)
             logging.info("=== currentLEOFreqs === %s",self.currentLEOFreqs)
             self.eng.workspace['currentLEOFreqs'] = self.channelFreqs[0][action]
+        else:
+            currentLEOFreqs = self.eng.workspace['currentLEOFreqs']
+            #Modify the values (example change)
+            new_values = np.array(currentLEOFreqs).flatten().tolist()
+            print("Old Frequencies: ", new_values)
+
+            new_values[int((self.leoIndex -1))] = self.channelFreqs[0][action]
+
+            print("New Frequencies: ", new_values)
+
+            #Update the workspace variable
+            self.eng.workspace['currentLEOFreqs'] = matlab.double(new_values)
             
             
 
