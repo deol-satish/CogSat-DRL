@@ -5,7 +5,7 @@ from gymnasium.spaces import MultiDiscrete, Dict, Box
 import logging
 import json
 import math
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 # Configure the logger
 logging.basicConfig(
@@ -37,6 +37,7 @@ class CogSatEnv(gymnasium.Env):
 
 
         self.timestep = 0
+        self.timelength = self.eng.eval("length(ts)", nargout=1)
         self.leoNum = int(self.eng.workspace['leoNum'])
         self.geoNum = int(self.eng.workspace['geoNum'])
         self.NumLeoUser = int(self.eng.workspace['NumLeoUser'])
@@ -87,27 +88,29 @@ class CogSatEnv(gymnasium.Env):
     
 
 
-    def convert_matlab_state_to_py_state(self, cur_state_from_matlab=None):
+    def get_state_from_matlab(self):
         # Log cur_state_from_matlab
         logging.info("=== Current State ===")
-        logging.info(json.dumps(cur_state_from_matlab, indent=2))
+        # logging.info(json.dumps(cur_state_from_matlab, indent=2))
         """Reset the environment and initialize the buffer."""
+
+        self.ts = self.get_matlab_ts()
+
+        self.FreqAlloc = np.array(self.eng.workspace['FreqAlloc'])
+        self.LEOFreqAlloc = self.FreqAlloc[:10,:]
+
         cur_obs = self.intial_obs.copy()
-        global step_count
-        step_count = 0
-        from datetime import datetime, timezone
 
-        # 1. utc_time (convert string to UNIX timestamp in seconds)
-        dt = datetime.strptime(cur_state_from_matlab["time"], "%d-%b-%Y %H:%M:%S")
-        utc_timestamp = int(dt.timestamp())
-        cur_obs["utc_time"] = np.array([utc_timestamp], dtype=np.int64)
+        cur_obs["utc_time"] = np.array([self.ts[self.timestep]], dtype=np.int64)
+        cur_obs["freq_lgs_leo"] = np.array(self.LEOFreqAlloc[:,self.timestep], dtype=np.float64)
 
-        # 2. freq_lgs_leo (interleaved lat/lon)
-        freq_lgs_leo = []
-        for i in range(1, self.leoNum + 1):
-            leo = cur_state_from_matlab[f"LEO_{i}"]
-            freq_lgs_leo.extend([leo["Latitude"], leo["Longitude"]])
-        cur_obs["freq_lgs_leo"] = np.array(freq_lgs_leo, dtype=np.float64)
+        logging.info("self.timestep: %s",self.timestep)
+
+        # Log utc_time
+        logging.info("utc_time: %s", cur_obs["utc_time"].tolist())
+
+        # Log freq_lgs_leo
+        logging.info("freq_lgs_leo: %s", cur_obs["freq_lgs_leo"].tolist())
 
         # (Optional) Validate against observation_space
         assert self.observation_space.contains(cur_obs), "cur_obs doesn't match the observation space!"
@@ -215,28 +218,13 @@ class CogSatEnv(gymnasium.Env):
         # Reset the scenario
         self.eng.eval("resetScenario", nargout=0)
 
-        self.leoNum = int(self.eng.workspace['leoNum'])
-        self.geoNum = int(self.eng.workspace['geoNum'])
-        self.NumLeoUser = int(self.eng.workspace['NumLeoUser'])
-
-        self.LeoChannels = self.eng.workspace['numChannels']
-        self.GeoChannels = self.eng.workspace['NumGeoUser']
-
         self.ChannelListLeo = self.eng.workspace['ChannelListLeo']
         self.ChannelListGeo = self.eng.workspace['ChannelListGeo']
 
         self.timestep = 0
         self.done = 0
 
-        self.ts = self.get_matlab_ts()
-
-
-        state = self.eng.workspace['snd_state']
-        # reward = self.eng.workspace['reward']
-
-        # Reset the observation
-
-        observation = self.convert_matlab_state_to_py_state(state)
+        observation = self.get_state_from_matlab()
         print("++++===== ENV RESET+++===")
  
         return observation, {}
