@@ -90,3 +90,10 @@ for t = 1:length(ts)
         end
     end
 end
+
+
+% save('Data');
+%% Initialise Interference Calculations
+fprintf('Interference calculation step...\n');
+T = length(ts);
+SINR = NaN(NumGS, T);  % Output SINR matrix [NumGS x T]

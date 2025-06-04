@@ -5,6 +5,7 @@ from gymnasium.spaces import MultiDiscrete, Dict, Box
 import logging
 import json
 import math
+from datetime import datetime, timedelta
 
 # Configure the logger
 logging.basicConfig(
@@ -28,38 +29,63 @@ class CogSatEnv(gymnasium.Env):
         self.eng = matlab.engine.start_matlab()
         self.eng.cd(self.eng.pwd(), nargout=0)  # ensure working directory is set
 
+        self.eng.addpath(r'./matlab_code', nargout=0)
+
         # Initialize the MATLAB scenario
         self.eng.eval("initialiseScenario", nargout=0)
         self.eng.eval("resetScenario", nargout=0)
 
+
+        self.timestep = 0
         self.leoNum = int(self.eng.workspace['leoNum'])
         self.geoNum = int(self.eng.workspace['geoNum'])
-        self.cities = self.eng.workspace['cities_py']
+        self.NumLeoUser = int(self.eng.workspace['NumLeoUser'])
 
-        self.currentLEOFreqs = self.eng.workspace['currentLEOFreqs']
-        self.channelFreqs = self.eng.workspace['channelFreqs']
+        self.LeoChannels = self.eng.workspace['numChannels']
+        self.GeoChannels = self.eng.workspace['NumGeoUser']
 
-        self.nuser = len(self.cities)
+        self.ChannelListLeo = self.eng.workspace['ChannelListLeo']
+        self.ChannelListGeo = self.eng.workspace['ChannelListGeo']
 
         self.intial_obs = {
             "utc_time": np.array([0], dtype=np.int64),
-            "leo_pos": np.random.randn(self.leoNum * 2).astype(np.float64),  # e.g., [x1, y1, x2, y2, x3, y3]
-            "geo_freq": np.random.uniform(10.5, 12.0, size=(self.geoNum,)).astype(np.float64),
-            "leo_freq": np.random.uniform(20.0, 22.0, size=(self.leoNum,)).astype(np.float64),
-            "leo_access": np.random.randint(0, 2, size=(self.leoNum * self.nuser,)).astype(np.float64),
+            "freq_lgs_leo": np.random.uniform(20.0, 22.0, size=(self.NumLeoUser,)).astype(np.float64),
         }         
         
  
         # Define action and observation space (example setup)
-        self.action_space = gymnasium.spaces.Discrete(10)  # Select a channel index for one LEO (for example)
+        # self.action_space = gymnasium.spaces.Discrete(10)  # Select a channel index for one LEO (for example)
+
+        self.action_space = gymnasium.spaces.Box(low=1.0, high=25.0, shape=(self.NumLeoUser,), dtype=np.float32)
+
+
         # Observation space structure
         self.observation_space = Dict({
             "utc_time": Box(low=-np.inf, high=np.inf, shape=(1,), dtype=np.int64),
-            "leo_pos": Box(low=-np.inf, high=np.inf, shape=(self.leoNum *2,), dtype=np.float64),
-            "geo_freq": Box(low=-np.inf, high=np.inf, shape=(self.geoNum,), dtype=np.float64),
-            "leo_freq": Box(low=-np.inf, high=np.inf, shape=(self.leoNum,), dtype=np.float64),
-            "leo_access": Box(low=0, high=1, shape=(self.leoNum* self.nuser,), dtype=np.float64),
+            "freq_lgs_leo": Box(low=-np.inf, high=np.inf, shape=(self.NumLeoUser,), dtype=np.float64),
         })
+
+    def get_matlab_datetime(self):
+        """
+        Get the MATLAB timestamp as a list of strings.
+        """
+        ts_str = self.eng.eval("cellstr(datestr(ts, 'yyyy-mm-ddTHH:MM:SS'))", nargout=1)
+        python_datetimes = [datetime.fromisoformat(s) for s in ts_str]
+        return python_datetimes
+    
+    
+    def get_matlab_ts(self):
+        """
+        Get the MATLAB timestamp as a list of strings.
+        """
+        ts_str = self.eng.eval("cellstr(datestr(ts, 'yyyy-mm-ddTHH:MM:SS'))", nargout=1)
+        python_datetimes = [datetime.fromisoformat(s) for s in ts_str]
+        timestamps = [dt.timestamp() for dt in python_datetimes]
+        return timestamps
+    
+
+    
+
 
     def convert_matlab_state_to_py_state(self, cur_state_from_matlab=None):
         # Log cur_state_from_matlab
@@ -76,33 +102,19 @@ class CogSatEnv(gymnasium.Env):
         utc_timestamp = int(dt.timestamp())
         cur_obs["utc_time"] = np.array([utc_timestamp], dtype=np.int64)
 
-        # 2. leo_pos (interleaved lat/lon)
-        leo_pos = []
+        # 2. freq_lgs_leo (interleaved lat/lon)
+        freq_lgs_leo = []
         for i in range(1, self.leoNum + 1):
             leo = cur_state_from_matlab[f"LEO_{i}"]
-            leo_pos.extend([leo["Latitude"], leo["Longitude"]])
-        cur_obs["leo_pos"] = np.array(leo_pos, dtype=np.float64)
-
-        # 3. geo_freq
-        cur_obs["geo_freq"] = np.array([cur_state_from_matlab["GeobaseFreq"]], dtype=np.float64)
-
-        # 4. leo_freq (not in cur_state_from_matlab — fill with zeros or placeholder)
-        cur_obs["leo_freq"] = np.zeros(self.leoNum, dtype=np.float64)
-
-        # 5. leo_access (flattened [LEO1_Melb, LEO1_Syd, LEO2_Melb, ..., LEO3_Syd])
-        leo_access = []
-        for i in range(1, self.leoNum + 1):
-            access = cur_state_from_matlab[f"LEO_{i}"]["AccessStatus"]
-            leo_access.extend([
-                float(access["Melbourne"]),
-                float(access["Sydney"])
-            ])
-        cur_obs["leo_access"] = np.array(leo_access, dtype=np.float64)
+            freq_lgs_leo.extend([leo["Latitude"], leo["Longitude"]])
+        cur_obs["freq_lgs_leo"] = np.array(freq_lgs_leo, dtype=np.float64)
 
         # (Optional) Validate against observation_space
         assert self.observation_space.contains(cur_obs), "cur_obs doesn't match the observation space!"
 
         return cur_obs
+    
+
  
     def step(self, action):
         """
@@ -205,13 +217,20 @@ class CogSatEnv(gymnasium.Env):
 
         self.leoNum = int(self.eng.workspace['leoNum'])
         self.geoNum = int(self.eng.workspace['geoNum'])
-        self.cities = self.eng.workspace['cities_py']
+        self.NumLeoUser = int(self.eng.workspace['NumLeoUser'])
 
-        self.currentLEOFreqs = self.eng.workspace['currentLEOFreqs']
-        self.channelFreqs = self.eng.workspace['channelFreqs']
+        self.LeoChannels = self.eng.workspace['numChannels']
+        self.GeoChannels = self.eng.workspace['NumGeoUser']
 
-        self.nuser = len(self.cities)
-        done = self.eng.workspace['done']
+        self.ChannelListLeo = self.eng.workspace['ChannelListLeo']
+        self.ChannelListGeo = self.eng.workspace['ChannelListGeo']
+
+        self.timestep = 0
+        self.done = 0
+
+        self.ts = self.get_matlab_ts()
+
+
         state = self.eng.workspace['snd_state']
         # reward = self.eng.workspace['reward']
 
