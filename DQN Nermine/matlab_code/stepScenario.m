@@ -74,7 +74,6 @@ end
 
 
 % save('Data');
-%% Interference calculation
 %% Interference Calculations
 fprintf('Interference calculation step...\n');
 T = length(ts);
