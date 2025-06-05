@@ -7,6 +7,8 @@ import json
 import math
 from datetime import datetime, timedelta, timezone
 
+env_name = "NermineCogSatEnv-v1"
+
 # Configure the logger
 logging.basicConfig(
     filename='state_log.txt',
@@ -36,13 +38,15 @@ class CogSatEnv(gymnasium.Env):
         self.eng.eval("resetScenario", nargout=0)
 
 
-        self.timestep = 0
+        self.tIndex = 0
         self.timelength = self.eng.eval("length(ts)", nargout=1)
         self.leoNum = int(self.eng.workspace['leoNum'])
         self.geoNum = int(self.eng.workspace['geoNum'])
         self.NumLeoUser = int(self.eng.workspace['NumLeoUser'])
+        self.NumGeoUser = int(self.eng.workspace['NumGeoUser'])
+        self.curLEO_User_id = 0
 
-        self.LeoChannels = self.eng.workspace['numChannels']
+        self.LeoChannels = int(self.eng.workspace['numChannels'])
         self.GeoChannels = self.eng.workspace['NumGeoUser']
 
         self.ChannelListLeo = self.eng.workspace['ChannelListLeo']
@@ -54,10 +58,8 @@ class CogSatEnv(gymnasium.Env):
         }         
         
  
-        # Define action and observation space (example setup)
-        # self.action_space = gymnasium.spaces.Discrete(10)  # Select a channel index for one LEO (for example)
-
-        self.action_space = gymnasium.spaces.Box(low=1.0, high=25.0, shape=(self.NumLeoUser,), dtype=np.float32)
+        # Define action and observation space
+        self.action_space = gymnasium.spaces.Discrete(self.LeoChannels)  # Select a channel index for one LEO (for example)
 
 
         # Observation space structure
@@ -101,10 +103,10 @@ class CogSatEnv(gymnasium.Env):
 
         cur_obs = self.intial_obs.copy()
 
-        cur_obs["utc_time"] = np.array([self.ts[self.timestep]], dtype=np.int64)
-        cur_obs["freq_lgs_leo"] = np.array(self.LEOFreqAlloc[:,self.timestep], dtype=np.float64)
+        cur_obs["utc_time"] = np.array([self.ts[self.tIndex]], dtype=np.int64)
+        cur_obs["freq_lgs_leo"] = np.array(self.LEOFreqAlloc[:,self.tIndex], dtype=np.float64)
 
-        logging.info("self.timestep: %s",self.timestep)
+        logging.info("self.tIndex: %s",self.tIndex)
 
         # Log utc_time
         logging.info("utc_time: %s", cur_obs["utc_time"].tolist())
@@ -123,92 +125,76 @@ class CogSatEnv(gymnasium.Env):
         """
         Apply action and return (observation, reward, terminated, truncated, info)
         """
+        print("*-"*50)
+        print("Step Started")
+        logging.info("=== Step Started ===")
+        # Access the variable from MATLAB workspace
+        channel_list_leo = self.eng.workspace['ChannelListLeo']
 
+        # Convert MATLAB array to NumPy array
+        channel_list_leo_np = np.array(channel_list_leo)
+
+        Serv_idxLEO = np.array(self.eng.workspace['Serv_idxLEO'])
+        
+
+        self.cur_leo_sat_id = int(Serv_idxLEO[self.curLEO_User_id, self.tIndex]) - 1
+
+        self.tIndex = int(self.tIndex)
+        
+
+        print("Action taken: ", action)
+        logging.info("=== Action Taken === %s", action)
+
+        print("Current LEO User ID: ", self.curLEO_User_id)
+        logging.info("=== Current LEO User ID === %s", self.curLEO_User_id)
+
+        print("self.tIndex: ", self.tIndex)
+        logging.info("=== Current Time Index === %s", self.tIndex)
+
+        print("Current LEO Satellite ID: ", self.cur_leo_sat_id)
+        logging.info("=== Current LEO Satellite ID === %s", self.cur_leo_sat_id)
+
+
+        channel_list_leo_np[self.curLEO_User_id, self.cur_leo_sat_id, self.tIndex] = int(action)
+        self.eng.workspace['ChannelListLeo'] = matlab.double(channel_list_leo_np)
+
+        print("Updated ChannelListLeo: ", np.array(self.eng.workspace['ChannelListLeo'])[self.curLEO_User_id, self.cur_leo_sat_id, self.tIndex])
+
+
+
+
+        self.eng.eval("stepScenario", nargout=0)
+        next_observation = self.get_state_from_matlab()     
+        
+        print("Next Observation: ", next_observation)
+        logging.info("=== Next Observation === %s", next_observation)   
          
         terminated = False
         truncated = False
 
-        self.currentLEOFreqs = self.eng.workspace['currentLEOFreqs']
-        self.channelFreqs = self.eng.workspace['channelFreqs']
-
-        action = int(action)
-
-        self.leoIndex = self.eng.workspace['leoIndex']
-
-
-        if type(self.currentLEOFreqs) == type(float(0)):
-            print("Action taken: ", action)
-            logging.info("=== Action Taken === %s", action)
-            logging.info("=== currentLEOFreqs === %s",self.currentLEOFreqs)
-            logging.info("=== currentLEOFreqs === %s",self.currentLEOFreqs)
-            self.eng.workspace['currentLEOFreqs'] = self.channelFreqs[0][action]
-        else:
-            currentLEOFreqs = self.eng.workspace['currentLEOFreqs']
-            #Modify the values (example change)
-            new_values = np.array(currentLEOFreqs).flatten().tolist()
-            print("Old Frequencies: ", new_values)
-
-            new_values[int((self.leoIndex -1))] = self.channelFreqs[0][action]
-
-            print("New Frequencies: ", new_values)
-
-            #Update the workspace variable
-            self.eng.workspace['currentLEOFreqs'] = matlab.double(new_values)
-            
-            
-
-
-        self.eng.eval("stepScenario", nargout=0)
-
-        print("Step Scenario",self.eng.workspace['tIdx'])
-        
-        state = self.eng.workspace['snd_state']
-
-        # Reset the observation
-        next_observation = self.convert_matlab_state_to_py_state(state)
-        terminated = self.eng.workspace['done']
-        reward_matlab = self.eng.workspace['reward']
+        SINR = np.array(self.eng.workspace['SINR'])
+        print("SINR[:,self.tIndex]: ", SINR[:,self.tIndex])
 
         reward = -32.4115512468957
 
-        calc_reward = 0.0
-
-        state['LEO_1']['AccessStatus']['Melbourne']
-        if (state['LEO_1']['AccessStatus']['Melbourne'] and state['LEO_1']['AccessStatus']['Sydney']):
-            reward = reward_matlab["LEO_1"]['reward']['Melbourne']['snr'] + reward_matlab["LEO_1"]['reward']['Sydney']['snr']
-            reward = reward /2
-        elif (state['LEO_1']['AccessStatus']['Melbourne'] and not state['LEO_1']['AccessStatus']['Sydney']):
-            reward = reward_matlab["LEO_1"]['reward']['Melbourne']['snr']
-        elif (not state['LEO_1']['AccessStatus']['Melbourne'] and state['LEO_1']['AccessStatus']['Sydney']):
-            reward = reward_matlab["LEO_1"]['reward']['Sydney']['snr']
-
-        # reward = math.log(reward)
-
+        reward = np.sum(SINR[:,self.tIndex])
         print("Reward: ", reward)
         logging.info("=== Reward === %s", reward)
 
-        
- 
-        # Action: e.g., select a new frequency for one LEO
-        # For this example, we let stepScenario handle the frequency selection randomly
-        
-        # Observation: simplified; in practice, you may compute SINR, access status, etc.
-        
- 
-        # Reward: simplified; in practice, reward could be SINR or channel access success
+        self.curLEO_User_id += 1
 
-        info = {"frequencies": np.array(self.currentLEOFreqs)}
+        if self.curLEO_User_id >= self.NumLeoUser:
+            self.curLEO_User_id = 0
+            self.tIndex += 1
+            if self.tIndex > self.timelength:
+                terminated = True
+                print("Episode finished after {} timesteps".format(self.tIndex))
+                logging.info("=== Episode finished after %s timesteps ===", self.tIndex)
 
-        if terminated or self.eng.workspace['tIdx'] > 179:
-            print("Episode terminated.")
-            logging.info("=== Episode Terminated ===")
-            self.eng.eval("SaveData", nargout=0)
+        info = {}
 
-        if self.eng.workspace['tIdx'] % 100 == 0:
-            print("Saving Data every 100 steps")
-            logging.info("=== Saving Data every 5 epochs ===")
-            self.eng.eval("SaveData", nargout=0)
-            truncated = True
+        print("*-"*50)
+
  
         return next_observation, reward, terminated, truncated, info
  
@@ -221,8 +207,9 @@ class CogSatEnv(gymnasium.Env):
         self.ChannelListLeo = self.eng.workspace['ChannelListLeo']
         self.ChannelListGeo = self.eng.workspace['ChannelListGeo']
 
-        self.timestep = 0
+        self.tIndex = 0
         self.done = 0
+        self.curLEO_User_id = 0
 
         observation = self.get_state_from_matlab()
         print("++++===== ENV RESET+++===")

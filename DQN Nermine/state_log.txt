@@ -1,4 +1,2137 @@
-2025-06-04 14:34:56,229 [INFO] === Current State ===
-2025-06-04 14:34:56,253 [INFO] self.timestep: 0
-2025-06-04 14:34:56,253 [INFO] utc_time: [1744250400]
-2025-06-04 14:34:56,253 [INFO] freq_lgs_leo: [21.0, 2.0, 23.0, 2.0, 23.0, 23.0, 8.0, 24.0, 9.0, 24.0]
+2025-06-05 11:10:49,153 [INFO] === Current State ===
+2025-06-05 11:10:49,273 [INFO] self.tIndex: 0
+2025-06-05 11:10:49,273 [INFO] utc_time: [1744250400]
+2025-06-05 11:10:49,273 [INFO] freq_lgs_leo: [21.0, 2.0, 23.0, 2.0, 23.0, 23.0, 8.0, 24.0, 9.0, 24.0]
+2025-06-05 11:10:57,693 [INFO] === Current State ===
+2025-06-05 11:10:57,706 [INFO] self.tIndex: 0
+2025-06-05 11:10:57,707 [INFO] utc_time: [1744250400]
+2025-06-05 11:10:57,707 [INFO] freq_lgs_leo: [6.0, 11.0, 8.0, 17.0, 24.0, 11.0, 1.0, 5.0, 10.0, 16.0]
+2025-06-05 11:11:05,725 [INFO] === Current State ===
+2025-06-05 11:11:05,732 [INFO] self.tIndex: 0
+2025-06-05 11:11:05,732 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:05,732 [INFO] freq_lgs_leo: [13.0, 11.0, 4.0, 2.0, 9.0, 2.0, 9.0, 21.0, 13.0, 6.0]
+2025-06-05 11:11:05,733 [INFO] === Step Started ===
+2025-06-05 11:11:05,749 [INFO] === Action Taken === 3
+2025-06-05 11:11:05,749 [INFO] === Current LEO User ID === 0
+2025-06-05 11:11:05,750 [INFO] === Current Time Index === 0
+2025-06-05 11:11:05,750 [INFO] === Current LEO Satellite ID === 583
+2025-06-05 11:11:06,933 [INFO] === Current State ===
+2025-06-05 11:11:06,942 [INFO] self.tIndex: 0
+2025-06-05 11:11:06,942 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:06,942 [INFO] freq_lgs_leo: [3.0, 11.0, 4.0, 2.0, 9.0, 2.0, 9.0, 21.0, 13.0, 6.0]
+2025-06-05 11:11:06,942 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3., 11.,  4.,  2.,  9.,  2.,  9., 21., 13.,  6.])}
+2025-06-05 11:11:06,944 [INFO] === Reward === 377.2114875187826
+2025-06-05 11:11:14,424 [INFO] === Current State ===
+2025-06-05 11:11:14,439 [INFO] self.tIndex: 0
+2025-06-05 11:11:14,440 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:14,440 [INFO] freq_lgs_leo: [16.0, 12.0, 20.0, 14.0, 19.0, 19.0, 10.0, 13.0, 12.0, 6.0]
+2025-06-05 11:11:14,440 [INFO] === Step Started ===
+2025-06-05 11:11:14,453 [INFO] === Action Taken === 3
+2025-06-05 11:11:14,454 [INFO] === Current LEO User ID === 0
+2025-06-05 11:11:14,454 [INFO] === Current Time Index === 0
+2025-06-05 11:11:14,454 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:11:15,528 [INFO] === Current State ===
+2025-06-05 11:11:15,536 [INFO] self.tIndex: 0
+2025-06-05 11:11:15,536 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:15,536 [INFO] freq_lgs_leo: [3.0, 12.0, 20.0, 14.0, 19.0, 19.0, 10.0, 13.0, 12.0, 6.0]
+2025-06-05 11:11:15,536 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3., 12., 20., 14., 19., 19., 10., 13., 12.,  6.])}
+2025-06-05 11:11:15,539 [INFO] === Reward === 386.3745100358079
+2025-06-05 11:11:15,540 [INFO] === Step Started ===
+2025-06-05 11:11:15,553 [INFO] === Action Taken === 2
+2025-06-05 11:11:15,553 [INFO] === Current LEO User ID === 1
+2025-06-05 11:11:15,553 [INFO] === Current Time Index === 0
+2025-06-05 11:11:15,554 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:11:16,598 [INFO] === Current State ===
+2025-06-05 11:11:16,604 [INFO] self.tIndex: 0
+2025-06-05 11:11:16,604 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:16,604 [INFO] freq_lgs_leo: [3.0, 2.0, 20.0, 14.0, 19.0, 19.0, 10.0, 13.0, 12.0, 6.0]
+2025-06-05 11:11:16,605 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3.,  2., 20., 14., 19., 19., 10., 13., 12.,  6.])}
+2025-06-05 11:11:16,606 [INFO] === Reward === 386.3745100358079
+2025-06-05 11:11:16,608 [INFO] === Step Started ===
+2025-06-05 11:11:16,621 [INFO] === Action Taken === 5
+2025-06-05 11:11:16,621 [INFO] === Current LEO User ID === 2
+2025-06-05 11:11:16,621 [INFO] === Current Time Index === 0
+2025-06-05 11:11:16,621 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:11:17,740 [INFO] === Current State ===
+2025-06-05 11:11:17,750 [INFO] self.tIndex: 0
+2025-06-05 11:11:17,750 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:17,750 [INFO] freq_lgs_leo: [3.0, 2.0, 5.0, 14.0, 19.0, 19.0, 10.0, 13.0, 12.0, 6.0]
+2025-06-05 11:11:17,751 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3.,  2.,  5., 14., 19., 19., 10., 13., 12.,  6.])}
+2025-06-05 11:11:17,754 [INFO] === Reward === 386.3745100358079
+2025-06-05 11:11:17,755 [INFO] === Step Started ===
+2025-06-05 11:11:17,774 [INFO] === Action Taken === 12
+2025-06-05 11:11:17,774 [INFO] === Current LEO User ID === 3
+2025-06-05 11:11:17,774 [INFO] === Current Time Index === 0
+2025-06-05 11:11:17,774 [INFO] === Current LEO Satellite ID === 485
+2025-06-05 11:11:18,839 [INFO] === Current State ===
+2025-06-05 11:11:18,845 [INFO] self.tIndex: 0
+2025-06-05 11:11:18,845 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:18,845 [INFO] freq_lgs_leo: [3.0, 2.0, 5.0, 12.0, 19.0, 19.0, 10.0, 13.0, 12.0, 6.0]
+2025-06-05 11:11:18,845 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3.,  2.,  5., 12., 19., 19., 10., 13., 12.,  6.])}
+2025-06-05 11:11:18,847 [INFO] === Reward === 386.3745100358079
+2025-06-05 11:11:18,848 [INFO] === Step Started ===
+2025-06-05 11:11:18,860 [INFO] === Action Taken === 7
+2025-06-05 11:11:18,860 [INFO] === Current LEO User ID === 4
+2025-06-05 11:11:18,860 [INFO] === Current Time Index === 0
+2025-06-05 11:11:18,860 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:11:19,884 [INFO] === Current State ===
+2025-06-05 11:11:19,890 [INFO] self.tIndex: 0
+2025-06-05 11:11:19,890 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:19,890 [INFO] freq_lgs_leo: [3.0, 2.0, 5.0, 12.0, 7.0, 19.0, 10.0, 13.0, 12.0, 6.0]
+2025-06-05 11:11:19,890 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3.,  2.,  5., 12.,  7., 19., 10., 13., 12.,  6.])}
+2025-06-05 11:11:19,892 [INFO] === Reward === 386.3745100358079
+2025-06-05 11:11:19,893 [INFO] === Step Started ===
+2025-06-05 11:11:19,906 [INFO] === Action Taken === 15
+2025-06-05 11:11:19,907 [INFO] === Current LEO User ID === 5
+2025-06-05 11:11:19,907 [INFO] === Current Time Index === 0
+2025-06-05 11:11:19,907 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:11:21,006 [INFO] === Current State ===
+2025-06-05 11:11:21,015 [INFO] self.tIndex: 0
+2025-06-05 11:11:21,015 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:21,015 [INFO] freq_lgs_leo: [3.0, 2.0, 5.0, 12.0, 7.0, 15.0, 10.0, 13.0, 12.0, 6.0]
+2025-06-05 11:11:21,015 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3.,  2.,  5., 12.,  7., 15., 10., 13., 12.,  6.])}
+2025-06-05 11:11:21,017 [INFO] === Reward === 386.3745100358079
+2025-06-05 11:11:21,018 [INFO] === Step Started ===
+2025-06-05 11:11:21,036 [INFO] === Action Taken === 24
+2025-06-05 11:11:21,036 [INFO] === Current LEO User ID === 6
+2025-06-05 11:11:21,036 [INFO] === Current Time Index === 0
+2025-06-05 11:11:21,036 [INFO] === Current LEO Satellite ID === 536
+2025-06-05 11:11:22,086 [INFO] === Current State ===
+2025-06-05 11:11:22,092 [INFO] self.tIndex: 0
+2025-06-05 11:11:22,092 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:22,092 [INFO] freq_lgs_leo: [3.0, 2.0, 5.0, 12.0, 7.0, 15.0, 24.0, 13.0, 12.0, 6.0]
+2025-06-05 11:11:22,093 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3.,  2.,  5., 12.,  7., 15., 24., 13., 12.,  6.])}
+2025-06-05 11:11:22,094 [INFO] === Reward === 386.3745100358079
+2025-06-05 11:11:22,097 [INFO] === Step Started ===
+2025-06-05 11:11:22,109 [INFO] === Action Taken === 6
+2025-06-05 11:11:22,109 [INFO] === Current LEO User ID === 7
+2025-06-05 11:11:22,109 [INFO] === Current Time Index === 0
+2025-06-05 11:11:22,109 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:11:23,128 [INFO] === Current State ===
+2025-06-05 11:11:23,134 [INFO] self.tIndex: 0
+2025-06-05 11:11:23,134 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:23,134 [INFO] freq_lgs_leo: [3.0, 2.0, 5.0, 12.0, 7.0, 15.0, 24.0, 6.0, 12.0, 6.0]
+2025-06-05 11:11:23,136 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3.,  2.,  5., 12.,  7., 15., 24.,  6., 12.,  6.])}
+2025-06-05 11:11:23,137 [INFO] === Reward === 386.3745100358079
+2025-06-05 11:11:23,139 [INFO] === Step Started ===
+2025-06-05 11:11:23,149 [INFO] === Action Taken === 7
+2025-06-05 11:11:23,149 [INFO] === Current LEO User ID === 8
+2025-06-05 11:11:23,149 [INFO] === Current Time Index === 0
+2025-06-05 11:11:23,149 [INFO] === Current LEO Satellite ID === 584
+2025-06-05 11:11:24,164 [INFO] === Current State ===
+2025-06-05 11:11:24,170 [INFO] self.tIndex: 0
+2025-06-05 11:11:24,170 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:24,170 [INFO] freq_lgs_leo: [3.0, 2.0, 5.0, 12.0, 7.0, 15.0, 24.0, 6.0, 7.0, 6.0]
+2025-06-05 11:11:24,170 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3.,  2.,  5., 12.,  7., 15., 24.,  6.,  7.,  6.])}
+2025-06-05 11:11:24,172 [INFO] === Reward === 386.3745100358079
+2025-06-05 11:11:24,173 [INFO] === Step Started ===
+2025-06-05 11:11:24,186 [INFO] === Action Taken === 3
+2025-06-05 11:11:24,186 [INFO] === Current LEO User ID === 9
+2025-06-05 11:11:24,186 [INFO] === Current Time Index === 0
+2025-06-05 11:11:24,186 [INFO] === Current LEO Satellite ID === 583
+2025-06-05 11:11:25,258 [INFO] === Current State ===
+2025-06-05 11:11:25,263 [INFO] self.tIndex: 0
+2025-06-05 11:11:25,263 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:25,263 [INFO] freq_lgs_leo: [3.0, 2.0, 5.0, 12.0, 7.0, 15.0, 24.0, 6.0, 7.0, 3.0]
+2025-06-05 11:11:25,263 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([ 3.,  2.,  5., 12.,  7., 15., 24.,  6.,  7.,  3.])}
+2025-06-05 11:11:25,264 [INFO] === Reward === 386.3745100358079
+2025-06-05 11:11:34,421 [INFO] === Current State ===
+2025-06-05 11:11:34,426 [INFO] self.tIndex: 0
+2025-06-05 11:11:34,426 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:34,426 [INFO] freq_lgs_leo: [11.0, 4.0, 8.0, 3.0, 9.0, 22.0, 6.0, 13.0, 10.0, 2.0]
+2025-06-05 11:11:34,427 [INFO] === Step Started ===
+2025-06-05 11:11:34,439 [INFO] === Action Taken === 13
+2025-06-05 11:11:34,439 [INFO] === Current LEO User ID === 0
+2025-06-05 11:11:34,439 [INFO] === Current Time Index === 0
+2025-06-05 11:11:34,439 [INFO] === Current LEO Satellite ID === 29
+2025-06-05 11:11:35,480 [INFO] === Current State ===
+2025-06-05 11:11:35,485 [INFO] self.tIndex: 0
+2025-06-05 11:11:35,485 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:35,485 [INFO] freq_lgs_leo: [13.0, 4.0, 8.0, 3.0, 9.0, 22.0, 6.0, 13.0, 10.0, 2.0]
+2025-06-05 11:11:35,485 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([13.,  4.,  8.,  3.,  9., 22.,  6., 13., 10.,  2.])}
+2025-06-05 11:11:35,487 [INFO] === Reward === 378.34428974609074
+2025-06-05 11:11:35,489 [INFO] === Step Started ===
+2025-06-05 11:11:35,503 [INFO] === Action Taken === 17
+2025-06-05 11:11:35,503 [INFO] === Current LEO User ID === 1
+2025-06-05 11:11:35,503 [INFO] === Current Time Index === 0
+2025-06-05 11:11:35,503 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:11:36,505 [INFO] === Current State ===
+2025-06-05 11:11:36,509 [INFO] self.tIndex: 0
+2025-06-05 11:11:36,509 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:36,509 [INFO] freq_lgs_leo: [13.0, 17.0, 8.0, 3.0, 9.0, 22.0, 6.0, 13.0, 10.0, 2.0]
+2025-06-05 11:11:36,510 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([13., 17.,  8.,  3.,  9., 22.,  6., 13., 10.,  2.])}
+2025-06-05 11:11:36,511 [INFO] === Reward === 378.34428974609074
+2025-06-05 11:11:36,513 [INFO] === Step Started ===
+2025-06-05 11:11:36,524 [INFO] === Action Taken === 3
+2025-06-05 11:11:36,524 [INFO] === Current LEO User ID === 2
+2025-06-05 11:11:36,524 [INFO] === Current Time Index === 0
+2025-06-05 11:11:36,524 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:11:37,498 [INFO] === Current State ===
+2025-06-05 11:11:37,505 [INFO] self.tIndex: 0
+2025-06-05 11:11:37,505 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:37,505 [INFO] freq_lgs_leo: [13.0, 17.0, 3.0, 3.0, 9.0, 22.0, 6.0, 13.0, 10.0, 2.0]
+2025-06-05 11:11:37,506 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([13., 17.,  3.,  3.,  9., 22.,  6., 13., 10.,  2.])}
+2025-06-05 11:11:37,509 [INFO] === Reward === 378.34428974609074
+2025-06-05 11:11:37,511 [INFO] === Step Started ===
+2025-06-05 11:11:37,526 [INFO] === Action Taken === 9
+2025-06-05 11:11:37,527 [INFO] === Current LEO User ID === 3
+2025-06-05 11:11:37,527 [INFO] === Current Time Index === 0
+2025-06-05 11:11:37,527 [INFO] === Current LEO Satellite ID === 485
+2025-06-05 11:11:38,594 [INFO] === Current State ===
+2025-06-05 11:11:38,603 [INFO] self.tIndex: 0
+2025-06-05 11:11:38,603 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:38,603 [INFO] freq_lgs_leo: [13.0, 17.0, 3.0, 9.0, 9.0, 22.0, 6.0, 13.0, 10.0, 2.0]
+2025-06-05 11:11:38,603 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([13., 17.,  3.,  9.,  9., 22.,  6., 13., 10.,  2.])}
+2025-06-05 11:11:38,604 [INFO] === Reward === 378.34428974609074
+2025-06-05 11:11:38,606 [INFO] === Step Started ===
+2025-06-05 11:11:38,617 [INFO] === Action Taken === 10
+2025-06-05 11:11:38,617 [INFO] === Current LEO User ID === 4
+2025-06-05 11:11:38,617 [INFO] === Current Time Index === 0
+2025-06-05 11:11:38,617 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:11:39,611 [INFO] === Current State ===
+2025-06-05 11:11:39,619 [INFO] self.tIndex: 0
+2025-06-05 11:11:39,619 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:39,619 [INFO] freq_lgs_leo: [13.0, 17.0, 3.0, 9.0, 10.0, 22.0, 6.0, 13.0, 10.0, 2.0]
+2025-06-05 11:11:39,620 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([13., 17.,  3.,  9., 10., 22.,  6., 13., 10.,  2.])}
+2025-06-05 11:11:39,621 [INFO] === Reward === 378.34428974609074
+2025-06-05 11:11:39,623 [INFO] === Step Started ===
+2025-06-05 11:11:39,637 [INFO] === Action Taken === 10
+2025-06-05 11:11:39,637 [INFO] === Current LEO User ID === 5
+2025-06-05 11:11:39,638 [INFO] === Current Time Index === 0
+2025-06-05 11:11:39,638 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:11:40,633 [INFO] === Current State ===
+2025-06-05 11:11:40,639 [INFO] self.tIndex: 0
+2025-06-05 11:11:40,639 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:40,639 [INFO] freq_lgs_leo: [13.0, 17.0, 3.0, 9.0, 10.0, 10.0, 6.0, 13.0, 10.0, 2.0]
+2025-06-05 11:11:40,639 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([13., 17.,  3.,  9., 10., 10.,  6., 13., 10.,  2.])}
+2025-06-05 11:11:40,641 [INFO] === Reward === 378.34428974609074
+2025-06-05 11:11:40,643 [INFO] === Step Started ===
+2025-06-05 11:11:40,653 [INFO] === Action Taken === 22
+2025-06-05 11:11:40,653 [INFO] === Current LEO User ID === 6
+2025-06-05 11:11:40,653 [INFO] === Current Time Index === 0
+2025-06-05 11:11:40,653 [INFO] === Current LEO Satellite ID === 536
+2025-06-05 11:11:41,695 [INFO] === Current State ===
+2025-06-05 11:11:41,700 [INFO] self.tIndex: 0
+2025-06-05 11:11:41,700 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:41,700 [INFO] freq_lgs_leo: [13.0, 17.0, 3.0, 9.0, 10.0, 10.0, 22.0, 13.0, 10.0, 2.0]
+2025-06-05 11:11:41,700 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([13., 17.,  3.,  9., 10., 10., 22., 13., 10.,  2.])}
+2025-06-05 11:11:41,702 [INFO] === Reward === 378.34428974609074
+2025-06-05 11:11:41,703 [INFO] === Step Started ===
+2025-06-05 11:11:41,715 [INFO] === Action Taken === 17
+2025-06-05 11:11:41,715 [INFO] === Current LEO User ID === 7
+2025-06-05 11:11:41,715 [INFO] === Current Time Index === 0
+2025-06-05 11:11:41,715 [INFO] === Current LEO Satellite ID === 583
+2025-06-05 11:11:42,701 [INFO] === Current State ===
+2025-06-05 11:11:42,711 [INFO] self.tIndex: 0
+2025-06-05 11:11:42,711 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:42,711 [INFO] freq_lgs_leo: [13.0, 17.0, 3.0, 9.0, 10.0, 10.0, 22.0, 17.0, 10.0, 2.0]
+2025-06-05 11:11:42,712 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([13., 17.,  3.,  9., 10., 10., 22., 17., 10.,  2.])}
+2025-06-05 11:11:42,714 [INFO] === Reward === 378.34428974609074
+2025-06-05 11:11:42,715 [INFO] === Step Started ===
+2025-06-05 11:11:42,728 [INFO] === Action Taken === 6
+2025-06-05 11:11:42,728 [INFO] === Current LEO User ID === 8
+2025-06-05 11:11:42,728 [INFO] === Current Time Index === 0
+2025-06-05 11:11:42,728 [INFO] === Current LEO Satellite ID === 585
+2025-06-05 11:11:43,709 [INFO] === Current State ===
+2025-06-05 11:11:43,716 [INFO] self.tIndex: 0
+2025-06-05 11:11:43,716 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:43,716 [INFO] freq_lgs_leo: [13.0, 17.0, 3.0, 9.0, 10.0, 10.0, 22.0, 17.0, 6.0, 2.0]
+2025-06-05 11:11:43,717 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([13., 17.,  3.,  9., 10., 10., 22., 17.,  6.,  2.])}
+2025-06-05 11:11:43,718 [INFO] === Reward === 378.34428974609074
+2025-06-05 11:11:43,720 [INFO] === Step Started ===
+2025-06-05 11:11:43,731 [INFO] === Action Taken === 10
+2025-06-05 11:11:43,731 [INFO] === Current LEO User ID === 9
+2025-06-05 11:11:43,731 [INFO] === Current Time Index === 0
+2025-06-05 11:11:43,731 [INFO] === Current LEO Satellite ID === 28
+2025-06-05 11:11:44,692 [INFO] === Current State ===
+2025-06-05 11:11:44,700 [INFO] self.tIndex: 0
+2025-06-05 11:11:44,700 [INFO] utc_time: [1744250400]
+2025-06-05 11:11:44,700 [INFO] freq_lgs_leo: [13.0, 17.0, 3.0, 9.0, 10.0, 10.0, 22.0, 17.0, 6.0, 10.0]
+2025-06-05 11:11:44,700 [INFO] === Next Observation === {'utc_time': array([1744250400], dtype=int64), 'freq_lgs_leo': array([13., 17.,  3.,  9., 10., 10., 22., 17.,  6., 10.])}
+2025-06-05 11:11:44,702 [INFO] === Reward === 378.34428974609074
+2025-06-05 11:11:44,804 [INFO] === Step Started ===
+2025-06-05 11:11:44,817 [INFO] === Action Taken === 17
+2025-06-05 11:11:44,817 [INFO] === Current LEO User ID === 0
+2025-06-05 11:11:44,817 [INFO] === Current Time Index === 1
+2025-06-05 11:11:44,817 [INFO] === Current LEO Satellite ID === 28
+2025-06-05 11:11:45,864 [INFO] === Current State ===
+2025-06-05 11:11:45,870 [INFO] self.tIndex: 1
+2025-06-05 11:11:45,870 [INFO] utc_time: [1744250460]
+2025-06-05 11:11:45,870 [INFO] freq_lgs_leo: [17.0, 24.0, 16.0, 25.0, 20.0, 22.0, 14.0, 3.0, 18.0, 10.0]
+2025-06-05 11:11:45,870 [INFO] === Next Observation === {'utc_time': array([1744250460], dtype=int64), 'freq_lgs_leo': array([17., 24., 16., 25., 20., 22., 14.,  3., 18., 10.])}
+2025-06-05 11:11:45,872 [INFO] === Reward === 377.20347928392476
+2025-06-05 11:11:45,873 [INFO] === Step Started ===
+2025-06-05 11:11:45,886 [INFO] === Action Taken === 15
+2025-06-05 11:11:45,886 [INFO] === Current LEO User ID === 1
+2025-06-05 11:11:45,886 [INFO] === Current Time Index === 1
+2025-06-05 11:11:45,886 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:11:46,910 [INFO] === Current State ===
+2025-06-05 11:11:46,915 [INFO] self.tIndex: 1
+2025-06-05 11:11:46,915 [INFO] utc_time: [1744250460]
+2025-06-05 11:11:46,916 [INFO] freq_lgs_leo: [17.0, 15.0, 16.0, 25.0, 20.0, 22.0, 14.0, 3.0, 18.0, 10.0]
+2025-06-05 11:11:46,916 [INFO] === Next Observation === {'utc_time': array([1744250460], dtype=int64), 'freq_lgs_leo': array([17., 15., 16., 25., 20., 22., 14.,  3., 18., 10.])}
+2025-06-05 11:11:46,918 [INFO] === Reward === 377.20347928392476
+2025-06-05 11:11:47,365 [INFO] === Step Started ===
+2025-06-05 11:11:47,379 [INFO] === Action Taken === 2
+2025-06-05 11:11:47,379 [INFO] === Current LEO User ID === 2
+2025-06-05 11:11:47,379 [INFO] === Current Time Index === 1
+2025-06-05 11:11:47,379 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:11:48,318 [INFO] === Current State ===
+2025-06-05 11:11:48,324 [INFO] self.tIndex: 1
+2025-06-05 11:11:48,324 [INFO] utc_time: [1744250460]
+2025-06-05 11:11:48,324 [INFO] freq_lgs_leo: [17.0, 15.0, 2.0, 25.0, 20.0, 22.0, 14.0, 3.0, 18.0, 10.0]
+2025-06-05 11:11:48,324 [INFO] === Next Observation === {'utc_time': array([1744250460], dtype=int64), 'freq_lgs_leo': array([17., 15.,  2., 25., 20., 22., 14.,  3., 18., 10.])}
+2025-06-05 11:11:48,325 [INFO] === Reward === 377.20347928392476
+2025-06-05 11:11:48,326 [INFO] === Step Started ===
+2025-06-05 11:11:48,338 [INFO] === Action Taken === 10
+2025-06-05 11:11:48,338 [INFO] === Current LEO User ID === 3
+2025-06-05 11:11:48,338 [INFO] === Current Time Index === 1
+2025-06-05 11:11:48,338 [INFO] === Current LEO Satellite ID === 484
+2025-06-05 11:11:49,289 [INFO] === Current State ===
+2025-06-05 11:11:49,295 [INFO] self.tIndex: 1
+2025-06-05 11:11:49,295 [INFO] utc_time: [1744250460]
+2025-06-05 11:11:49,295 [INFO] freq_lgs_leo: [17.0, 15.0, 2.0, 10.0, 20.0, 22.0, 14.0, 3.0, 18.0, 10.0]
+2025-06-05 11:11:49,296 [INFO] === Next Observation === {'utc_time': array([1744250460], dtype=int64), 'freq_lgs_leo': array([17., 15.,  2., 10., 20., 22., 14.,  3., 18., 10.])}
+2025-06-05 11:11:49,297 [INFO] === Reward === 377.20347928392476
+2025-06-05 11:11:49,299 [INFO] === Step Started ===
+2025-06-05 11:11:49,313 [INFO] === Action Taken === 11
+2025-06-05 11:11:49,313 [INFO] === Current LEO User ID === 4
+2025-06-05 11:11:49,313 [INFO] === Current Time Index === 1
+2025-06-05 11:11:49,313 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:11:50,272 [INFO] === Current State ===
+2025-06-05 11:11:50,277 [INFO] self.tIndex: 1
+2025-06-05 11:11:50,277 [INFO] utc_time: [1744250460]
+2025-06-05 11:11:50,277 [INFO] freq_lgs_leo: [17.0, 15.0, 2.0, 10.0, 11.0, 22.0, 14.0, 3.0, 18.0, 10.0]
+2025-06-05 11:11:50,278 [INFO] === Next Observation === {'utc_time': array([1744250460], dtype=int64), 'freq_lgs_leo': array([17., 15.,  2., 10., 11., 22., 14.,  3., 18., 10.])}
+2025-06-05 11:11:50,279 [INFO] === Reward === 377.20347928392476
+2025-06-05 11:11:50,281 [INFO] === Step Started ===
+2025-06-05 11:11:50,292 [INFO] === Action Taken === 20
+2025-06-05 11:11:50,292 [INFO] === Current LEO User ID === 5
+2025-06-05 11:11:50,292 [INFO] === Current Time Index === 1
+2025-06-05 11:11:50,292 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:11:51,254 [INFO] === Current State ===
+2025-06-05 11:11:51,260 [INFO] self.tIndex: 1
+2025-06-05 11:11:51,260 [INFO] utc_time: [1744250460]
+2025-06-05 11:11:51,260 [INFO] freq_lgs_leo: [17.0, 15.0, 2.0, 10.0, 11.0, 20.0, 14.0, 3.0, 18.0, 10.0]
+2025-06-05 11:11:51,261 [INFO] === Next Observation === {'utc_time': array([1744250460], dtype=int64), 'freq_lgs_leo': array([17., 15.,  2., 10., 11., 20., 14.,  3., 18., 10.])}
+2025-06-05 11:11:51,262 [INFO] === Reward === 377.20347928392476
+2025-06-05 11:11:51,272 [INFO] === Step Started ===
+2025-06-05 11:11:51,284 [INFO] === Action Taken === 21
+2025-06-05 11:11:51,284 [INFO] === Current LEO User ID === 6
+2025-06-05 11:11:51,284 [INFO] === Current Time Index === 1
+2025-06-05 11:11:51,284 [INFO] === Current LEO Satellite ID === 535
+2025-06-05 11:11:52,305 [INFO] === Current State ===
+2025-06-05 11:11:52,311 [INFO] self.tIndex: 1
+2025-06-05 11:11:52,311 [INFO] utc_time: [1744250460]
+2025-06-05 11:11:52,311 [INFO] freq_lgs_leo: [17.0, 15.0, 2.0, 10.0, 11.0, 20.0, 21.0, 3.0, 18.0, 10.0]
+2025-06-05 11:11:52,312 [INFO] === Next Observation === {'utc_time': array([1744250460], dtype=int64), 'freq_lgs_leo': array([17., 15.,  2., 10., 11., 20., 21.,  3., 18., 10.])}
+2025-06-05 11:11:52,313 [INFO] === Reward === 377.20347928392476
+2025-06-05 11:11:52,315 [INFO] === Step Started ===
+2025-06-05 11:11:52,326 [INFO] === Action Taken === 0
+2025-06-05 11:11:52,326 [INFO] === Current LEO User ID === 7
+2025-06-05 11:11:52,326 [INFO] === Current Time Index === 1
+2025-06-05 11:11:52,326 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:11:53,296 [INFO] === Current State ===
+2025-06-05 11:11:53,302 [INFO] self.tIndex: 1
+2025-06-05 11:11:53,302 [INFO] utc_time: [1744250460]
+2025-06-05 11:11:53,302 [INFO] freq_lgs_leo: [17.0, 15.0, 2.0, 10.0, 11.0, 20.0, 21.0, 0.0, 18.0, 10.0]
+2025-06-05 11:11:53,303 [INFO] === Next Observation === {'utc_time': array([1744250460], dtype=int64), 'freq_lgs_leo': array([17., 15.,  2., 10., 11., 20., 21.,  0., 18., 10.])}
+2025-06-05 11:11:53,305 [INFO] === Reward === 377.20347928392476
+2025-06-05 11:11:53,306 [INFO] === Step Started ===
+2025-06-05 11:11:53,318 [INFO] === Action Taken === 17
+2025-06-05 11:11:53,318 [INFO] === Current LEO User ID === 8
+2025-06-05 11:11:53,318 [INFO] === Current Time Index === 1
+2025-06-05 11:11:53,318 [INFO] === Current LEO Satellite ID === 584
+2025-06-05 11:11:54,293 [INFO] === Current State ===
+2025-06-05 11:11:54,299 [INFO] self.tIndex: 1
+2025-06-05 11:11:54,299 [INFO] utc_time: [1744250460]
+2025-06-05 11:11:54,299 [INFO] freq_lgs_leo: [17.0, 15.0, 2.0, 10.0, 11.0, 20.0, 21.0, 0.0, 17.0, 10.0]
+2025-06-05 11:11:54,299 [INFO] === Next Observation === {'utc_time': array([1744250460], dtype=int64), 'freq_lgs_leo': array([17., 15.,  2., 10., 11., 20., 21.,  0., 17., 10.])}
+2025-06-05 11:11:54,303 [INFO] === Reward === 377.20347928392476
+2025-06-05 11:11:54,304 [INFO] === Step Started ===
+2025-06-05 11:11:54,318 [INFO] === Action Taken === 20
+2025-06-05 11:11:54,318 [INFO] === Current LEO User ID === 9
+2025-06-05 11:11:54,318 [INFO] === Current Time Index === 1
+2025-06-05 11:11:54,318 [INFO] === Current LEO Satellite ID === 583
+2025-06-05 11:11:55,279 [INFO] === Current State ===
+2025-06-05 11:11:55,288 [INFO] self.tIndex: 1
+2025-06-05 11:11:55,288 [INFO] utc_time: [1744250460]
+2025-06-05 11:11:55,288 [INFO] freq_lgs_leo: [17.0, 15.0, 2.0, 10.0, 11.0, 20.0, 21.0, 0.0, 17.0, 20.0]
+2025-06-05 11:11:55,288 [INFO] === Next Observation === {'utc_time': array([1744250460], dtype=int64), 'freq_lgs_leo': array([17., 15.,  2., 10., 11., 20., 21.,  0., 17., 20.])}
+2025-06-05 11:11:55,290 [INFO] === Reward === 377.20347928392476
+2025-06-05 11:11:55,305 [INFO] === Step Started ===
+2025-06-05 11:11:55,319 [INFO] === Action Taken === 19
+2025-06-05 11:11:55,319 [INFO] === Current LEO User ID === 0
+2025-06-05 11:11:55,319 [INFO] === Current Time Index === 2
+2025-06-05 11:11:55,319 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:11:56,301 [INFO] === Current State ===
+2025-06-05 11:11:56,306 [INFO] self.tIndex: 2
+2025-06-05 11:11:56,306 [INFO] utc_time: [1744250520]
+2025-06-05 11:11:56,306 [INFO] freq_lgs_leo: [19.0, 24.0, 24.0, 9.0, 12.0, 18.0, 15.0, 17.0, 15.0, 18.0]
+2025-06-05 11:11:56,306 [INFO] === Next Observation === {'utc_time': array([1744250520], dtype=int64), 'freq_lgs_leo': array([19., 24., 24.,  9., 12., 18., 15., 17., 15., 18.])}
+2025-06-05 11:11:56,307 [INFO] === Reward === 389.00783170512995
+2025-06-05 11:11:56,309 [INFO] === Step Started ===
+2025-06-05 11:11:56,321 [INFO] === Action Taken === 5
+2025-06-05 11:11:56,321 [INFO] === Current LEO User ID === 1
+2025-06-05 11:11:56,321 [INFO] === Current Time Index === 2
+2025-06-05 11:11:56,321 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:11:57,318 [INFO] === Current State ===
+2025-06-05 11:11:57,324 [INFO] self.tIndex: 2
+2025-06-05 11:11:57,324 [INFO] utc_time: [1744250520]
+2025-06-05 11:11:57,324 [INFO] freq_lgs_leo: [19.0, 5.0, 24.0, 9.0, 12.0, 18.0, 15.0, 17.0, 15.0, 18.0]
+2025-06-05 11:11:57,324 [INFO] === Next Observation === {'utc_time': array([1744250520], dtype=int64), 'freq_lgs_leo': array([19.,  5., 24.,  9., 12., 18., 15., 17., 15., 18.])}
+2025-06-05 11:11:57,328 [INFO] === Reward === 389.00783170512995
+2025-06-05 11:11:57,329 [INFO] === Step Started ===
+2025-06-05 11:11:57,341 [INFO] === Action Taken === 9
+2025-06-05 11:11:57,341 [INFO] === Current LEO User ID === 2
+2025-06-05 11:11:57,341 [INFO] === Current Time Index === 2
+2025-06-05 11:11:57,341 [INFO] === Current LEO Satellite ID === 27
+2025-06-05 11:11:58,308 [INFO] === Current State ===
+2025-06-05 11:11:58,314 [INFO] self.tIndex: 2
+2025-06-05 11:11:58,314 [INFO] utc_time: [1744250520]
+2025-06-05 11:11:58,314 [INFO] freq_lgs_leo: [19.0, 5.0, 9.0, 9.0, 12.0, 18.0, 15.0, 17.0, 15.0, 18.0]
+2025-06-05 11:11:58,315 [INFO] === Next Observation === {'utc_time': array([1744250520], dtype=int64), 'freq_lgs_leo': array([19.,  5.,  9.,  9., 12., 18., 15., 17., 15., 18.])}
+2025-06-05 11:11:58,316 [INFO] === Reward === 389.00783170512995
+2025-06-05 11:11:58,317 [INFO] === Step Started ===
+2025-06-05 11:11:58,328 [INFO] === Action Taken === 20
+2025-06-05 11:11:58,328 [INFO] === Current LEO User ID === 3
+2025-06-05 11:11:58,328 [INFO] === Current Time Index === 2
+2025-06-05 11:11:58,328 [INFO] === Current LEO Satellite ID === 484
+2025-06-05 11:11:59,341 [INFO] === Current State ===
+2025-06-05 11:11:59,348 [INFO] self.tIndex: 2
+2025-06-05 11:11:59,349 [INFO] utc_time: [1744250520]
+2025-06-05 11:11:59,349 [INFO] freq_lgs_leo: [19.0, 5.0, 9.0, 20.0, 12.0, 18.0, 15.0, 17.0, 15.0, 18.0]
+2025-06-05 11:11:59,349 [INFO] === Next Observation === {'utc_time': array([1744250520], dtype=int64), 'freq_lgs_leo': array([19.,  5.,  9., 20., 12., 18., 15., 17., 15., 18.])}
+2025-06-05 11:11:59,351 [INFO] === Reward === 389.00783170512995
+2025-06-05 11:11:59,364 [INFO] === Step Started ===
+2025-06-05 11:11:59,380 [INFO] === Action Taken === 6
+2025-06-05 11:11:59,380 [INFO] === Current LEO User ID === 4
+2025-06-05 11:11:59,380 [INFO] === Current Time Index === 2
+2025-06-05 11:11:59,380 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:12:00,358 [INFO] === Current State ===
+2025-06-05 11:12:00,363 [INFO] self.tIndex: 2
+2025-06-05 11:12:00,363 [INFO] utc_time: [1744250520]
+2025-06-05 11:12:00,363 [INFO] freq_lgs_leo: [19.0, 5.0, 9.0, 20.0, 6.0, 18.0, 15.0, 17.0, 15.0, 18.0]
+2025-06-05 11:12:00,364 [INFO] === Next Observation === {'utc_time': array([1744250520], dtype=int64), 'freq_lgs_leo': array([19.,  5.,  9., 20.,  6., 18., 15., 17., 15., 18.])}
+2025-06-05 11:12:00,366 [INFO] === Reward === 389.00783170512995
+2025-06-05 11:12:00,368 [INFO] === Step Started ===
+2025-06-05 11:12:00,381 [INFO] === Action Taken === 19
+2025-06-05 11:12:00,381 [INFO] === Current LEO User ID === 5
+2025-06-05 11:12:00,381 [INFO] === Current Time Index === 2
+2025-06-05 11:12:00,381 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:12:01,431 [INFO] === Current State ===
+2025-06-05 11:12:01,438 [INFO] self.tIndex: 2
+2025-06-05 11:12:01,438 [INFO] utc_time: [1744250520]
+2025-06-05 11:12:01,438 [INFO] freq_lgs_leo: [19.0, 5.0, 9.0, 20.0, 6.0, 19.0, 15.0, 17.0, 15.0, 18.0]
+2025-06-05 11:12:01,438 [INFO] === Next Observation === {'utc_time': array([1744250520], dtype=int64), 'freq_lgs_leo': array([19.,  5.,  9., 20.,  6., 19., 15., 17., 15., 18.])}
+2025-06-05 11:12:01,440 [INFO] === Reward === 389.00783170512995
+2025-06-05 11:12:01,441 [INFO] === Step Started ===
+2025-06-05 11:12:01,451 [INFO] === Action Taken === 6
+2025-06-05 11:12:01,451 [INFO] === Current LEO User ID === 6
+2025-06-05 11:12:01,451 [INFO] === Current Time Index === 2
+2025-06-05 11:12:01,451 [INFO] === Current LEO Satellite ID === 536
+2025-06-05 11:12:02,446 [INFO] === Current State ===
+2025-06-05 11:12:02,452 [INFO] self.tIndex: 2
+2025-06-05 11:12:02,452 [INFO] utc_time: [1744250520]
+2025-06-05 11:12:02,453 [INFO] freq_lgs_leo: [19.0, 5.0, 9.0, 20.0, 6.0, 19.0, 6.0, 17.0, 15.0, 18.0]
+2025-06-05 11:12:02,453 [INFO] === Next Observation === {'utc_time': array([1744250520], dtype=int64), 'freq_lgs_leo': array([19.,  5.,  9., 20.,  6., 19.,  6., 17., 15., 18.])}
+2025-06-05 11:12:02,454 [INFO] === Reward === 389.00783170512995
+2025-06-05 11:12:02,480 [INFO] === Step Started ===
+2025-06-05 11:12:02,495 [INFO] === Action Taken === 1
+2025-06-05 11:12:02,495 [INFO] === Current LEO User ID === 7
+2025-06-05 11:12:02,495 [INFO] === Current Time Index === 2
+2025-06-05 11:12:02,495 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:12:03,490 [INFO] === Current State ===
+2025-06-05 11:12:03,496 [INFO] self.tIndex: 2
+2025-06-05 11:12:03,496 [INFO] utc_time: [1744250520]
+2025-06-05 11:12:03,496 [INFO] freq_lgs_leo: [19.0, 5.0, 9.0, 20.0, 6.0, 19.0, 6.0, 1.0, 15.0, 18.0]
+2025-06-05 11:12:03,497 [INFO] === Next Observation === {'utc_time': array([1744250520], dtype=int64), 'freq_lgs_leo': array([19.,  5.,  9., 20.,  6., 19.,  6.,  1., 15., 18.])}
+2025-06-05 11:12:03,498 [INFO] === Reward === 389.00783170512995
+2025-06-05 11:12:03,509 [INFO] === Step Started ===
+2025-06-05 11:12:03,529 [INFO] === Action Taken === 24
+2025-06-05 11:12:03,529 [INFO] === Current LEO User ID === 8
+2025-06-05 11:12:03,530 [INFO] === Current Time Index === 2
+2025-06-05 11:12:03,530 [INFO] === Current LEO Satellite ID === 584
+2025-06-05 11:12:04,576 [INFO] === Current State ===
+2025-06-05 11:12:04,584 [INFO] self.tIndex: 2
+2025-06-05 11:12:04,584 [INFO] utc_time: [1744250520]
+2025-06-05 11:12:04,584 [INFO] freq_lgs_leo: [19.0, 5.0, 9.0, 20.0, 6.0, 19.0, 6.0, 1.0, 24.0, 18.0]
+2025-06-05 11:12:04,584 [INFO] === Next Observation === {'utc_time': array([1744250520], dtype=int64), 'freq_lgs_leo': array([19.,  5.,  9., 20.,  6., 19.,  6.,  1., 24., 18.])}
+2025-06-05 11:12:04,586 [INFO] === Reward === 389.00783170512995
+2025-06-05 11:12:04,587 [INFO] === Step Started ===
+2025-06-05 11:12:04,598 [INFO] === Action Taken === 19
+2025-06-05 11:12:04,598 [INFO] === Current LEO User ID === 9
+2025-06-05 11:12:04,598 [INFO] === Current Time Index === 2
+2025-06-05 11:12:04,598 [INFO] === Current LEO Satellite ID === 27
+2025-06-05 11:12:05,546 [INFO] === Current State ===
+2025-06-05 11:12:05,552 [INFO] self.tIndex: 2
+2025-06-05 11:12:05,552 [INFO] utc_time: [1744250520]
+2025-06-05 11:12:05,552 [INFO] freq_lgs_leo: [19.0, 5.0, 9.0, 20.0, 6.0, 19.0, 6.0, 1.0, 24.0, 19.0]
+2025-06-05 11:12:05,552 [INFO] === Next Observation === {'utc_time': array([1744250520], dtype=int64), 'freq_lgs_leo': array([19.,  5.,  9., 20.,  6., 19.,  6.,  1., 24., 19.])}
+2025-06-05 11:12:05,553 [INFO] === Reward === 389.00783170512995
+2025-06-05 11:12:05,555 [INFO] === Step Started ===
+2025-06-05 11:12:05,567 [INFO] === Action Taken === 8
+2025-06-05 11:12:05,567 [INFO] === Current LEO User ID === 0
+2025-06-05 11:12:05,567 [INFO] === Current Time Index === 3
+2025-06-05 11:12:05,567 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:12:06,534 [INFO] === Current State ===
+2025-06-05 11:12:06,539 [INFO] self.tIndex: 3
+2025-06-05 11:12:06,539 [INFO] utc_time: [1744250580]
+2025-06-05 11:12:06,539 [INFO] freq_lgs_leo: [8.0, 20.0, 20.0, 8.0, 22.0, 19.0, 21.0, 11.0, 4.0, 8.0]
+2025-06-05 11:12:06,540 [INFO] === Next Observation === {'utc_time': array([1744250580], dtype=int64), 'freq_lgs_leo': array([ 8., 20., 20.,  8., 22., 19., 21., 11.,  4.,  8.])}
+2025-06-05 11:12:06,541 [INFO] === Reward === 389.41701760587205
+2025-06-05 11:12:06,542 [INFO] === Step Started ===
+2025-06-05 11:12:06,555 [INFO] === Action Taken === 7
+2025-06-05 11:12:06,555 [INFO] === Current LEO User ID === 1
+2025-06-05 11:12:06,555 [INFO] === Current Time Index === 3
+2025-06-05 11:12:06,555 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:12:07,551 [INFO] === Current State ===
+2025-06-05 11:12:07,557 [INFO] self.tIndex: 3
+2025-06-05 11:12:07,557 [INFO] utc_time: [1744250580]
+2025-06-05 11:12:07,557 [INFO] freq_lgs_leo: [8.0, 7.0, 20.0, 8.0, 22.0, 19.0, 21.0, 11.0, 4.0, 8.0]
+2025-06-05 11:12:07,558 [INFO] === Next Observation === {'utc_time': array([1744250580], dtype=int64), 'freq_lgs_leo': array([ 8.,  7., 20.,  8., 22., 19., 21., 11.,  4.,  8.])}
+2025-06-05 11:12:07,559 [INFO] === Reward === 389.41701760587205
+2025-06-05 11:12:07,572 [INFO] === Step Started ===
+2025-06-05 11:12:07,585 [INFO] === Action Taken === 2
+2025-06-05 11:12:07,585 [INFO] === Current LEO User ID === 2
+2025-06-05 11:12:07,585 [INFO] === Current Time Index === 3
+2025-06-05 11:12:07,586 [INFO] === Current LEO Satellite ID === 27
+2025-06-05 11:12:08,586 [INFO] === Current State ===
+2025-06-05 11:12:08,591 [INFO] self.tIndex: 3
+2025-06-05 11:12:08,591 [INFO] utc_time: [1744250580]
+2025-06-05 11:12:08,591 [INFO] freq_lgs_leo: [8.0, 7.0, 2.0, 8.0, 22.0, 19.0, 21.0, 11.0, 4.0, 8.0]
+2025-06-05 11:12:08,591 [INFO] === Next Observation === {'utc_time': array([1744250580], dtype=int64), 'freq_lgs_leo': array([ 8.,  7.,  2.,  8., 22., 19., 21., 11.,  4.,  8.])}
+2025-06-05 11:12:08,593 [INFO] === Reward === 389.41701760587205
+2025-06-05 11:12:08,594 [INFO] === Step Started ===
+2025-06-05 11:12:08,606 [INFO] === Action Taken === 12
+2025-06-05 11:12:08,606 [INFO] === Current LEO User ID === 3
+2025-06-05 11:12:08,606 [INFO] === Current Time Index === 3
+2025-06-05 11:12:08,606 [INFO] === Current LEO Satellite ID === 484
+2025-06-05 11:12:09,584 [INFO] === Current State ===
+2025-06-05 11:12:09,590 [INFO] self.tIndex: 3
+2025-06-05 11:12:09,590 [INFO] utc_time: [1744250580]
+2025-06-05 11:12:09,590 [INFO] freq_lgs_leo: [8.0, 7.0, 2.0, 12.0, 22.0, 19.0, 21.0, 11.0, 4.0, 8.0]
+2025-06-05 11:12:09,590 [INFO] === Next Observation === {'utc_time': array([1744250580], dtype=int64), 'freq_lgs_leo': array([ 8.,  7.,  2., 12., 22., 19., 21., 11.,  4.,  8.])}
+2025-06-05 11:12:09,592 [INFO] === Reward === 389.41701760587205
+2025-06-05 11:12:09,593 [INFO] === Step Started ===
+2025-06-05 11:12:09,607 [INFO] === Action Taken === 7
+2025-06-05 11:12:09,607 [INFO] === Current LEO User ID === 4
+2025-06-05 11:12:09,607 [INFO] === Current Time Index === 3
+2025-06-05 11:12:09,607 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:12:10,607 [INFO] === Current State ===
+2025-06-05 11:12:10,613 [INFO] self.tIndex: 3
+2025-06-05 11:12:10,613 [INFO] utc_time: [1744250580]
+2025-06-05 11:12:10,613 [INFO] freq_lgs_leo: [8.0, 7.0, 2.0, 12.0, 7.0, 19.0, 21.0, 11.0, 4.0, 8.0]
+2025-06-05 11:12:10,614 [INFO] === Next Observation === {'utc_time': array([1744250580], dtype=int64), 'freq_lgs_leo': array([ 8.,  7.,  2., 12.,  7., 19., 21., 11.,  4.,  8.])}
+2025-06-05 11:12:10,616 [INFO] === Reward === 389.41701760587205
+2025-06-05 11:12:10,617 [INFO] === Step Started ===
+2025-06-05 11:12:10,630 [INFO] === Action Taken === 18
+2025-06-05 11:12:10,630 [INFO] === Current LEO User ID === 5
+2025-06-05 11:12:10,630 [INFO] === Current Time Index === 3
+2025-06-05 11:12:10,630 [INFO] === Current LEO Satellite ID === 29
+2025-06-05 11:12:11,630 [INFO] === Current State ===
+2025-06-05 11:12:11,637 [INFO] self.tIndex: 3
+2025-06-05 11:12:11,638 [INFO] utc_time: [1744250580]
+2025-06-05 11:12:11,638 [INFO] freq_lgs_leo: [8.0, 7.0, 2.0, 12.0, 7.0, 18.0, 21.0, 11.0, 4.0, 8.0]
+2025-06-05 11:12:11,638 [INFO] === Next Observation === {'utc_time': array([1744250580], dtype=int64), 'freq_lgs_leo': array([ 8.,  7.,  2., 12.,  7., 18., 21., 11.,  4.,  8.])}
+2025-06-05 11:12:11,640 [INFO] === Reward === 389.41701760587205
+2025-06-05 11:12:11,647 [INFO] === Step Started ===
+2025-06-05 11:12:11,662 [INFO] === Action Taken === 15
+2025-06-05 11:12:11,662 [INFO] === Current LEO User ID === 6
+2025-06-05 11:12:11,662 [INFO] === Current Time Index === 3
+2025-06-05 11:12:11,662 [INFO] === Current LEO Satellite ID === 535
+2025-06-05 11:12:12,603 [INFO] === Current State ===
+2025-06-05 11:12:12,609 [INFO] self.tIndex: 3
+2025-06-05 11:12:12,609 [INFO] utc_time: [1744250580]
+2025-06-05 11:12:12,609 [INFO] freq_lgs_leo: [8.0, 7.0, 2.0, 12.0, 7.0, 18.0, 15.0, 11.0, 4.0, 8.0]
+2025-06-05 11:12:12,610 [INFO] === Next Observation === {'utc_time': array([1744250580], dtype=int64), 'freq_lgs_leo': array([ 8.,  7.,  2., 12.,  7., 18., 15., 11.,  4.,  8.])}
+2025-06-05 11:12:12,611 [INFO] === Reward === 389.41701760587205
+2025-06-05 11:12:12,613 [INFO] === Step Started ===
+2025-06-05 11:12:12,627 [INFO] === Action Taken === 24
+2025-06-05 11:12:12,627 [INFO] === Current LEO User ID === 7
+2025-06-05 11:12:12,627 [INFO] === Current Time Index === 3
+2025-06-05 11:12:12,627 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:12:13,590 [INFO] === Current State ===
+2025-06-05 11:12:13,595 [INFO] self.tIndex: 3
+2025-06-05 11:12:13,595 [INFO] utc_time: [1744250580]
+2025-06-05 11:12:13,595 [INFO] freq_lgs_leo: [8.0, 7.0, 2.0, 12.0, 7.0, 18.0, 15.0, 24.0, 4.0, 8.0]
+2025-06-05 11:12:13,595 [INFO] === Next Observation === {'utc_time': array([1744250580], dtype=int64), 'freq_lgs_leo': array([ 8.,  7.,  2., 12.,  7., 18., 15., 24.,  4.,  8.])}
+2025-06-05 11:12:13,597 [INFO] === Reward === 389.41701760587205
+2025-06-05 11:12:13,598 [INFO] === Step Started ===
+2025-06-05 11:12:13,613 [INFO] === Action Taken === 5
+2025-06-05 11:12:13,613 [INFO] === Current LEO User ID === 8
+2025-06-05 11:12:13,613 [INFO] === Current Time Index === 3
+2025-06-05 11:12:13,613 [INFO] === Current LEO Satellite ID === 584
+2025-06-05 11:12:14,617 [INFO] === Current State ===
+2025-06-05 11:12:14,624 [INFO] self.tIndex: 3
+2025-06-05 11:12:14,624 [INFO] utc_time: [1744250580]
+2025-06-05 11:12:14,624 [INFO] freq_lgs_leo: [8.0, 7.0, 2.0, 12.0, 7.0, 18.0, 15.0, 24.0, 5.0, 8.0]
+2025-06-05 11:12:14,624 [INFO] === Next Observation === {'utc_time': array([1744250580], dtype=int64), 'freq_lgs_leo': array([ 8.,  7.,  2., 12.,  7., 18., 15., 24.,  5.,  8.])}
+2025-06-05 11:12:14,627 [INFO] === Reward === 389.41701760587205
+2025-06-05 11:12:14,628 [INFO] === Step Started ===
+2025-06-05 11:12:14,640 [INFO] === Action Taken === 12
+2025-06-05 11:12:14,640 [INFO] === Current LEO User ID === 9
+2025-06-05 11:12:14,640 [INFO] === Current Time Index === 3
+2025-06-05 11:12:14,640 [INFO] === Current LEO Satellite ID === 583
+2025-06-05 11:12:15,624 [INFO] === Current State ===
+2025-06-05 11:12:15,630 [INFO] self.tIndex: 3
+2025-06-05 11:12:15,630 [INFO] utc_time: [1744250580]
+2025-06-05 11:12:15,630 [INFO] freq_lgs_leo: [8.0, 7.0, 2.0, 12.0, 7.0, 18.0, 15.0, 24.0, 5.0, 12.0]
+2025-06-05 11:12:15,630 [INFO] === Next Observation === {'utc_time': array([1744250580], dtype=int64), 'freq_lgs_leo': array([ 8.,  7.,  2., 12.,  7., 18., 15., 24.,  5., 12.])}
+2025-06-05 11:12:15,632 [INFO] === Reward === 389.41701760587205
+2025-06-05 11:12:15,645 [INFO] === Step Started ===
+2025-06-05 11:12:15,660 [INFO] === Action Taken === 1
+2025-06-05 11:12:15,660 [INFO] === Current LEO User ID === 0
+2025-06-05 11:12:15,660 [INFO] === Current Time Index === 4
+2025-06-05 11:12:15,660 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:12:16,664 [INFO] === Current State ===
+2025-06-05 11:12:16,670 [INFO] self.tIndex: 4
+2025-06-05 11:12:16,670 [INFO] utc_time: [1744250640]
+2025-06-05 11:12:16,670 [INFO] freq_lgs_leo: [1.0, 2.0, 7.0, 4.0, 10.0, 12.0, 3.0, 11.0, 6.0, 11.0]
+2025-06-05 11:12:16,671 [INFO] === Next Observation === {'utc_time': array([1744250640], dtype=int64), 'freq_lgs_leo': array([ 1.,  2.,  7.,  4., 10., 12.,  3., 11.,  6., 11.])}
+2025-06-05 11:12:16,672 [INFO] === Reward === 374.5795699266626
+2025-06-05 11:12:16,674 [INFO] === Step Started ===
+2025-06-05 11:12:16,687 [INFO] === Action Taken === 9
+2025-06-05 11:12:16,688 [INFO] === Current LEO User ID === 1
+2025-06-05 11:12:16,688 [INFO] === Current Time Index === 4
+2025-06-05 11:12:16,688 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:12:17,671 [INFO] === Current State ===
+2025-06-05 11:12:17,677 [INFO] self.tIndex: 4
+2025-06-05 11:12:17,677 [INFO] utc_time: [1744250640]
+2025-06-05 11:12:17,677 [INFO] freq_lgs_leo: [1.0, 9.0, 7.0, 4.0, 10.0, 12.0, 3.0, 11.0, 6.0, 11.0]
+2025-06-05 11:12:17,677 [INFO] === Next Observation === {'utc_time': array([1744250640], dtype=int64), 'freq_lgs_leo': array([ 1.,  9.,  7.,  4., 10., 12.,  3., 11.,  6., 11.])}
+2025-06-05 11:12:17,679 [INFO] === Reward === 374.5795699266626
+2025-06-05 11:12:17,681 [INFO] === Step Started ===
+2025-06-05 11:12:17,693 [INFO] === Action Taken === 18
+2025-06-05 11:12:17,693 [INFO] === Current LEO User ID === 2
+2025-06-05 11:12:17,693 [INFO] === Current Time Index === 4
+2025-06-05 11:12:17,693 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:12:18,689 [INFO] === Current State ===
+2025-06-05 11:12:18,695 [INFO] self.tIndex: 4
+2025-06-05 11:12:18,695 [INFO] utc_time: [1744250640]
+2025-06-05 11:12:18,695 [INFO] freq_lgs_leo: [1.0, 9.0, 18.0, 4.0, 10.0, 12.0, 3.0, 11.0, 6.0, 11.0]
+2025-06-05 11:12:18,696 [INFO] === Next Observation === {'utc_time': array([1744250640], dtype=int64), 'freq_lgs_leo': array([ 1.,  9., 18.,  4., 10., 12.,  3., 11.,  6., 11.])}
+2025-06-05 11:12:18,698 [INFO] === Reward === 374.5795699266626
+2025-06-05 11:12:18,700 [INFO] === Step Started ===
+2025-06-05 11:12:18,716 [INFO] === Action Taken === 7
+2025-06-05 11:12:18,716 [INFO] === Current LEO User ID === 3
+2025-06-05 11:12:18,716 [INFO] === Current Time Index === 4
+2025-06-05 11:12:18,716 [INFO] === Current LEO Satellite ID === 483
+2025-06-05 11:12:19,734 [INFO] === Current State ===
+2025-06-05 11:12:19,740 [INFO] self.tIndex: 4
+2025-06-05 11:12:19,740 [INFO] utc_time: [1744250640]
+2025-06-05 11:12:19,740 [INFO] freq_lgs_leo: [1.0, 9.0, 18.0, 7.0, 10.0, 12.0, 3.0, 11.0, 6.0, 11.0]
+2025-06-05 11:12:19,740 [INFO] === Next Observation === {'utc_time': array([1744250640], dtype=int64), 'freq_lgs_leo': array([ 1.,  9., 18.,  7., 10., 12.,  3., 11.,  6., 11.])}
+2025-06-05 11:12:19,742 [INFO] === Reward === 374.5795699266626
+2025-06-05 11:12:19,751 [INFO] === Step Started ===
+2025-06-05 11:12:19,765 [INFO] === Action Taken === 8
+2025-06-05 11:12:19,765 [INFO] === Current LEO User ID === 4
+2025-06-05 11:12:19,765 [INFO] === Current Time Index === 4
+2025-06-05 11:12:19,765 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:12:20,695 [INFO] === Current State ===
+2025-06-05 11:12:20,700 [INFO] self.tIndex: 4
+2025-06-05 11:12:20,700 [INFO] utc_time: [1744250640]
+2025-06-05 11:12:20,701 [INFO] freq_lgs_leo: [1.0, 9.0, 18.0, 7.0, 8.0, 12.0, 3.0, 11.0, 6.0, 11.0]
+2025-06-05 11:12:20,701 [INFO] === Next Observation === {'utc_time': array([1744250640], dtype=int64), 'freq_lgs_leo': array([ 1.,  9., 18.,  7.,  8., 12.,  3., 11.,  6., 11.])}
+2025-06-05 11:12:20,702 [INFO] === Reward === 374.5795699266626
+2025-06-05 11:12:20,704 [INFO] === Step Started ===
+2025-06-05 11:12:20,716 [INFO] === Action Taken === 7
+2025-06-05 11:12:20,716 [INFO] === Current LEO User ID === 5
+2025-06-05 11:12:20,716 [INFO] === Current Time Index === 4
+2025-06-05 11:12:20,716 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:12:21,667 [INFO] === Current State ===
+2025-06-05 11:12:21,672 [INFO] self.tIndex: 4
+2025-06-05 11:12:21,672 [INFO] utc_time: [1744250640]
+2025-06-05 11:12:21,672 [INFO] freq_lgs_leo: [1.0, 9.0, 18.0, 7.0, 8.0, 7.0, 3.0, 11.0, 6.0, 11.0]
+2025-06-05 11:12:21,672 [INFO] === Next Observation === {'utc_time': array([1744250640], dtype=int64), 'freq_lgs_leo': array([ 1.,  9., 18.,  7.,  8.,  7.,  3., 11.,  6., 11.])}
+2025-06-05 11:12:21,674 [INFO] === Reward === 374.5795699266626
+2025-06-05 11:12:21,675 [INFO] === Step Started ===
+2025-06-05 11:12:21,687 [INFO] === Action Taken === 3
+2025-06-05 11:12:21,687 [INFO] === Current LEO User ID === 6
+2025-06-05 11:12:21,687 [INFO] === Current Time Index === 4
+2025-06-05 11:12:21,687 [INFO] === Current LEO Satellite ID === 535
+2025-06-05 11:12:22,670 [INFO] === Current State ===
+2025-06-05 11:12:22,681 [INFO] self.tIndex: 4
+2025-06-05 11:12:22,681 [INFO] utc_time: [1744250640]
+2025-06-05 11:12:22,681 [INFO] freq_lgs_leo: [1.0, 9.0, 18.0, 7.0, 8.0, 7.0, 3.0, 11.0, 6.0, 11.0]
+2025-06-05 11:12:22,682 [INFO] === Next Observation === {'utc_time': array([1744250640], dtype=int64), 'freq_lgs_leo': array([ 1.,  9., 18.,  7.,  8.,  7.,  3., 11.,  6., 11.])}
+2025-06-05 11:12:22,684 [INFO] === Reward === 374.5795699266626
+2025-06-05 11:12:22,686 [INFO] === Step Started ===
+2025-06-05 11:12:22,702 [INFO] === Action Taken === 20
+2025-06-05 11:12:22,703 [INFO] === Current LEO User ID === 7
+2025-06-05 11:12:22,703 [INFO] === Current Time Index === 4
+2025-06-05 11:12:22,703 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:12:23,839 [INFO] === Current State ===
+2025-06-05 11:12:23,850 [INFO] self.tIndex: 4
+2025-06-05 11:12:23,850 [INFO] utc_time: [1744250640]
+2025-06-05 11:12:23,850 [INFO] freq_lgs_leo: [1.0, 9.0, 18.0, 7.0, 8.0, 7.0, 3.0, 20.0, 6.0, 11.0]
+2025-06-05 11:12:23,850 [INFO] === Next Observation === {'utc_time': array([1744250640], dtype=int64), 'freq_lgs_leo': array([ 1.,  9., 18.,  7.,  8.,  7.,  3., 20.,  6., 11.])}
+2025-06-05 11:12:23,853 [INFO] === Reward === 374.5795699266626
+2025-06-05 11:12:23,857 [INFO] === Step Started ===
+2025-06-05 11:12:23,875 [INFO] === Action Taken === 2
+2025-06-05 11:12:23,875 [INFO] === Current LEO User ID === 8
+2025-06-05 11:12:23,875 [INFO] === Current Time Index === 4
+2025-06-05 11:12:23,875 [INFO] === Current LEO Satellite ID === 583
+2025-06-05 11:12:24,939 [INFO] === Current State ===
+2025-06-05 11:12:24,944 [INFO] self.tIndex: 4
+2025-06-05 11:12:24,944 [INFO] utc_time: [1744250640]
+2025-06-05 11:12:24,944 [INFO] freq_lgs_leo: [1.0, 9.0, 18.0, 7.0, 8.0, 7.0, 3.0, 20.0, 2.0, 11.0]
+2025-06-05 11:12:24,945 [INFO] === Next Observation === {'utc_time': array([1744250640], dtype=int64), 'freq_lgs_leo': array([ 1.,  9., 18.,  7.,  8.,  7.,  3., 20.,  2., 11.])}
+2025-06-05 11:12:24,946 [INFO] === Reward === 374.5795699266626
+2025-06-05 11:12:24,947 [INFO] === Step Started ===
+2025-06-05 11:12:24,966 [INFO] === Action Taken === 19
+2025-06-05 11:12:24,967 [INFO] === Current LEO User ID === 9
+2025-06-05 11:12:24,967 [INFO] === Current Time Index === 4
+2025-06-05 11:12:24,967 [INFO] === Current LEO Satellite ID === 26
+2025-06-05 11:12:26,180 [INFO] === Current State ===
+2025-06-05 11:12:26,187 [INFO] self.tIndex: 4
+2025-06-05 11:12:26,187 [INFO] utc_time: [1744250640]
+2025-06-05 11:12:26,187 [INFO] freq_lgs_leo: [1.0, 9.0, 18.0, 7.0, 8.0, 7.0, 3.0, 20.0, 2.0, 19.0]
+2025-06-05 11:12:26,188 [INFO] === Next Observation === {'utc_time': array([1744250640], dtype=int64), 'freq_lgs_leo': array([ 1.,  9., 18.,  7.,  8.,  7.,  3., 20.,  2., 19.])}
+2025-06-05 11:12:26,189 [INFO] === Reward === 374.5795699266626
+2025-06-05 11:12:26,193 [INFO] === Step Started ===
+2025-06-05 11:12:26,208 [INFO] === Action Taken === 14
+2025-06-05 11:12:26,208 [INFO] === Current LEO User ID === 0
+2025-06-05 11:12:26,208 [INFO] === Current Time Index === 5
+2025-06-05 11:12:26,208 [INFO] === Current LEO Satellite ID === 27
+2025-06-05 11:12:27,324 [INFO] === Current State ===
+2025-06-05 11:12:27,331 [INFO] self.tIndex: 5
+2025-06-05 11:12:27,331 [INFO] utc_time: [1744250700]
+2025-06-05 11:12:27,331 [INFO] freq_lgs_leo: [14.0, 13.0, 3.0, 14.0, 5.0, 8.0, 21.0, 23.0, 14.0, 17.0]
+2025-06-05 11:12:27,332 [INFO] === Next Observation === {'utc_time': array([1744250700], dtype=int64), 'freq_lgs_leo': array([14., 13.,  3., 14.,  5.,  8., 21., 23., 14., 17.])}
+2025-06-05 11:12:27,333 [INFO] === Reward === 376.7910682526635
+2025-06-05 11:12:27,335 [INFO] === Step Started ===
+2025-06-05 11:12:27,348 [INFO] === Action Taken === 13
+2025-06-05 11:12:27,348 [INFO] === Current LEO User ID === 1
+2025-06-05 11:12:27,348 [INFO] === Current Time Index === 5
+2025-06-05 11:12:27,349 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:12:28,529 [INFO] === Current State ===
+2025-06-05 11:12:28,539 [INFO] self.tIndex: 5
+2025-06-05 11:12:28,539 [INFO] utc_time: [1744250700]
+2025-06-05 11:12:28,539 [INFO] freq_lgs_leo: [14.0, 13.0, 3.0, 14.0, 5.0, 8.0, 21.0, 23.0, 14.0, 17.0]
+2025-06-05 11:12:28,540 [INFO] === Next Observation === {'utc_time': array([1744250700], dtype=int64), 'freq_lgs_leo': array([14., 13.,  3., 14.,  5.,  8., 21., 23., 14., 17.])}
+2025-06-05 11:12:28,542 [INFO] === Reward === 376.7910682526635
+2025-06-05 11:12:28,548 [INFO] === Step Started ===
+2025-06-05 11:12:28,562 [INFO] === Action Taken === 22
+2025-06-05 11:12:28,563 [INFO] === Current LEO User ID === 2
+2025-06-05 11:12:28,563 [INFO] === Current Time Index === 5
+2025-06-05 11:12:28,563 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:12:29,563 [INFO] === Current State ===
+2025-06-05 11:12:29,570 [INFO] self.tIndex: 5
+2025-06-05 11:12:29,571 [INFO] utc_time: [1744250700]
+2025-06-05 11:12:29,571 [INFO] freq_lgs_leo: [14.0, 13.0, 22.0, 14.0, 5.0, 8.0, 21.0, 23.0, 14.0, 17.0]
+2025-06-05 11:12:29,571 [INFO] === Next Observation === {'utc_time': array([1744250700], dtype=int64), 'freq_lgs_leo': array([14., 13., 22., 14.,  5.,  8., 21., 23., 14., 17.])}
+2025-06-05 11:12:29,573 [INFO] === Reward === 376.7910682526635
+2025-06-05 11:12:29,575 [INFO] === Step Started ===
+2025-06-05 11:12:29,591 [INFO] === Action Taken === 16
+2025-06-05 11:12:29,591 [INFO] === Current LEO User ID === 3
+2025-06-05 11:12:29,591 [INFO] === Current Time Index === 5
+2025-06-05 11:12:29,591 [INFO] === Current LEO Satellite ID === 483
+2025-06-05 11:12:30,813 [INFO] === Current State ===
+2025-06-05 11:12:30,820 [INFO] self.tIndex: 5
+2025-06-05 11:12:30,820 [INFO] utc_time: [1744250700]
+2025-06-05 11:12:30,820 [INFO] freq_lgs_leo: [14.0, 13.0, 22.0, 16.0, 5.0, 8.0, 21.0, 23.0, 14.0, 17.0]
+2025-06-05 11:12:30,821 [INFO] === Next Observation === {'utc_time': array([1744250700], dtype=int64), 'freq_lgs_leo': array([14., 13., 22., 16.,  5.,  8., 21., 23., 14., 17.])}
+2025-06-05 11:12:30,824 [INFO] === Reward === 376.7910682526635
+2025-06-05 11:12:30,826 [INFO] === Step Started ===
+2025-06-05 11:12:30,843 [INFO] === Action Taken === 3
+2025-06-05 11:12:30,843 [INFO] === Current LEO User ID === 4
+2025-06-05 11:12:30,843 [INFO] === Current Time Index === 5
+2025-06-05 11:12:30,843 [INFO] === Current LEO Satellite ID === 532
+2025-06-05 11:12:31,912 [INFO] === Current State ===
+2025-06-05 11:12:31,918 [INFO] self.tIndex: 5
+2025-06-05 11:12:31,918 [INFO] utc_time: [1744250700]
+2025-06-05 11:12:31,918 [INFO] freq_lgs_leo: [14.0, 13.0, 22.0, 16.0, 3.0, 8.0, 21.0, 23.0, 14.0, 17.0]
+2025-06-05 11:12:31,918 [INFO] === Next Observation === {'utc_time': array([1744250700], dtype=int64), 'freq_lgs_leo': array([14., 13., 22., 16.,  3.,  8., 21., 23., 14., 17.])}
+2025-06-05 11:12:31,920 [INFO] === Reward === 376.7910682526635
+2025-06-05 11:12:31,922 [INFO] === Step Started ===
+2025-06-05 11:12:31,934 [INFO] === Action Taken === 10
+2025-06-05 11:12:31,934 [INFO] === Current LEO User ID === 5
+2025-06-05 11:12:31,934 [INFO] === Current Time Index === 5
+2025-06-05 11:12:31,934 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:12:32,934 [INFO] === Current State ===
+2025-06-05 11:12:32,940 [INFO] self.tIndex: 5
+2025-06-05 11:12:32,940 [INFO] utc_time: [1744250700]
+2025-06-05 11:12:32,940 [INFO] freq_lgs_leo: [14.0, 13.0, 22.0, 16.0, 3.0, 10.0, 21.0, 23.0, 14.0, 17.0]
+2025-06-05 11:12:32,941 [INFO] === Next Observation === {'utc_time': array([1744250700], dtype=int64), 'freq_lgs_leo': array([14., 13., 22., 16.,  3., 10., 21., 23., 14., 17.])}
+2025-06-05 11:12:32,943 [INFO] === Reward === 376.7910682526635
+2025-06-05 11:12:32,959 [INFO] === Step Started ===
+2025-06-05 11:12:32,971 [INFO] === Action Taken === 19
+2025-06-05 11:12:32,971 [INFO] === Current LEO User ID === 6
+2025-06-05 11:12:32,971 [INFO] === Current Time Index === 5
+2025-06-05 11:12:32,971 [INFO] === Current LEO Satellite ID === 534
+2025-06-05 11:12:33,995 [INFO] === Current State ===
+2025-06-05 11:12:34,003 [INFO] self.tIndex: 5
+2025-06-05 11:12:34,003 [INFO] utc_time: [1744250700]
+2025-06-05 11:12:34,003 [INFO] freq_lgs_leo: [14.0, 13.0, 22.0, 16.0, 3.0, 10.0, 19.0, 23.0, 14.0, 17.0]
+2025-06-05 11:12:34,004 [INFO] === Next Observation === {'utc_time': array([1744250700], dtype=int64), 'freq_lgs_leo': array([14., 13., 22., 16.,  3., 10., 19., 23., 14., 17.])}
+2025-06-05 11:12:34,006 [INFO] === Reward === 376.7910682526635
+2025-06-05 11:12:34,006 [INFO] === Step Started ===
+2025-06-05 11:12:34,018 [INFO] === Action Taken === 21
+2025-06-05 11:12:34,018 [INFO] === Current LEO User ID === 7
+2025-06-05 11:12:34,018 [INFO] === Current Time Index === 5
+2025-06-05 11:12:34,018 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:12:35,061 [INFO] === Current State ===
+2025-06-05 11:12:35,067 [INFO] self.tIndex: 5
+2025-06-05 11:12:35,067 [INFO] utc_time: [1744250700]
+2025-06-05 11:12:35,067 [INFO] freq_lgs_leo: [14.0, 13.0, 22.0, 16.0, 3.0, 10.0, 19.0, 21.0, 14.0, 17.0]
+2025-06-05 11:12:35,068 [INFO] === Next Observation === {'utc_time': array([1744250700], dtype=int64), 'freq_lgs_leo': array([14., 13., 22., 16.,  3., 10., 19., 21., 14., 17.])}
+2025-06-05 11:12:35,069 [INFO] === Reward === 376.7910682526635
+2025-06-05 11:12:35,070 [INFO] === Step Started ===
+2025-06-05 11:12:35,081 [INFO] === Action Taken === 9
+2025-06-05 11:12:35,081 [INFO] === Current LEO User ID === 8
+2025-06-05 11:12:35,081 [INFO] === Current Time Index === 5
+2025-06-05 11:12:35,081 [INFO] === Current LEO Satellite ID === 583
+2025-06-05 11:12:36,085 [INFO] === Current State ===
+2025-06-05 11:12:36,091 [INFO] self.tIndex: 5
+2025-06-05 11:12:36,091 [INFO] utc_time: [1744250700]
+2025-06-05 11:12:36,091 [INFO] freq_lgs_leo: [14.0, 13.0, 22.0, 16.0, 3.0, 10.0, 19.0, 21.0, 9.0, 17.0]
+2025-06-05 11:12:36,091 [INFO] === Next Observation === {'utc_time': array([1744250700], dtype=int64), 'freq_lgs_leo': array([14., 13., 22., 16.,  3., 10., 19., 21.,  9., 17.])}
+2025-06-05 11:12:36,094 [INFO] === Reward === 376.7910682526635
+2025-06-05 11:12:36,095 [INFO] === Step Started ===
+2025-06-05 11:12:36,109 [INFO] === Action Taken === 6
+2025-06-05 11:12:36,109 [INFO] === Current LEO User ID === 9
+2025-06-05 11:12:36,109 [INFO] === Current Time Index === 5
+2025-06-05 11:12:36,109 [INFO] === Current LEO Satellite ID === 26
+2025-06-05 11:12:37,180 [INFO] === Current State ===
+2025-06-05 11:12:37,187 [INFO] self.tIndex: 5
+2025-06-05 11:12:37,188 [INFO] utc_time: [1744250700]
+2025-06-05 11:12:37,188 [INFO] freq_lgs_leo: [14.0, 13.0, 22.0, 16.0, 3.0, 10.0, 19.0, 21.0, 9.0, 6.0]
+2025-06-05 11:12:37,188 [INFO] === Next Observation === {'utc_time': array([1744250700], dtype=int64), 'freq_lgs_leo': array([14., 13., 22., 16.,  3., 10., 19., 21.,  9.,  6.])}
+2025-06-05 11:12:37,190 [INFO] === Reward === 376.7910682526635
+2025-06-05 11:12:37,210 [INFO] === Step Started ===
+2025-06-05 11:12:37,224 [INFO] === Action Taken === 21
+2025-06-05 11:12:37,224 [INFO] === Current LEO User ID === 0
+2025-06-05 11:12:37,224 [INFO] === Current Time Index === 6
+2025-06-05 11:12:37,224 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:12:38,377 [INFO] === Current State ===
+2025-06-05 11:12:38,385 [INFO] self.tIndex: 6
+2025-06-05 11:12:38,385 [INFO] utc_time: [1744250760]
+2025-06-05 11:12:38,385 [INFO] freq_lgs_leo: [21.0, 19.0, 10.0, 9.0, 1.0, 8.0, 14.0, 9.0, 25.0, 9.0]
+2025-06-05 11:12:38,385 [INFO] === Next Observation === {'utc_time': array([1744250760], dtype=int64), 'freq_lgs_leo': array([21., 19., 10.,  9.,  1.,  8., 14.,  9., 25.,  9.])}
+2025-06-05 11:12:38,387 [INFO] === Reward === 393.8185426256585
+2025-06-05 11:12:38,388 [INFO] === Step Started ===
+2025-06-05 11:12:38,400 [INFO] === Action Taken === 13
+2025-06-05 11:12:38,400 [INFO] === Current LEO User ID === 1
+2025-06-05 11:12:38,402 [INFO] === Current Time Index === 6
+2025-06-05 11:12:38,402 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:12:39,427 [INFO] === Current State ===
+2025-06-05 11:12:39,432 [INFO] self.tIndex: 6
+2025-06-05 11:12:39,432 [INFO] utc_time: [1744250760]
+2025-06-05 11:12:39,432 [INFO] freq_lgs_leo: [21.0, 13.0, 10.0, 9.0, 1.0, 8.0, 14.0, 9.0, 25.0, 9.0]
+2025-06-05 11:12:39,432 [INFO] === Next Observation === {'utc_time': array([1744250760], dtype=int64), 'freq_lgs_leo': array([21., 13., 10.,  9.,  1.,  8., 14.,  9., 25.,  9.])}
+2025-06-05 11:12:39,434 [INFO] === Reward === 393.8185426256585
+2025-06-05 11:12:39,436 [INFO] === Step Started ===
+2025-06-05 11:12:39,448 [INFO] === Action Taken === 24
+2025-06-05 11:12:39,448 [INFO] === Current LEO User ID === 2
+2025-06-05 11:12:39,448 [INFO] === Current Time Index === 6
+2025-06-05 11:12:39,448 [INFO] === Current LEO Satellite ID === 25
+2025-06-05 11:12:40,506 [INFO] === Current State ===
+2025-06-05 11:12:40,513 [INFO] self.tIndex: 6
+2025-06-05 11:12:40,513 [INFO] utc_time: [1744250760]
+2025-06-05 11:12:40,513 [INFO] freq_lgs_leo: [21.0, 13.0, 24.0, 9.0, 1.0, 8.0, 14.0, 9.0, 25.0, 9.0]
+2025-06-05 11:12:40,513 [INFO] === Next Observation === {'utc_time': array([1744250760], dtype=int64), 'freq_lgs_leo': array([21., 13., 24.,  9.,  1.,  8., 14.,  9., 25.,  9.])}
+2025-06-05 11:12:40,515 [INFO] === Reward === 393.8185426256585
+2025-06-05 11:12:40,516 [INFO] === Step Started ===
+2025-06-05 11:12:40,531 [INFO] === Action Taken === 17
+2025-06-05 11:12:40,531 [INFO] === Current LEO User ID === 3
+2025-06-05 11:12:40,531 [INFO] === Current Time Index === 6
+2025-06-05 11:12:40,531 [INFO] === Current LEO Satellite ID === 483
+2025-06-05 11:12:41,600 [INFO] === Current State ===
+2025-06-05 11:12:41,605 [INFO] self.tIndex: 6
+2025-06-05 11:12:41,605 [INFO] utc_time: [1744250760]
+2025-06-05 11:12:41,605 [INFO] freq_lgs_leo: [21.0, 13.0, 24.0, 17.0, 1.0, 8.0, 14.0, 9.0, 25.0, 9.0]
+2025-06-05 11:12:41,605 [INFO] === Next Observation === {'utc_time': array([1744250760], dtype=int64), 'freq_lgs_leo': array([21., 13., 24., 17.,  1.,  8., 14.,  9., 25.,  9.])}
+2025-06-05 11:12:41,607 [INFO] === Reward === 393.8185426256585
+2025-06-05 11:12:41,618 [INFO] === Step Started ===
+2025-06-05 11:12:41,631 [INFO] === Action Taken === 19
+2025-06-05 11:12:41,631 [INFO] === Current LEO User ID === 4
+2025-06-05 11:12:41,631 [INFO] === Current Time Index === 6
+2025-06-05 11:12:41,631 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:12:42,740 [INFO] === Current State ===
+2025-06-05 11:12:42,749 [INFO] self.tIndex: 6
+2025-06-05 11:12:42,749 [INFO] utc_time: [1744250760]
+2025-06-05 11:12:42,749 [INFO] freq_lgs_leo: [21.0, 13.0, 24.0, 17.0, 19.0, 8.0, 14.0, 9.0, 25.0, 9.0]
+2025-06-05 11:12:42,750 [INFO] === Next Observation === {'utc_time': array([1744250760], dtype=int64), 'freq_lgs_leo': array([21., 13., 24., 17., 19.,  8., 14.,  9., 25.,  9.])}
+2025-06-05 11:12:42,752 [INFO] === Reward === 393.8185426256585
+2025-06-05 11:12:42,753 [INFO] === Step Started ===
+2025-06-05 11:12:42,767 [INFO] === Action Taken === 17
+2025-06-05 11:12:42,767 [INFO] === Current LEO User ID === 5
+2025-06-05 11:12:42,767 [INFO] === Current Time Index === 6
+2025-06-05 11:12:42,767 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:12:43,815 [INFO] === Current State ===
+2025-06-05 11:12:43,821 [INFO] self.tIndex: 6
+2025-06-05 11:12:43,821 [INFO] utc_time: [1744250760]
+2025-06-05 11:12:43,821 [INFO] freq_lgs_leo: [21.0, 13.0, 24.0, 17.0, 19.0, 17.0, 14.0, 9.0, 25.0, 9.0]
+2025-06-05 11:12:43,821 [INFO] === Next Observation === {'utc_time': array([1744250760], dtype=int64), 'freq_lgs_leo': array([21., 13., 24., 17., 19., 17., 14.,  9., 25.,  9.])}
+2025-06-05 11:12:43,823 [INFO] === Reward === 393.8185426256585
+2025-06-05 11:12:43,824 [INFO] === Step Started ===
+2025-06-05 11:12:43,833 [INFO] === Action Taken === 22
+2025-06-05 11:12:43,833 [INFO] === Current LEO User ID === 6
+2025-06-05 11:12:43,833 [INFO] === Current Time Index === 6
+2025-06-05 11:12:43,833 [INFO] === Current LEO Satellite ID === 534
+2025-06-05 11:12:45,021 [INFO] === Current State ===
+2025-06-05 11:12:45,033 [INFO] self.tIndex: 6
+2025-06-05 11:12:45,033 [INFO] utc_time: [1744250760]
+2025-06-05 11:12:45,033 [INFO] freq_lgs_leo: [21.0, 13.0, 24.0, 17.0, 19.0, 17.0, 22.0, 9.0, 25.0, 9.0]
+2025-06-05 11:12:45,033 [INFO] === Next Observation === {'utc_time': array([1744250760], dtype=int64), 'freq_lgs_leo': array([21., 13., 24., 17., 19., 17., 22.,  9., 25.,  9.])}
+2025-06-05 11:12:45,036 [INFO] === Reward === 393.8185426256585
+2025-06-05 11:12:45,036 [INFO] === Step Started ===
+2025-06-05 11:12:45,049 [INFO] === Action Taken === 7
+2025-06-05 11:12:45,049 [INFO] === Current LEO User ID === 7
+2025-06-05 11:12:45,050 [INFO] === Current Time Index === 6
+2025-06-05 11:12:45,050 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:12:46,154 [INFO] === Current State ===
+2025-06-05 11:12:46,163 [INFO] self.tIndex: 6
+2025-06-05 11:12:46,163 [INFO] utc_time: [1744250760]
+2025-06-05 11:12:46,163 [INFO] freq_lgs_leo: [21.0, 13.0, 24.0, 17.0, 19.0, 17.0, 22.0, 7.0, 25.0, 9.0]
+2025-06-05 11:12:46,163 [INFO] === Next Observation === {'utc_time': array([1744250760], dtype=int64), 'freq_lgs_leo': array([21., 13., 24., 17., 19., 17., 22.,  7., 25.,  9.])}
+2025-06-05 11:12:46,165 [INFO] === Reward === 393.8185426256585
+2025-06-05 11:12:46,177 [INFO] === Step Started ===
+2025-06-05 11:12:46,191 [INFO] === Action Taken === 11
+2025-06-05 11:12:46,192 [INFO] === Current LEO User ID === 8
+2025-06-05 11:12:46,192 [INFO] === Current Time Index === 6
+2025-06-05 11:12:46,192 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:12:47,180 [INFO] === Current State ===
+2025-06-05 11:12:47,186 [INFO] self.tIndex: 6
+2025-06-05 11:12:47,186 [INFO] utc_time: [1744250760]
+2025-06-05 11:12:47,186 [INFO] freq_lgs_leo: [21.0, 13.0, 24.0, 17.0, 19.0, 17.0, 22.0, 7.0, 11.0, 9.0]
+2025-06-05 11:12:47,186 [INFO] === Next Observation === {'utc_time': array([1744250760], dtype=int64), 'freq_lgs_leo': array([21., 13., 24., 17., 19., 17., 22.,  7., 11.,  9.])}
+2025-06-05 11:12:47,188 [INFO] === Reward === 393.8185426256585
+2025-06-05 11:12:47,189 [INFO] === Step Started ===
+2025-06-05 11:12:47,199 [INFO] === Action Taken === 18
+2025-06-05 11:12:47,199 [INFO] === Current LEO User ID === 9
+2025-06-05 11:12:47,199 [INFO] === Current Time Index === 6
+2025-06-05 11:12:47,199 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:12:48,163 [INFO] === Current State ===
+2025-06-05 11:12:48,168 [INFO] self.tIndex: 6
+2025-06-05 11:12:48,168 [INFO] utc_time: [1744250760]
+2025-06-05 11:12:48,168 [INFO] freq_lgs_leo: [21.0, 13.0, 24.0, 17.0, 19.0, 17.0, 22.0, 7.0, 11.0, 18.0]
+2025-06-05 11:12:48,168 [INFO] === Next Observation === {'utc_time': array([1744250760], dtype=int64), 'freq_lgs_leo': array([21., 13., 24., 17., 19., 17., 22.,  7., 11., 18.])}
+2025-06-05 11:12:48,170 [INFO] === Reward === 393.8185426256585
+2025-06-05 11:12:48,171 [INFO] === Step Started ===
+2025-06-05 11:12:48,184 [INFO] === Action Taken === 1
+2025-06-05 11:12:48,184 [INFO] === Current LEO User ID === 0
+2025-06-05 11:12:48,184 [INFO] === Current Time Index === 7
+2025-06-05 11:12:48,184 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:12:49,240 [INFO] === Current State ===
+2025-06-05 11:12:49,249 [INFO] self.tIndex: 7
+2025-06-05 11:12:49,249 [INFO] utc_time: [1744250820]
+2025-06-05 11:12:49,249 [INFO] freq_lgs_leo: [1.0, 17.0, 3.0, 12.0, 5.0, 1.0, 9.0, 12.0, 22.0, 15.0]
+2025-06-05 11:12:49,249 [INFO] === Next Observation === {'utc_time': array([1744250820], dtype=int64), 'freq_lgs_leo': array([ 1., 17.,  3., 12.,  5.,  1.,  9., 12., 22., 15.])}
+2025-06-05 11:12:49,251 [INFO] === Reward === 379.36832342965016
+2025-06-05 11:12:49,252 [INFO] === Step Started ===
+2025-06-05 11:12:49,262 [INFO] === Action Taken === 11
+2025-06-05 11:12:49,262 [INFO] === Current LEO User ID === 1
+2025-06-05 11:12:49,262 [INFO] === Current Time Index === 7
+2025-06-05 11:12:49,262 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:12:50,286 [INFO] === Current State ===
+2025-06-05 11:12:50,292 [INFO] self.tIndex: 7
+2025-06-05 11:12:50,292 [INFO] utc_time: [1744250820]
+2025-06-05 11:12:50,292 [INFO] freq_lgs_leo: [1.0, 11.0, 3.0, 12.0, 5.0, 1.0, 9.0, 12.0, 22.0, 15.0]
+2025-06-05 11:12:50,293 [INFO] === Next Observation === {'utc_time': array([1744250820], dtype=int64), 'freq_lgs_leo': array([ 1., 11.,  3., 12.,  5.,  1.,  9., 12., 22., 15.])}
+2025-06-05 11:12:50,294 [INFO] === Reward === 379.36832342965016
+2025-06-05 11:12:50,301 [INFO] === Step Started ===
+2025-06-05 11:12:50,319 [INFO] === Action Taken === 4
+2025-06-05 11:12:50,319 [INFO] === Current LEO User ID === 2
+2025-06-05 11:12:50,319 [INFO] === Current Time Index === 7
+2025-06-05 11:12:50,319 [INFO] === Current LEO Satellite ID === 25
+2025-06-05 11:12:51,286 [INFO] === Current State ===
+2025-06-05 11:12:51,291 [INFO] self.tIndex: 7
+2025-06-05 11:12:51,291 [INFO] utc_time: [1744250820]
+2025-06-05 11:12:51,291 [INFO] freq_lgs_leo: [1.0, 11.0, 4.0, 12.0, 5.0, 1.0, 9.0, 12.0, 22.0, 15.0]
+2025-06-05 11:12:51,292 [INFO] === Next Observation === {'utc_time': array([1744250820], dtype=int64), 'freq_lgs_leo': array([ 1., 11.,  4., 12.,  5.,  1.,  9., 12., 22., 15.])}
+2025-06-05 11:12:51,293 [INFO] === Reward === 379.36832342965016
+2025-06-05 11:12:51,294 [INFO] === Step Started ===
+2025-06-05 11:12:51,304 [INFO] === Action Taken === 2
+2025-06-05 11:12:51,304 [INFO] === Current LEO User ID === 3
+2025-06-05 11:12:51,304 [INFO] === Current Time Index === 7
+2025-06-05 11:12:51,304 [INFO] === Current LEO Satellite ID === 482
+2025-06-05 11:12:52,282 [INFO] === Current State ===
+2025-06-05 11:12:52,291 [INFO] self.tIndex: 7
+2025-06-05 11:12:52,291 [INFO] utc_time: [1744250820]
+2025-06-05 11:12:52,291 [INFO] freq_lgs_leo: [1.0, 11.0, 4.0, 2.0, 5.0, 1.0, 9.0, 12.0, 22.0, 15.0]
+2025-06-05 11:12:52,292 [INFO] === Next Observation === {'utc_time': array([1744250820], dtype=int64), 'freq_lgs_leo': array([ 1., 11.,  4.,  2.,  5.,  1.,  9., 12., 22., 15.])}
+2025-06-05 11:12:52,294 [INFO] === Reward === 379.36832342965016
+2025-06-05 11:12:52,295 [INFO] === Step Started ===
+2025-06-05 11:12:52,309 [INFO] === Action Taken === 17
+2025-06-05 11:12:52,309 [INFO] === Current LEO User ID === 4
+2025-06-05 11:12:52,309 [INFO] === Current Time Index === 7
+2025-06-05 11:12:52,309 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:12:53,267 [INFO] === Current State ===
+2025-06-05 11:12:53,273 [INFO] self.tIndex: 7
+2025-06-05 11:12:53,273 [INFO] utc_time: [1744250820]
+2025-06-05 11:12:53,273 [INFO] freq_lgs_leo: [1.0, 11.0, 4.0, 2.0, 17.0, 1.0, 9.0, 12.0, 22.0, 15.0]
+2025-06-05 11:12:53,274 [INFO] === Next Observation === {'utc_time': array([1744250820], dtype=int64), 'freq_lgs_leo': array([ 1., 11.,  4.,  2., 17.,  1.,  9., 12., 22., 15.])}
+2025-06-05 11:12:53,276 [INFO] === Reward === 379.36832342965016
+2025-06-05 11:12:53,277 [INFO] === Step Started ===
+2025-06-05 11:12:53,289 [INFO] === Action Taken === 5
+2025-06-05 11:12:53,289 [INFO] === Current LEO User ID === 5
+2025-06-05 11:12:53,289 [INFO] === Current Time Index === 7
+2025-06-05 11:12:53,289 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:12:54,284 [INFO] === Current State ===
+2025-06-05 11:12:54,290 [INFO] self.tIndex: 7
+2025-06-05 11:12:54,291 [INFO] utc_time: [1744250820]
+2025-06-05 11:12:54,291 [INFO] freq_lgs_leo: [1.0, 11.0, 4.0, 2.0, 17.0, 5.0, 9.0, 12.0, 22.0, 15.0]
+2025-06-05 11:12:54,291 [INFO] === Next Observation === {'utc_time': array([1744250820], dtype=int64), 'freq_lgs_leo': array([ 1., 11.,  4.,  2., 17.,  5.,  9., 12., 22., 15.])}
+2025-06-05 11:12:54,292 [INFO] === Reward === 379.36832342965016
+2025-06-05 11:12:54,306 [INFO] === Step Started ===
+2025-06-05 11:12:54,317 [INFO] === Action Taken === 21
+2025-06-05 11:12:54,317 [INFO] === Current LEO User ID === 6
+2025-06-05 11:12:54,317 [INFO] === Current Time Index === 7
+2025-06-05 11:12:54,317 [INFO] === Current LEO Satellite ID === 534
+2025-06-05 11:12:55,351 [INFO] === Current State ===
+2025-06-05 11:12:55,357 [INFO] self.tIndex: 7
+2025-06-05 11:12:55,357 [INFO] utc_time: [1744250820]
+2025-06-05 11:12:55,357 [INFO] freq_lgs_leo: [1.0, 11.0, 4.0, 2.0, 17.0, 5.0, 21.0, 12.0, 22.0, 15.0]
+2025-06-05 11:12:55,357 [INFO] === Next Observation === {'utc_time': array([1744250820], dtype=int64), 'freq_lgs_leo': array([ 1., 11.,  4.,  2., 17.,  5., 21., 12., 22., 15.])}
+2025-06-05 11:12:55,359 [INFO] === Reward === 379.36832342965016
+2025-06-05 11:12:55,359 [INFO] === Step Started ===
+2025-06-05 11:12:55,368 [INFO] === Action Taken === 11
+2025-06-05 11:12:55,368 [INFO] === Current LEO User ID === 7
+2025-06-05 11:12:55,368 [INFO] === Current Time Index === 7
+2025-06-05 11:12:55,368 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:12:56,346 [INFO] === Current State ===
+2025-06-05 11:12:56,356 [INFO] self.tIndex: 7
+2025-06-05 11:12:56,356 [INFO] utc_time: [1744250820]
+2025-06-05 11:12:56,356 [INFO] freq_lgs_leo: [1.0, 11.0, 4.0, 2.0, 17.0, 5.0, 21.0, 11.0, 22.0, 15.0]
+2025-06-05 11:12:56,356 [INFO] === Next Observation === {'utc_time': array([1744250820], dtype=int64), 'freq_lgs_leo': array([ 1., 11.,  4.,  2., 17.,  5., 21., 11., 22., 15.])}
+2025-06-05 11:12:56,358 [INFO] === Reward === 379.36832342965016
+2025-06-05 11:12:56,359 [INFO] === Step Started ===
+2025-06-05 11:12:56,368 [INFO] === Action Taken === 12
+2025-06-05 11:12:56,368 [INFO] === Current LEO User ID === 8
+2025-06-05 11:12:56,368 [INFO] === Current Time Index === 7
+2025-06-05 11:12:56,368 [INFO] === Current LEO Satellite ID === 582
+2025-06-05 11:12:57,450 [INFO] === Current State ===
+2025-06-05 11:12:57,458 [INFO] self.tIndex: 7
+2025-06-05 11:12:57,458 [INFO] utc_time: [1744250820]
+2025-06-05 11:12:57,458 [INFO] freq_lgs_leo: [1.0, 11.0, 4.0, 2.0, 17.0, 5.0, 21.0, 11.0, 12.0, 15.0]
+2025-06-05 11:12:57,459 [INFO] === Next Observation === {'utc_time': array([1744250820], dtype=int64), 'freq_lgs_leo': array([ 1., 11.,  4.,  2., 17.,  5., 21., 11., 12., 15.])}
+2025-06-05 11:12:57,461 [INFO] === Reward === 379.36832342965016
+2025-06-05 11:12:57,462 [INFO] === Step Started ===
+2025-06-05 11:12:57,472 [INFO] === Action Taken === 14
+2025-06-05 11:12:57,472 [INFO] === Current LEO User ID === 9
+2025-06-05 11:12:57,472 [INFO] === Current Time Index === 7
+2025-06-05 11:12:57,472 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:12:58,466 [INFO] === Current State ===
+2025-06-05 11:12:58,471 [INFO] self.tIndex: 7
+2025-06-05 11:12:58,471 [INFO] utc_time: [1744250820]
+2025-06-05 11:12:58,471 [INFO] freq_lgs_leo: [1.0, 11.0, 4.0, 2.0, 17.0, 5.0, 21.0, 11.0, 12.0, 14.0]
+2025-06-05 11:12:58,472 [INFO] === Next Observation === {'utc_time': array([1744250820], dtype=int64), 'freq_lgs_leo': array([ 1., 11.,  4.,  2., 17.,  5., 21., 11., 12., 14.])}
+2025-06-05 11:12:58,474 [INFO] === Reward === 379.36832342965016
+2025-06-05 11:12:58,487 [INFO] === Step Started ===
+2025-06-05 11:12:58,502 [INFO] === Action Taken === 23
+2025-06-05 11:12:58,502 [INFO] === Current LEO User ID === 0
+2025-06-05 11:12:58,502 [INFO] === Current Time Index === 8
+2025-06-05 11:12:58,502 [INFO] === Current LEO Satellite ID === 25
+2025-06-05 11:12:59,467 [INFO] === Current State ===
+2025-06-05 11:12:59,473 [INFO] self.tIndex: 8
+2025-06-05 11:12:59,473 [INFO] utc_time: [1744250880]
+2025-06-05 11:12:59,473 [INFO] freq_lgs_leo: [23.0, 7.0, 12.0, 24.0, 2.0, 11.0, 1.0, 5.0, 5.0, 24.0]
+2025-06-05 11:12:59,473 [INFO] === Next Observation === {'utc_time': array([1744250880], dtype=int64), 'freq_lgs_leo': array([23.,  7., 12., 24.,  2., 11.,  1.,  5.,  5., 24.])}
+2025-06-05 11:12:59,475 [INFO] === Reward === 371.9702349490166
+2025-06-05 11:12:59,475 [INFO] === Step Started ===
+2025-06-05 11:12:59,484 [INFO] === Action Taken === 9
+2025-06-05 11:12:59,484 [INFO] === Current LEO User ID === 1
+2025-06-05 11:12:59,484 [INFO] === Current Time Index === 8
+2025-06-05 11:12:59,484 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:13:00,538 [INFO] === Current State ===
+2025-06-05 11:13:00,546 [INFO] self.tIndex: 8
+2025-06-05 11:13:00,546 [INFO] utc_time: [1744250880]
+2025-06-05 11:13:00,546 [INFO] freq_lgs_leo: [23.0, 9.0, 12.0, 24.0, 2.0, 11.0, 1.0, 5.0, 5.0, 24.0]
+2025-06-05 11:13:00,546 [INFO] === Next Observation === {'utc_time': array([1744250880], dtype=int64), 'freq_lgs_leo': array([23.,  9., 12., 24.,  2., 11.,  1.,  5.,  5., 24.])}
+2025-06-05 11:13:00,548 [INFO] === Reward === 371.9702349490166
+2025-06-05 11:13:00,549 [INFO] === Step Started ===
+2025-06-05 11:13:00,558 [INFO] === Action Taken === 24
+2025-06-05 11:13:00,558 [INFO] === Current LEO User ID === 2
+2025-06-05 11:13:00,559 [INFO] === Current Time Index === 8
+2025-06-05 11:13:00,559 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:13:01,494 [INFO] === Current State ===
+2025-06-05 11:13:01,500 [INFO] self.tIndex: 8
+2025-06-05 11:13:01,500 [INFO] utc_time: [1744250880]
+2025-06-05 11:13:01,500 [INFO] freq_lgs_leo: [23.0, 9.0, 24.0, 24.0, 2.0, 11.0, 1.0, 5.0, 5.0, 24.0]
+2025-06-05 11:13:01,501 [INFO] === Next Observation === {'utc_time': array([1744250880], dtype=int64), 'freq_lgs_leo': array([23.,  9., 24., 24.,  2., 11.,  1.,  5.,  5., 24.])}
+2025-06-05 11:13:01,502 [INFO] === Reward === 371.9702349490166
+2025-06-05 11:13:01,503 [INFO] === Step Started ===
+2025-06-05 11:13:01,513 [INFO] === Action Taken === 13
+2025-06-05 11:13:01,513 [INFO] === Current LEO User ID === 3
+2025-06-05 11:13:01,513 [INFO] === Current Time Index === 8
+2025-06-05 11:13:01,513 [INFO] === Current LEO Satellite ID === 482
+2025-06-05 11:13:02,487 [INFO] === Current State ===
+2025-06-05 11:13:02,493 [INFO] self.tIndex: 8
+2025-06-05 11:13:02,494 [INFO] utc_time: [1744250880]
+2025-06-05 11:13:02,494 [INFO] freq_lgs_leo: [23.0, 9.0, 24.0, 13.0, 2.0, 11.0, 1.0, 5.0, 5.0, 24.0]
+2025-06-05 11:13:02,494 [INFO] === Next Observation === {'utc_time': array([1744250880], dtype=int64), 'freq_lgs_leo': array([23.,  9., 24., 13.,  2., 11.,  1.,  5.,  5., 24.])}
+2025-06-05 11:13:02,495 [INFO] === Reward === 371.9702349490166
+2025-06-05 11:13:02,506 [INFO] === Step Started ===
+2025-06-05 11:13:02,518 [INFO] === Action Taken === 19
+2025-06-05 11:13:02,518 [INFO] === Current LEO User ID === 4
+2025-06-05 11:13:02,518 [INFO] === Current Time Index === 8
+2025-06-05 11:13:02,518 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:13:03,487 [INFO] === Current State ===
+2025-06-05 11:13:03,495 [INFO] self.tIndex: 8
+2025-06-05 11:13:03,495 [INFO] utc_time: [1744250880]
+2025-06-05 11:13:03,495 [INFO] freq_lgs_leo: [23.0, 9.0, 24.0, 13.0, 19.0, 11.0, 1.0, 5.0, 5.0, 24.0]
+2025-06-05 11:13:03,495 [INFO] === Next Observation === {'utc_time': array([1744250880], dtype=int64), 'freq_lgs_leo': array([23.,  9., 24., 13., 19., 11.,  1.,  5.,  5., 24.])}
+2025-06-05 11:13:03,497 [INFO] === Reward === 371.9702349490166
+2025-06-05 11:13:03,498 [INFO] === Step Started ===
+2025-06-05 11:13:03,509 [INFO] === Action Taken === 11
+2025-06-05 11:13:03,509 [INFO] === Current LEO User ID === 5
+2025-06-05 11:13:03,509 [INFO] === Current Time Index === 8
+2025-06-05 11:13:03,509 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:13:04,461 [INFO] === Current State ===
+2025-06-05 11:13:04,465 [INFO] self.tIndex: 8
+2025-06-05 11:13:04,465 [INFO] utc_time: [1744250880]
+2025-06-05 11:13:04,465 [INFO] freq_lgs_leo: [23.0, 9.0, 24.0, 13.0, 19.0, 11.0, 1.0, 5.0, 5.0, 24.0]
+2025-06-05 11:13:04,466 [INFO] === Next Observation === {'utc_time': array([1744250880], dtype=int64), 'freq_lgs_leo': array([23.,  9., 24., 13., 19., 11.,  1.,  5.,  5., 24.])}
+2025-06-05 11:13:04,467 [INFO] === Reward === 371.9702349490166
+2025-06-05 11:13:04,468 [INFO] === Step Started ===
+2025-06-05 11:13:04,476 [INFO] === Action Taken === 1
+2025-06-05 11:13:04,476 [INFO] === Current LEO User ID === 6
+2025-06-05 11:13:04,476 [INFO] === Current Time Index === 8
+2025-06-05 11:13:04,476 [INFO] === Current LEO Satellite ID === 534
+2025-06-05 11:13:05,599 [INFO] === Current State ===
+2025-06-05 11:13:05,611 [INFO] self.tIndex: 8
+2025-06-05 11:13:05,611 [INFO] utc_time: [1744250880]
+2025-06-05 11:13:05,611 [INFO] freq_lgs_leo: [23.0, 9.0, 24.0, 13.0, 19.0, 11.0, 1.0, 5.0, 5.0, 24.0]
+2025-06-05 11:13:05,611 [INFO] === Next Observation === {'utc_time': array([1744250880], dtype=int64), 'freq_lgs_leo': array([23.,  9., 24., 13., 19., 11.,  1.,  5.,  5., 24.])}
+2025-06-05 11:13:05,614 [INFO] === Reward === 371.9702349490166
+2025-06-05 11:13:05,615 [INFO] === Step Started ===
+2025-06-05 11:13:05,628 [INFO] === Action Taken === 11
+2025-06-05 11:13:05,628 [INFO] === Current LEO User ID === 7
+2025-06-05 11:13:05,628 [INFO] === Current Time Index === 8
+2025-06-05 11:13:05,628 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:13:06,581 [INFO] === Current State ===
+2025-06-05 11:13:06,586 [INFO] self.tIndex: 8
+2025-06-05 11:13:06,586 [INFO] utc_time: [1744250880]
+2025-06-05 11:13:06,586 [INFO] freq_lgs_leo: [23.0, 9.0, 24.0, 13.0, 19.0, 11.0, 1.0, 11.0, 5.0, 24.0]
+2025-06-05 11:13:06,587 [INFO] === Next Observation === {'utc_time': array([1744250880], dtype=int64), 'freq_lgs_leo': array([23.,  9., 24., 13., 19., 11.,  1., 11.,  5., 24.])}
+2025-06-05 11:13:06,588 [INFO] === Reward === 371.9702349490166
+2025-06-05 11:13:06,598 [INFO] === Step Started ===
+2025-06-05 11:13:06,609 [INFO] === Action Taken === 7
+2025-06-05 11:13:06,609 [INFO] === Current LEO User ID === 8
+2025-06-05 11:13:06,609 [INFO] === Current Time Index === 8
+2025-06-05 11:13:06,609 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:13:07,536 [INFO] === Current State ===
+2025-06-05 11:13:07,542 [INFO] self.tIndex: 8
+2025-06-05 11:13:07,542 [INFO] utc_time: [1744250880]
+2025-06-05 11:13:07,542 [INFO] freq_lgs_leo: [23.0, 9.0, 24.0, 13.0, 19.0, 11.0, 1.0, 11.0, 7.0, 24.0]
+2025-06-05 11:13:07,542 [INFO] === Next Observation === {'utc_time': array([1744250880], dtype=int64), 'freq_lgs_leo': array([23.,  9., 24., 13., 19., 11.,  1., 11.,  7., 24.])}
+2025-06-05 11:13:07,544 [INFO] === Reward === 371.9702349490166
+2025-06-05 11:13:07,545 [INFO] === Step Started ===
+2025-06-05 11:13:07,553 [INFO] === Action Taken === 13
+2025-06-05 11:13:07,553 [INFO] === Current LEO User ID === 9
+2025-06-05 11:13:07,553 [INFO] === Current Time Index === 8
+2025-06-05 11:13:07,553 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:13:08,514 [INFO] === Current State ===
+2025-06-05 11:13:08,518 [INFO] self.tIndex: 8
+2025-06-05 11:13:08,518 [INFO] utc_time: [1744250880]
+2025-06-05 11:13:08,518 [INFO] freq_lgs_leo: [23.0, 9.0, 24.0, 13.0, 19.0, 11.0, 1.0, 11.0, 7.0, 13.0]
+2025-06-05 11:13:08,519 [INFO] === Next Observation === {'utc_time': array([1744250880], dtype=int64), 'freq_lgs_leo': array([23.,  9., 24., 13., 19., 11.,  1., 11.,  7., 13.])}
+2025-06-05 11:13:08,520 [INFO] === Reward === 371.9702349490166
+2025-06-05 11:13:08,521 [INFO] === Step Started ===
+2025-06-05 11:13:08,531 [INFO] === Action Taken === 8
+2025-06-05 11:13:08,531 [INFO] === Current LEO User ID === 0
+2025-06-05 11:13:08,531 [INFO] === Current Time Index === 9
+2025-06-05 11:13:08,531 [INFO] === Current LEO Satellite ID === 24
+2025-06-05 11:13:09,555 [INFO] === Current State ===
+2025-06-05 11:13:09,562 [INFO] self.tIndex: 9
+2025-06-05 11:13:09,562 [INFO] utc_time: [1744250940]
+2025-06-05 11:13:09,562 [INFO] freq_lgs_leo: [8.0, 11.0, 9.0, 19.0, 11.0, 3.0, 9.0, 17.0, 14.0, 2.0]
+2025-06-05 11:13:09,563 [INFO] === Next Observation === {'utc_time': array([1744250940], dtype=int64), 'freq_lgs_leo': array([ 8., 11.,  9., 19., 11.,  3.,  9., 17., 14.,  2.])}
+2025-06-05 11:13:09,566 [INFO] === Reward === 374.7358627450419
+2025-06-05 11:13:09,566 [INFO] === Step Started ===
+2025-06-05 11:13:09,579 [INFO] === Action Taken === 18
+2025-06-05 11:13:09,579 [INFO] === Current LEO User ID === 1
+2025-06-05 11:13:09,579 [INFO] === Current Time Index === 9
+2025-06-05 11:13:09,579 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:13:10,567 [INFO] === Current State ===
+2025-06-05 11:13:10,573 [INFO] self.tIndex: 9
+2025-06-05 11:13:10,573 [INFO] utc_time: [1744250940]
+2025-06-05 11:13:10,573 [INFO] freq_lgs_leo: [8.0, 18.0, 9.0, 19.0, 11.0, 3.0, 9.0, 17.0, 14.0, 2.0]
+2025-06-05 11:13:10,573 [INFO] === Next Observation === {'utc_time': array([1744250940], dtype=int64), 'freq_lgs_leo': array([ 8., 18.,  9., 19., 11.,  3.,  9., 17., 14.,  2.])}
+2025-06-05 11:13:10,575 [INFO] === Reward === 374.7358627450419
+2025-06-05 11:13:10,583 [INFO] === Step Started ===
+2025-06-05 11:13:10,593 [INFO] === Action Taken === 6
+2025-06-05 11:13:10,593 [INFO] === Current LEO User ID === 2
+2025-06-05 11:13:10,593 [INFO] === Current Time Index === 9
+2025-06-05 11:13:10,593 [INFO] === Current LEO Satellite ID === 24
+2025-06-05 11:13:11,571 [INFO] === Current State ===
+2025-06-05 11:13:11,580 [INFO] self.tIndex: 9
+2025-06-05 11:13:11,580 [INFO] utc_time: [1744250940]
+2025-06-05 11:13:11,580 [INFO] freq_lgs_leo: [8.0, 18.0, 6.0, 19.0, 11.0, 3.0, 9.0, 17.0, 14.0, 2.0]
+2025-06-05 11:13:11,580 [INFO] === Next Observation === {'utc_time': array([1744250940], dtype=int64), 'freq_lgs_leo': array([ 8., 18.,  6., 19., 11.,  3.,  9., 17., 14.,  2.])}
+2025-06-05 11:13:11,582 [INFO] === Reward === 374.7358627450419
+2025-06-05 11:13:11,582 [INFO] === Step Started ===
+2025-06-05 11:13:11,591 [INFO] === Action Taken === 15
+2025-06-05 11:13:11,591 [INFO] === Current LEO User ID === 3
+2025-06-05 11:13:11,592 [INFO] === Current Time Index === 9
+2025-06-05 11:13:11,592 [INFO] === Current LEO Satellite ID === 531
+2025-06-05 11:13:12,571 [INFO] === Current State ===
+2025-06-05 11:13:12,576 [INFO] self.tIndex: 9
+2025-06-05 11:13:12,576 [INFO] utc_time: [1744250940]
+2025-06-05 11:13:12,576 [INFO] freq_lgs_leo: [8.0, 18.0, 6.0, 15.0, 11.0, 3.0, 9.0, 17.0, 14.0, 2.0]
+2025-06-05 11:13:12,576 [INFO] === Next Observation === {'utc_time': array([1744250940], dtype=int64), 'freq_lgs_leo': array([ 8., 18.,  6., 15., 11.,  3.,  9., 17., 14.,  2.])}
+2025-06-05 11:13:12,578 [INFO] === Reward === 374.7358627450419
+2025-06-05 11:13:12,579 [INFO] === Step Started ===
+2025-06-05 11:13:12,590 [INFO] === Action Taken === 24
+2025-06-05 11:13:12,590 [INFO] === Current LEO User ID === 4
+2025-06-05 11:13:12,590 [INFO] === Current Time Index === 9
+2025-06-05 11:13:12,590 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:13:13,555 [INFO] === Current State ===
+2025-06-05 11:13:13,560 [INFO] self.tIndex: 9
+2025-06-05 11:13:13,560 [INFO] utc_time: [1744250940]
+2025-06-05 11:13:13,560 [INFO] freq_lgs_leo: [8.0, 18.0, 6.0, 15.0, 24.0, 3.0, 9.0, 17.0, 14.0, 2.0]
+2025-06-05 11:13:13,560 [INFO] === Next Observation === {'utc_time': array([1744250940], dtype=int64), 'freq_lgs_leo': array([ 8., 18.,  6., 15., 24.,  3.,  9., 17., 14.,  2.])}
+2025-06-05 11:13:13,562 [INFO] === Reward === 374.7358627450419
+2025-06-05 11:13:13,563 [INFO] === Step Started ===
+2025-06-05 11:13:13,573 [INFO] === Action Taken === 10
+2025-06-05 11:13:13,573 [INFO] === Current LEO User ID === 5
+2025-06-05 11:13:13,573 [INFO] === Current Time Index === 9
+2025-06-05 11:13:13,573 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:13:14,499 [INFO] === Current State ===
+2025-06-05 11:13:14,504 [INFO] self.tIndex: 9
+2025-06-05 11:13:14,504 [INFO] utc_time: [1744250940]
+2025-06-05 11:13:14,504 [INFO] freq_lgs_leo: [8.0, 18.0, 6.0, 15.0, 24.0, 10.0, 9.0, 17.0, 14.0, 2.0]
+2025-06-05 11:13:14,504 [INFO] === Next Observation === {'utc_time': array([1744250940], dtype=int64), 'freq_lgs_leo': array([ 8., 18.,  6., 15., 24., 10.,  9., 17., 14.,  2.])}
+2025-06-05 11:13:14,506 [INFO] === Reward === 374.7358627450419
+2025-06-05 11:13:14,517 [INFO] === Step Started ===
+2025-06-05 11:13:14,530 [INFO] === Action Taken === 6
+2025-06-05 11:13:14,530 [INFO] === Current LEO User ID === 6
+2025-06-05 11:13:14,530 [INFO] === Current Time Index === 9
+2025-06-05 11:13:14,530 [INFO] === Current LEO Satellite ID === 533
+2025-06-05 11:13:15,546 [INFO] === Current State ===
+2025-06-05 11:13:15,552 [INFO] self.tIndex: 9
+2025-06-05 11:13:15,552 [INFO] utc_time: [1744250940]
+2025-06-05 11:13:15,552 [INFO] freq_lgs_leo: [8.0, 18.0, 6.0, 15.0, 24.0, 10.0, 6.0, 17.0, 14.0, 2.0]
+2025-06-05 11:13:15,552 [INFO] === Next Observation === {'utc_time': array([1744250940], dtype=int64), 'freq_lgs_leo': array([ 8., 18.,  6., 15., 24., 10.,  6., 17., 14.,  2.])}
+2025-06-05 11:13:15,554 [INFO] === Reward === 374.7358627450419
+2025-06-05 11:13:15,554 [INFO] === Step Started ===
+2025-06-05 11:13:15,565 [INFO] === Action Taken === 9
+2025-06-05 11:13:15,565 [INFO] === Current LEO User ID === 7
+2025-06-05 11:13:15,565 [INFO] === Current Time Index === 9
+2025-06-05 11:13:15,565 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:13:16,491 [INFO] === Current State ===
+2025-06-05 11:13:16,496 [INFO] self.tIndex: 9
+2025-06-05 11:13:16,496 [INFO] utc_time: [1744250940]
+2025-06-05 11:13:16,496 [INFO] freq_lgs_leo: [8.0, 18.0, 6.0, 15.0, 24.0, 10.0, 6.0, 9.0, 14.0, 2.0]
+2025-06-05 11:13:16,496 [INFO] === Next Observation === {'utc_time': array([1744250940], dtype=int64), 'freq_lgs_leo': array([ 8., 18.,  6., 15., 24., 10.,  6.,  9., 14.,  2.])}
+2025-06-05 11:13:16,498 [INFO] === Reward === 374.7358627450419
+2025-06-05 11:13:16,499 [INFO] === Step Started ===
+2025-06-05 11:13:16,508 [INFO] === Action Taken === 13
+2025-06-05 11:13:16,508 [INFO] === Current LEO User ID === 8
+2025-06-05 11:13:16,508 [INFO] === Current Time Index === 9
+2025-06-05 11:13:16,508 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:13:17,562 [INFO] === Current State ===
+2025-06-05 11:13:17,575 [INFO] self.tIndex: 9
+2025-06-05 11:13:17,575 [INFO] utc_time: [1744250940]
+2025-06-05 11:13:17,575 [INFO] freq_lgs_leo: [8.0, 18.0, 6.0, 15.0, 24.0, 10.0, 6.0, 9.0, 13.0, 2.0]
+2025-06-05 11:13:17,575 [INFO] === Next Observation === {'utc_time': array([1744250940], dtype=int64), 'freq_lgs_leo': array([ 8., 18.,  6., 15., 24., 10.,  6.,  9., 13.,  2.])}
+2025-06-05 11:13:17,577 [INFO] === Reward === 374.7358627450419
+2025-06-05 11:13:17,577 [INFO] === Step Started ===
+2025-06-05 11:13:17,594 [INFO] === Action Taken === 22
+2025-06-05 11:13:17,594 [INFO] === Current LEO User ID === 9
+2025-06-05 11:13:17,594 [INFO] === Current Time Index === 9
+2025-06-05 11:13:17,595 [INFO] === Current LEO Satellite ID === 25
+2025-06-05 11:13:18,558 [INFO] === Current State ===
+2025-06-05 11:13:18,564 [INFO] self.tIndex: 9
+2025-06-05 11:13:18,564 [INFO] utc_time: [1744250940]
+2025-06-05 11:13:18,564 [INFO] freq_lgs_leo: [8.0, 18.0, 6.0, 15.0, 24.0, 10.0, 6.0, 9.0, 13.0, 22.0]
+2025-06-05 11:13:18,564 [INFO] === Next Observation === {'utc_time': array([1744250940], dtype=int64), 'freq_lgs_leo': array([ 8., 18.,  6., 15., 24., 10.,  6.,  9., 13., 22.])}
+2025-06-05 11:13:18,566 [INFO] === Reward === 374.7358627450419
+2025-06-05 11:13:18,579 [INFO] === Step Started ===
+2025-06-05 11:13:18,591 [INFO] === Action Taken === 13
+2025-06-05 11:13:18,591 [INFO] === Current LEO User ID === 0
+2025-06-05 11:13:18,591 [INFO] === Current Time Index === 10
+2025-06-05 11:13:18,591 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:13:19,604 [INFO] === Current State ===
+2025-06-05 11:13:19,609 [INFO] self.tIndex: 10
+2025-06-05 11:13:19,609 [INFO] utc_time: [1744251000]
+2025-06-05 11:13:19,609 [INFO] freq_lgs_leo: [13.0, 6.0, 14.0, 11.0, 13.0, 24.0, 17.0, 10.0, 5.0, 13.0]
+2025-06-05 11:13:19,609 [INFO] === Next Observation === {'utc_time': array([1744251000], dtype=int64), 'freq_lgs_leo': array([13.,  6., 14., 11., 13., 24., 17., 10.,  5., 13.])}
+2025-06-05 11:13:19,611 [INFO] === Reward === 389.02549492571967
+2025-06-05 11:13:19,612 [INFO] === Step Started ===
+2025-06-05 11:13:19,621 [INFO] === Action Taken === 13
+2025-06-05 11:13:19,621 [INFO] === Current LEO User ID === 1
+2025-06-05 11:13:19,622 [INFO] === Current Time Index === 10
+2025-06-05 11:13:19,622 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:13:20,543 [INFO] === Current State ===
+2025-06-05 11:13:20,548 [INFO] self.tIndex: 10
+2025-06-05 11:13:20,548 [INFO] utc_time: [1744251000]
+2025-06-05 11:13:20,548 [INFO] freq_lgs_leo: [13.0, 13.0, 14.0, 11.0, 13.0, 24.0, 17.0, 10.0, 5.0, 13.0]
+2025-06-05 11:13:20,548 [INFO] === Next Observation === {'utc_time': array([1744251000], dtype=int64), 'freq_lgs_leo': array([13., 13., 14., 11., 13., 24., 17., 10.,  5., 13.])}
+2025-06-05 11:13:20,550 [INFO] === Reward === 389.02549492571967
+2025-06-05 11:13:20,550 [INFO] === Step Started ===
+2025-06-05 11:13:20,560 [INFO] === Action Taken === 7
+2025-06-05 11:13:20,560 [INFO] === Current LEO User ID === 2
+2025-06-05 11:13:20,560 [INFO] === Current Time Index === 10
+2025-06-05 11:13:20,560 [INFO] === Current LEO Satellite ID === 24
+2025-06-05 11:13:21,494 [INFO] === Current State ===
+2025-06-05 11:13:21,500 [INFO] self.tIndex: 10
+2025-06-05 11:13:21,500 [INFO] utc_time: [1744251000]
+2025-06-05 11:13:21,500 [INFO] freq_lgs_leo: [13.0, 13.0, 7.0, 11.0, 13.0, 24.0, 17.0, 10.0, 5.0, 13.0]
+2025-06-05 11:13:21,501 [INFO] === Next Observation === {'utc_time': array([1744251000], dtype=int64), 'freq_lgs_leo': array([13., 13.,  7., 11., 13., 24., 17., 10.,  5., 13.])}
+2025-06-05 11:13:21,502 [INFO] === Reward === 389.02549492571967
+2025-06-05 11:13:21,503 [INFO] === Step Started ===
+2025-06-05 11:13:21,511 [INFO] === Action Taken === 19
+2025-06-05 11:13:21,512 [INFO] === Current LEO User ID === 3
+2025-06-05 11:13:21,512 [INFO] === Current Time Index === 10
+2025-06-05 11:13:21,512 [INFO] === Current LEO Satellite ID === 529
+2025-06-05 11:13:22,485 [INFO] === Current State ===
+2025-06-05 11:13:22,491 [INFO] self.tIndex: 10
+2025-06-05 11:13:22,491 [INFO] utc_time: [1744251000]
+2025-06-05 11:13:22,491 [INFO] freq_lgs_leo: [13.0, 13.0, 7.0, 19.0, 13.0, 24.0, 17.0, 10.0, 5.0, 13.0]
+2025-06-05 11:13:22,492 [INFO] === Next Observation === {'utc_time': array([1744251000], dtype=int64), 'freq_lgs_leo': array([13., 13.,  7., 19., 13., 24., 17., 10.,  5., 13.])}
+2025-06-05 11:13:22,493 [INFO] === Reward === 389.02549492571967
+2025-06-05 11:13:22,510 [INFO] === Step Started ===
+2025-06-05 11:13:22,519 [INFO] === Action Taken === 3
+2025-06-05 11:13:22,519 [INFO] === Current LEO User ID === 4
+2025-06-05 11:13:22,519 [INFO] === Current Time Index === 10
+2025-06-05 11:13:22,519 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:13:23,522 [INFO] === Current State ===
+2025-06-05 11:13:23,529 [INFO] self.tIndex: 10
+2025-06-05 11:13:23,529 [INFO] utc_time: [1744251000]
+2025-06-05 11:13:23,529 [INFO] freq_lgs_leo: [13.0, 13.0, 7.0, 19.0, 3.0, 24.0, 17.0, 10.0, 5.0, 13.0]
+2025-06-05 11:13:23,529 [INFO] === Next Observation === {'utc_time': array([1744251000], dtype=int64), 'freq_lgs_leo': array([13., 13.,  7., 19.,  3., 24., 17., 10.,  5., 13.])}
+2025-06-05 11:13:23,531 [INFO] === Reward === 389.02549492571967
+2025-06-05 11:13:23,531 [INFO] === Step Started ===
+2025-06-05 11:13:23,541 [INFO] === Action Taken === 23
+2025-06-05 11:13:23,541 [INFO] === Current LEO User ID === 5
+2025-06-05 11:13:23,541 [INFO] === Current Time Index === 10
+2025-06-05 11:13:23,541 [INFO] === Current LEO Satellite ID === 576
+2025-06-05 11:13:24,506 [INFO] === Current State ===
+2025-06-05 11:13:24,512 [INFO] self.tIndex: 10
+2025-06-05 11:13:24,512 [INFO] utc_time: [1744251000]
+2025-06-05 11:13:24,512 [INFO] freq_lgs_leo: [13.0, 13.0, 7.0, 19.0, 3.0, 23.0, 17.0, 10.0, 5.0, 13.0]
+2025-06-05 11:13:24,512 [INFO] === Next Observation === {'utc_time': array([1744251000], dtype=int64), 'freq_lgs_leo': array([13., 13.,  7., 19.,  3., 23., 17., 10.,  5., 13.])}
+2025-06-05 11:13:24,514 [INFO] === Reward === 389.02549492571967
+2025-06-05 11:13:24,514 [INFO] === Step Started ===
+2025-06-05 11:13:24,523 [INFO] === Action Taken === 12
+2025-06-05 11:13:24,524 [INFO] === Current LEO User ID === 6
+2025-06-05 11:13:24,524 [INFO] === Current Time Index === 10
+2025-06-05 11:13:24,524 [INFO] === Current LEO Satellite ID === 532
+2025-06-05 11:13:25,463 [INFO] === Current State ===
+2025-06-05 11:13:25,470 [INFO] self.tIndex: 10
+2025-06-05 11:13:25,470 [INFO] utc_time: [1744251000]
+2025-06-05 11:13:25,470 [INFO] freq_lgs_leo: [13.0, 13.0, 7.0, 19.0, 3.0, 23.0, 12.0, 10.0, 5.0, 13.0]
+2025-06-05 11:13:25,470 [INFO] === Next Observation === {'utc_time': array([1744251000], dtype=int64), 'freq_lgs_leo': array([13., 13.,  7., 19.,  3., 23., 12., 10.,  5., 13.])}
+2025-06-05 11:13:25,472 [INFO] === Reward === 389.02549492571967
+2025-06-05 11:13:25,473 [INFO] === Step Started ===
+2025-06-05 11:13:25,483 [INFO] === Action Taken === 3
+2025-06-05 11:13:25,483 [INFO] === Current LEO User ID === 7
+2025-06-05 11:13:25,483 [INFO] === Current Time Index === 10
+2025-06-05 11:13:25,483 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:13:26,445 [INFO] === Current State ===
+2025-06-05 11:13:26,451 [INFO] self.tIndex: 10
+2025-06-05 11:13:26,451 [INFO] utc_time: [1744251000]
+2025-06-05 11:13:26,451 [INFO] freq_lgs_leo: [13.0, 13.0, 7.0, 19.0, 3.0, 23.0, 12.0, 3.0, 5.0, 13.0]
+2025-06-05 11:13:26,452 [INFO] === Next Observation === {'utc_time': array([1744251000], dtype=int64), 'freq_lgs_leo': array([13., 13.,  7., 19.,  3., 23., 12.,  3.,  5., 13.])}
+2025-06-05 11:13:26,453 [INFO] === Reward === 389.02549492571967
+2025-06-05 11:13:26,461 [INFO] === Step Started ===
+2025-06-05 11:13:26,472 [INFO] === Action Taken === 17
+2025-06-05 11:13:26,472 [INFO] === Current LEO User ID === 8
+2025-06-05 11:13:26,472 [INFO] === Current Time Index === 10
+2025-06-05 11:13:26,472 [INFO] === Current LEO Satellite ID === 581
+2025-06-05 11:13:27,454 [INFO] === Current State ===
+2025-06-05 11:13:27,459 [INFO] self.tIndex: 10
+2025-06-05 11:13:27,459 [INFO] utc_time: [1744251000]
+2025-06-05 11:13:27,459 [INFO] freq_lgs_leo: [13.0, 13.0, 7.0, 19.0, 3.0, 23.0, 12.0, 3.0, 17.0, 13.0]
+2025-06-05 11:13:27,459 [INFO] === Next Observation === {'utc_time': array([1744251000], dtype=int64), 'freq_lgs_leo': array([13., 13.,  7., 19.,  3., 23., 12.,  3., 17., 13.])}
+2025-06-05 11:13:27,460 [INFO] === Reward === 389.02549492571967
+2025-06-05 11:13:27,461 [INFO] === Step Started ===
+2025-06-05 11:13:27,471 [INFO] === Action Taken === 21
+2025-06-05 11:13:27,471 [INFO] === Current LEO User ID === 9
+2025-06-05 11:13:27,471 [INFO] === Current Time Index === 10
+2025-06-05 11:13:27,471 [INFO] === Current LEO Satellite ID === 24
+2025-06-05 11:13:28,384 [INFO] === Current State ===
+2025-06-05 11:13:28,390 [INFO] self.tIndex: 10
+2025-06-05 11:13:28,390 [INFO] utc_time: [1744251000]
+2025-06-05 11:13:28,390 [INFO] freq_lgs_leo: [13.0, 13.0, 7.0, 19.0, 3.0, 23.0, 12.0, 3.0, 17.0, 21.0]
+2025-06-05 11:13:28,390 [INFO] === Next Observation === {'utc_time': array([1744251000], dtype=int64), 'freq_lgs_leo': array([13., 13.,  7., 19.,  3., 23., 12.,  3., 17., 21.])}
+2025-06-05 11:13:28,392 [INFO] === Reward === 389.02549492571967
+2025-06-05 11:13:28,393 [INFO] === Step Started ===
+2025-06-05 11:13:28,402 [INFO] === Action Taken === 4
+2025-06-05 11:13:28,402 [INFO] === Current LEO User ID === 0
+2025-06-05 11:13:28,402 [INFO] === Current Time Index === 11
+2025-06-05 11:13:28,403 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:13:29,352 [INFO] === Current State ===
+2025-06-05 11:13:29,358 [INFO] self.tIndex: 11
+2025-06-05 11:13:29,358 [INFO] utc_time: [1744251060]
+2025-06-05 11:13:29,358 [INFO] freq_lgs_leo: [4.0, 14.0, 23.0, 5.0, 13.0, 8.0, 8.0, 2.0, 2.0, 21.0]
+2025-06-05 11:13:29,359 [INFO] === Next Observation === {'utc_time': array([1744251060], dtype=int64), 'freq_lgs_leo': array([ 4., 14., 23.,  5., 13.,  8.,  8.,  2.,  2., 21.])}
+2025-06-05 11:13:29,360 [INFO] === Reward === 381.953365568574
+2025-06-05 11:13:29,361 [INFO] === Step Started ===
+2025-06-05 11:13:29,369 [INFO] === Action Taken === 17
+2025-06-05 11:13:29,369 [INFO] === Current LEO User ID === 1
+2025-06-05 11:13:29,369 [INFO] === Current Time Index === 11
+2025-06-05 11:13:29,369 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:13:30,290 [INFO] === Current State ===
+2025-06-05 11:13:30,296 [INFO] self.tIndex: 11
+2025-06-05 11:13:30,296 [INFO] utc_time: [1744251060]
+2025-06-05 11:13:30,296 [INFO] freq_lgs_leo: [4.0, 17.0, 23.0, 5.0, 13.0, 8.0, 8.0, 2.0, 2.0, 21.0]
+2025-06-05 11:13:30,296 [INFO] === Next Observation === {'utc_time': array([1744251060], dtype=int64), 'freq_lgs_leo': array([ 4., 17., 23.,  5., 13.,  8.,  8.,  2.,  2., 21.])}
+2025-06-05 11:13:30,298 [INFO] === Reward === 381.953365568574
+2025-06-05 11:13:30,310 [INFO] === Step Started ===
+2025-06-05 11:13:30,321 [INFO] === Action Taken === 5
+2025-06-05 11:13:30,321 [INFO] === Current LEO User ID === 2
+2025-06-05 11:13:30,321 [INFO] === Current Time Index === 11
+2025-06-05 11:13:30,321 [INFO] === Current LEO Satellite ID === 23
+2025-06-05 11:13:31,285 [INFO] === Current State ===
+2025-06-05 11:13:31,292 [INFO] self.tIndex: 11
+2025-06-05 11:13:31,292 [INFO] utc_time: [1744251060]
+2025-06-05 11:13:31,292 [INFO] freq_lgs_leo: [4.0, 17.0, 5.0, 5.0, 13.0, 8.0, 8.0, 2.0, 2.0, 21.0]
+2025-06-05 11:13:31,292 [INFO] === Next Observation === {'utc_time': array([1744251060], dtype=int64), 'freq_lgs_leo': array([ 4., 17.,  5.,  5., 13.,  8.,  8.,  2.,  2., 21.])}
+2025-06-05 11:13:31,295 [INFO] === Reward === 381.953365568574
+2025-06-05 11:13:31,295 [INFO] === Step Started ===
+2025-06-05 11:13:31,304 [INFO] === Action Taken === 22
+2025-06-05 11:13:31,304 [INFO] === Current LEO User ID === 3
+2025-06-05 11:13:31,304 [INFO] === Current Time Index === 11
+2025-06-05 11:13:31,304 [INFO] === Current LEO Satellite ID === 480
+2025-06-05 11:13:32,302 [INFO] === Current State ===
+2025-06-05 11:13:32,307 [INFO] self.tIndex: 11
+2025-06-05 11:13:32,307 [INFO] utc_time: [1744251060]
+2025-06-05 11:13:32,307 [INFO] freq_lgs_leo: [4.0, 17.0, 5.0, 22.0, 13.0, 8.0, 8.0, 2.0, 2.0, 21.0]
+2025-06-05 11:13:32,308 [INFO] === Next Observation === {'utc_time': array([1744251060], dtype=int64), 'freq_lgs_leo': array([ 4., 17.,  5., 22., 13.,  8.,  8.,  2.,  2., 21.])}
+2025-06-05 11:13:32,309 [INFO] === Reward === 381.953365568574
+2025-06-05 11:13:32,309 [INFO] === Step Started ===
+2025-06-05 11:13:32,320 [INFO] === Action Taken === 3
+2025-06-05 11:13:32,320 [INFO] === Current LEO User ID === 4
+2025-06-05 11:13:32,320 [INFO] === Current Time Index === 11
+2025-06-05 11:13:32,320 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:13:33,360 [INFO] === Current State ===
+2025-06-05 11:13:33,366 [INFO] self.tIndex: 11
+2025-06-05 11:13:33,366 [INFO] utc_time: [1744251060]
+2025-06-05 11:13:33,366 [INFO] freq_lgs_leo: [4.0, 17.0, 5.0, 22.0, 3.0, 8.0, 8.0, 2.0, 2.0, 21.0]
+2025-06-05 11:13:33,366 [INFO] === Next Observation === {'utc_time': array([1744251060], dtype=int64), 'freq_lgs_leo': array([ 4., 17.,  5., 22.,  3.,  8.,  8.,  2.,  2., 21.])}
+2025-06-05 11:13:33,368 [INFO] === Reward === 381.953365568574
+2025-06-05 11:13:33,368 [INFO] === Step Started ===
+2025-06-05 11:13:33,377 [INFO] === Action Taken === 14
+2025-06-05 11:13:33,377 [INFO] === Current LEO User ID === 5
+2025-06-05 11:13:33,377 [INFO] === Current Time Index === 11
+2025-06-05 11:13:33,377 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:13:34,354 [INFO] === Current State ===
+2025-06-05 11:13:34,359 [INFO] self.tIndex: 11
+2025-06-05 11:13:34,359 [INFO] utc_time: [1744251060]
+2025-06-05 11:13:34,360 [INFO] freq_lgs_leo: [4.0, 17.0, 5.0, 22.0, 3.0, 14.0, 8.0, 2.0, 2.0, 21.0]
+2025-06-05 11:13:34,360 [INFO] === Next Observation === {'utc_time': array([1744251060], dtype=int64), 'freq_lgs_leo': array([ 4., 17.,  5., 22.,  3., 14.,  8.,  2.,  2., 21.])}
+2025-06-05 11:13:34,362 [INFO] === Reward === 381.953365568574
+2025-06-05 11:13:34,371 [INFO] === Step Started ===
+2025-06-05 11:13:34,381 [INFO] === Action Taken === 1
+2025-06-05 11:13:34,381 [INFO] === Current LEO User ID === 6
+2025-06-05 11:13:34,381 [INFO] === Current Time Index === 11
+2025-06-05 11:13:34,381 [INFO] === Current LEO Satellite ID === 531
+2025-06-05 11:13:35,388 [INFO] === Current State ===
+2025-06-05 11:13:35,393 [INFO] self.tIndex: 11
+2025-06-05 11:13:35,393 [INFO] utc_time: [1744251060]
+2025-06-05 11:13:35,393 [INFO] freq_lgs_leo: [4.0, 17.0, 5.0, 22.0, 3.0, 14.0, 1.0, 2.0, 2.0, 21.0]
+2025-06-05 11:13:35,393 [INFO] === Next Observation === {'utc_time': array([1744251060], dtype=int64), 'freq_lgs_leo': array([ 4., 17.,  5., 22.,  3., 14.,  1.,  2.,  2., 21.])}
+2025-06-05 11:13:35,394 [INFO] === Reward === 381.953365568574
+2025-06-05 11:13:35,396 [INFO] === Step Started ===
+2025-06-05 11:13:35,404 [INFO] === Action Taken === 22
+2025-06-05 11:13:35,404 [INFO] === Current LEO User ID === 7
+2025-06-05 11:13:35,404 [INFO] === Current Time Index === 11
+2025-06-05 11:13:35,404 [INFO] === Current LEO Satellite ID === 24
+2025-06-05 11:13:36,353 [INFO] === Current State ===
+2025-06-05 11:13:36,362 [INFO] self.tIndex: 11
+2025-06-05 11:13:36,362 [INFO] utc_time: [1744251060]
+2025-06-05 11:13:36,362 [INFO] freq_lgs_leo: [4.0, 17.0, 5.0, 22.0, 3.0, 14.0, 1.0, 22.0, 2.0, 21.0]
+2025-06-05 11:13:36,364 [INFO] === Next Observation === {'utc_time': array([1744251060], dtype=int64), 'freq_lgs_leo': array([ 4., 17.,  5., 22.,  3., 14.,  1., 22.,  2., 21.])}
+2025-06-05 11:13:36,366 [INFO] === Reward === 381.953365568574
+2025-06-05 11:13:36,367 [INFO] === Step Started ===
+2025-06-05 11:13:36,381 [INFO] === Action Taken === 23
+2025-06-05 11:13:36,381 [INFO] === Current LEO User ID === 8
+2025-06-05 11:13:36,381 [INFO] === Current Time Index === 11
+2025-06-05 11:13:36,381 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:13:37,378 [INFO] === Current State ===
+2025-06-05 11:13:37,384 [INFO] self.tIndex: 11
+2025-06-05 11:13:37,384 [INFO] utc_time: [1744251060]
+2025-06-05 11:13:37,384 [INFO] freq_lgs_leo: [4.0, 17.0, 5.0, 22.0, 3.0, 14.0, 1.0, 22.0, 23.0, 21.0]
+2025-06-05 11:13:37,384 [INFO] === Next Observation === {'utc_time': array([1744251060], dtype=int64), 'freq_lgs_leo': array([ 4., 17.,  5., 22.,  3., 14.,  1., 22., 23., 21.])}
+2025-06-05 11:13:37,388 [INFO] === Reward === 381.953365568574
+2025-06-05 11:13:37,388 [INFO] === Step Started ===
+2025-06-05 11:13:37,398 [INFO] === Action Taken === 24
+2025-06-05 11:13:37,398 [INFO] === Current LEO User ID === 9
+2025-06-05 11:13:37,398 [INFO] === Current Time Index === 11
+2025-06-05 11:13:37,398 [INFO] === Current LEO Satellite ID === 23
+2025-06-05 11:13:38,372 [INFO] === Current State ===
+2025-06-05 11:13:38,380 [INFO] self.tIndex: 11
+2025-06-05 11:13:38,381 [INFO] utc_time: [1744251060]
+2025-06-05 11:13:38,381 [INFO] freq_lgs_leo: [4.0, 17.0, 5.0, 22.0, 3.0, 14.0, 1.0, 22.0, 23.0, 24.0]
+2025-06-05 11:13:38,381 [INFO] === Next Observation === {'utc_time': array([1744251060], dtype=int64), 'freq_lgs_leo': array([ 4., 17.,  5., 22.,  3., 14.,  1., 22., 23., 24.])}
+2025-06-05 11:13:38,384 [INFO] === Reward === 381.953365568574
+2025-06-05 11:13:38,397 [INFO] === Step Started ===
+2025-06-05 11:13:38,412 [INFO] === Action Taken === 21
+2025-06-05 11:13:38,412 [INFO] === Current LEO User ID === 0
+2025-06-05 11:13:38,412 [INFO] === Current Time Index === 12
+2025-06-05 11:13:38,412 [INFO] === Current LEO Satellite ID === 24
+2025-06-05 11:13:39,501 [INFO] === Current State ===
+2025-06-05 11:13:39,508 [INFO] self.tIndex: 12
+2025-06-05 11:13:39,508 [INFO] utc_time: [1744251120]
+2025-06-05 11:13:39,508 [INFO] freq_lgs_leo: [21.0, 16.0, 21.0, 4.0, 16.0, 21.0, 3.0, 2.0, 7.0, 10.0]
+2025-06-05 11:13:39,508 [INFO] === Next Observation === {'utc_time': array([1744251120], dtype=int64), 'freq_lgs_leo': array([21., 16., 21.,  4., 16., 21.,  3.,  2.,  7., 10.])}
+2025-06-05 11:13:39,510 [INFO] === Reward === 371.5102883607835
+2025-06-05 11:13:39,511 [INFO] === Step Started ===
+2025-06-05 11:13:39,523 [INFO] === Action Taken === 4
+2025-06-05 11:13:39,523 [INFO] === Current LEO User ID === 1
+2025-06-05 11:13:39,523 [INFO] === Current Time Index === 12
+2025-06-05 11:13:39,524 [INFO] === Current LEO Satellite ID === 576
+2025-06-05 11:13:40,574 [INFO] === Current State ===
+2025-06-05 11:13:40,581 [INFO] self.tIndex: 12
+2025-06-05 11:13:40,581 [INFO] utc_time: [1744251120]
+2025-06-05 11:13:40,581 [INFO] freq_lgs_leo: [21.0, 4.0, 21.0, 4.0, 16.0, 21.0, 3.0, 2.0, 7.0, 10.0]
+2025-06-05 11:13:40,581 [INFO] === Next Observation === {'utc_time': array([1744251120], dtype=int64), 'freq_lgs_leo': array([21.,  4., 21.,  4., 16., 21.,  3.,  2.,  7., 10.])}
+2025-06-05 11:13:40,583 [INFO] === Reward === 371.5102883607835
+2025-06-05 11:13:40,583 [INFO] === Step Started ===
+2025-06-05 11:13:40,597 [INFO] === Action Taken === 9
+2025-06-05 11:13:40,598 [INFO] === Current LEO User ID === 2
+2025-06-05 11:13:40,598 [INFO] === Current Time Index === 12
+2025-06-05 11:13:40,598 [INFO] === Current LEO Satellite ID === 22
+2025-06-05 11:13:41,677 [INFO] === Current State ===
+2025-06-05 11:13:41,684 [INFO] self.tIndex: 12
+2025-06-05 11:13:41,684 [INFO] utc_time: [1744251120]
+2025-06-05 11:13:41,684 [INFO] freq_lgs_leo: [21.0, 4.0, 9.0, 4.0, 16.0, 21.0, 3.0, 2.0, 7.0, 10.0]
+2025-06-05 11:13:41,684 [INFO] === Next Observation === {'utc_time': array([1744251120], dtype=int64), 'freq_lgs_leo': array([21.,  4.,  9.,  4., 16., 21.,  3.,  2.,  7., 10.])}
+2025-06-05 11:13:41,686 [INFO] === Reward === 371.5102883607835
+2025-06-05 11:13:41,687 [INFO] === Step Started ===
+2025-06-05 11:13:41,697 [INFO] === Action Taken === 15
+2025-06-05 11:13:41,698 [INFO] === Current LEO User ID === 3
+2025-06-05 11:13:41,698 [INFO] === Current Time Index === 12
+2025-06-05 11:13:41,698 [INFO] === Current LEO Satellite ID === 479
+2025-06-05 11:13:42,761 [INFO] === Current State ===
+2025-06-05 11:13:42,767 [INFO] self.tIndex: 12
+2025-06-05 11:13:42,767 [INFO] utc_time: [1744251120]
+2025-06-05 11:13:42,767 [INFO] freq_lgs_leo: [21.0, 4.0, 9.0, 15.0, 16.0, 21.0, 3.0, 2.0, 7.0, 10.0]
+2025-06-05 11:13:42,768 [INFO] === Next Observation === {'utc_time': array([1744251120], dtype=int64), 'freq_lgs_leo': array([21.,  4.,  9., 15., 16., 21.,  3.,  2.,  7., 10.])}
+2025-06-05 11:13:42,769 [INFO] === Reward === 371.5102883607835
+2025-06-05 11:13:42,782 [INFO] === Step Started ===
+2025-06-05 11:13:42,792 [INFO] === Action Taken === 11
+2025-06-05 11:13:42,792 [INFO] === Current LEO User ID === 4
+2025-06-05 11:13:42,792 [INFO] === Current Time Index === 12
+2025-06-05 11:13:42,792 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:13:43,768 [INFO] === Current State ===
+2025-06-05 11:13:43,773 [INFO] self.tIndex: 12
+2025-06-05 11:13:43,773 [INFO] utc_time: [1744251120]
+2025-06-05 11:13:43,774 [INFO] freq_lgs_leo: [21.0, 4.0, 9.0, 15.0, 11.0, 21.0, 3.0, 2.0, 7.0, 10.0]
+2025-06-05 11:13:43,777 [INFO] === Next Observation === {'utc_time': array([1744251120], dtype=int64), 'freq_lgs_leo': array([21.,  4.,  9., 15., 11., 21.,  3.,  2.,  7., 10.])}
+2025-06-05 11:13:43,780 [INFO] === Reward === 371.5102883607835
+2025-06-05 11:13:43,781 [INFO] === Step Started ===
+2025-06-05 11:13:43,793 [INFO] === Action Taken === 17
+2025-06-05 11:13:43,793 [INFO] === Current LEO User ID === 5
+2025-06-05 11:13:43,793 [INFO] === Current Time Index === 12
+2025-06-05 11:13:43,793 [INFO] === Current LEO Satellite ID === 574
+2025-06-05 11:13:44,832 [INFO] === Current State ===
+2025-06-05 11:13:44,838 [INFO] self.tIndex: 12
+2025-06-05 11:13:44,838 [INFO] utc_time: [1744251120]
+2025-06-05 11:13:44,838 [INFO] freq_lgs_leo: [21.0, 4.0, 9.0, 15.0, 11.0, 17.0, 3.0, 2.0, 7.0, 10.0]
+2025-06-05 11:13:44,839 [INFO] === Next Observation === {'utc_time': array([1744251120], dtype=int64), 'freq_lgs_leo': array([21.,  4.,  9., 15., 11., 17.,  3.,  2.,  7., 10.])}
+2025-06-05 11:13:44,840 [INFO] === Reward === 371.5102883607835
+2025-06-05 11:13:44,841 [INFO] === Step Started ===
+2025-06-05 11:13:44,852 [INFO] === Action Taken === 9
+2025-06-05 11:13:44,852 [INFO] === Current LEO User ID === 6
+2025-06-05 11:13:44,852 [INFO] === Current Time Index === 12
+2025-06-05 11:13:44,852 [INFO] === Current LEO Satellite ID === 532
+2025-06-05 11:13:45,896 [INFO] === Current State ===
+2025-06-05 11:13:45,904 [INFO] self.tIndex: 12
+2025-06-05 11:13:45,904 [INFO] utc_time: [1744251120]
+2025-06-05 11:13:45,904 [INFO] freq_lgs_leo: [21.0, 4.0, 9.0, 15.0, 11.0, 17.0, 9.0, 2.0, 7.0, 10.0]
+2025-06-05 11:13:45,905 [INFO] === Next Observation === {'utc_time': array([1744251120], dtype=int64), 'freq_lgs_leo': array([21.,  4.,  9., 15., 11., 17.,  9.,  2.,  7., 10.])}
+2025-06-05 11:13:45,906 [INFO] === Reward === 371.5102883607835
+2025-06-05 11:13:45,907 [INFO] === Step Started ===
+2025-06-05 11:13:45,922 [INFO] === Action Taken === 16
+2025-06-05 11:13:45,923 [INFO] === Current LEO User ID === 7
+2025-06-05 11:13:45,923 [INFO] === Current Time Index === 12
+2025-06-05 11:13:45,923 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:13:47,172 [INFO] === Current State ===
+2025-06-05 11:13:47,178 [INFO] self.tIndex: 12
+2025-06-05 11:13:47,178 [INFO] utc_time: [1744251120]
+2025-06-05 11:13:47,178 [INFO] freq_lgs_leo: [21.0, 4.0, 9.0, 15.0, 11.0, 17.0, 9.0, 16.0, 7.0, 10.0]
+2025-06-05 11:13:47,179 [INFO] === Next Observation === {'utc_time': array([1744251120], dtype=int64), 'freq_lgs_leo': array([21.,  4.,  9., 15., 11., 17.,  9., 16.,  7., 10.])}
+2025-06-05 11:13:47,181 [INFO] === Reward === 371.5102883607835
+2025-06-05 11:13:47,195 [INFO] === Step Started ===
+2025-06-05 11:13:47,206 [INFO] === Action Taken === 20
+2025-06-05 11:13:47,208 [INFO] === Current LEO User ID === 8
+2025-06-05 11:13:47,208 [INFO] === Current Time Index === 12
+2025-06-05 11:13:47,208 [INFO] === Current LEO Satellite ID === 580
+2025-06-05 11:13:48,520 [INFO] === Current State ===
+2025-06-05 11:13:48,529 [INFO] self.tIndex: 12
+2025-06-05 11:13:48,530 [INFO] utc_time: [1744251120]
+2025-06-05 11:13:48,530 [INFO] freq_lgs_leo: [21.0, 4.0, 9.0, 15.0, 11.0, 17.0, 9.0, 16.0, 20.0, 10.0]
+2025-06-05 11:13:48,530 [INFO] === Next Observation === {'utc_time': array([1744251120], dtype=int64), 'freq_lgs_leo': array([21.,  4.,  9., 15., 11., 17.,  9., 16., 20., 10.])}
+2025-06-05 11:13:48,535 [INFO] === Reward === 371.5102883607835
+2025-06-05 11:13:48,536 [INFO] === Step Started ===
+2025-06-05 11:13:48,555 [INFO] === Action Taken === 16
+2025-06-05 11:13:48,555 [INFO] === Current LEO User ID === 9
+2025-06-05 11:13:48,555 [INFO] === Current Time Index === 12
+2025-06-05 11:13:48,555 [INFO] === Current LEO Satellite ID === 23
+2025-06-05 11:13:50,433 [INFO] === Current State ===
+2025-06-05 11:13:50,441 [INFO] self.tIndex: 12
+2025-06-05 11:13:50,441 [INFO] utc_time: [1744251120]
+2025-06-05 11:13:50,441 [INFO] freq_lgs_leo: [21.0, 4.0, 9.0, 15.0, 11.0, 17.0, 9.0, 16.0, 20.0, 16.0]
+2025-06-05 11:13:50,442 [INFO] === Next Observation === {'utc_time': array([1744251120], dtype=int64), 'freq_lgs_leo': array([21.,  4.,  9., 15., 11., 17.,  9., 16., 20., 16.])}
+2025-06-05 11:13:50,444 [INFO] === Reward === 371.5102883607835
+2025-06-05 11:13:50,446 [INFO] === Step Started ===
+2025-06-05 11:13:50,462 [INFO] === Action Taken === 19
+2025-06-05 11:13:50,463 [INFO] === Current LEO User ID === 0
+2025-06-05 11:13:50,463 [INFO] === Current Time Index === 13
+2025-06-05 11:13:50,463 [INFO] === Current LEO Satellite ID === 23
+2025-06-05 11:13:51,949 [INFO] === Current State ===
+2025-06-05 11:13:51,967 [INFO] self.tIndex: 13
+2025-06-05 11:13:51,967 [INFO] utc_time: [1744251180]
+2025-06-05 11:13:51,967 [INFO] freq_lgs_leo: [19.0, 17.0, 1.0, 22.0, 15.0, 10.0, 11.0, 4.0, 7.0, 9.0]
+2025-06-05 11:13:51,968 [INFO] === Next Observation === {'utc_time': array([1744251180], dtype=int64), 'freq_lgs_leo': array([19., 17.,  1., 22., 15., 10., 11.,  4.,  7.,  9.])}
+2025-06-05 11:13:51,973 [INFO] === Reward === 379.0785600907835
+2025-06-05 11:13:51,975 [INFO] === Step Started ===
+2025-06-05 11:13:52,004 [INFO] === Action Taken === 8
+2025-06-05 11:13:52,004 [INFO] === Current LEO User ID === 1
+2025-06-05 11:13:52,004 [INFO] === Current Time Index === 13
+2025-06-05 11:13:52,005 [INFO] === Current LEO Satellite ID === 576
+2025-06-05 11:13:53,515 [INFO] === Current State ===
+2025-06-05 11:13:53,523 [INFO] self.tIndex: 13
+2025-06-05 11:13:53,523 [INFO] utc_time: [1744251180]
+2025-06-05 11:13:53,523 [INFO] freq_lgs_leo: [19.0, 8.0, 1.0, 22.0, 15.0, 10.0, 11.0, 4.0, 7.0, 9.0]
+2025-06-05 11:13:53,523 [INFO] === Next Observation === {'utc_time': array([1744251180], dtype=int64), 'freq_lgs_leo': array([19.,  8.,  1., 22., 15., 10., 11.,  4.,  7.,  9.])}
+2025-06-05 11:13:53,524 [INFO] === Reward === 379.0785600907835
+2025-06-05 11:13:53,536 [INFO] === Step Started ===
+2025-06-05 11:13:53,548 [INFO] === Action Taken === 3
+2025-06-05 11:13:53,548 [INFO] === Current LEO User ID === 2
+2025-06-05 11:13:53,548 [INFO] === Current Time Index === 13
+2025-06-05 11:13:53,548 [INFO] === Current LEO Satellite ID === 22
+2025-06-05 11:13:54,650 [INFO] === Current State ===
+2025-06-05 11:13:54,658 [INFO] self.tIndex: 13
+2025-06-05 11:13:54,658 [INFO] utc_time: [1744251180]
+2025-06-05 11:13:54,658 [INFO] freq_lgs_leo: [19.0, 8.0, 3.0, 22.0, 15.0, 10.0, 11.0, 4.0, 7.0, 9.0]
+2025-06-05 11:13:54,659 [INFO] === Next Observation === {'utc_time': array([1744251180], dtype=int64), 'freq_lgs_leo': array([19.,  8.,  3., 22., 15., 10., 11.,  4.,  7.,  9.])}
+2025-06-05 11:13:54,661 [INFO] === Reward === 379.0785600907835
+2025-06-05 11:13:54,662 [INFO] === Step Started ===
+2025-06-05 11:13:54,682 [INFO] === Action Taken === 17
+2025-06-05 11:13:54,682 [INFO] === Current LEO User ID === 3
+2025-06-05 11:13:54,682 [INFO] === Current Time Index === 13
+2025-06-05 11:13:54,682 [INFO] === Current LEO Satellite ID === 479
+2025-06-05 11:13:55,700 [INFO] === Current State ===
+2025-06-05 11:13:55,707 [INFO] self.tIndex: 13
+2025-06-05 11:13:55,708 [INFO] utc_time: [1744251180]
+2025-06-05 11:13:55,708 [INFO] freq_lgs_leo: [19.0, 8.0, 3.0, 17.0, 15.0, 10.0, 11.0, 4.0, 7.0, 9.0]
+2025-06-05 11:13:55,708 [INFO] === Next Observation === {'utc_time': array([1744251180], dtype=int64), 'freq_lgs_leo': array([19.,  8.,  3., 17., 15., 10., 11.,  4.,  7.,  9.])}
+2025-06-05 11:13:55,710 [INFO] === Reward === 379.0785600907835
+2025-06-05 11:13:55,710 [INFO] === Step Started ===
+2025-06-05 11:13:55,724 [INFO] === Action Taken === 14
+2025-06-05 11:13:55,724 [INFO] === Current LEO User ID === 4
+2025-06-05 11:13:55,724 [INFO] === Current Time Index === 13
+2025-06-05 11:13:55,724 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:13:56,835 [INFO] === Current State ===
+2025-06-05 11:13:56,841 [INFO] self.tIndex: 13
+2025-06-05 11:13:56,843 [INFO] utc_time: [1744251180]
+2025-06-05 11:13:56,843 [INFO] freq_lgs_leo: [19.0, 8.0, 3.0, 17.0, 14.0, 10.0, 11.0, 4.0, 7.0, 9.0]
+2025-06-05 11:13:56,843 [INFO] === Next Observation === {'utc_time': array([1744251180], dtype=int64), 'freq_lgs_leo': array([19.,  8.,  3., 17., 14., 10., 11.,  4.,  7.,  9.])}
+2025-06-05 11:13:56,845 [INFO] === Reward === 379.0785600907835
+2025-06-05 11:13:56,845 [INFO] === Step Started ===
+2025-06-05 11:13:56,858 [INFO] === Action Taken === 2
+2025-06-05 11:13:56,858 [INFO] === Current LEO User ID === 5
+2025-06-05 11:13:56,858 [INFO] === Current Time Index === 13
+2025-06-05 11:13:56,858 [INFO] === Current LEO Satellite ID === 575
+2025-06-05 11:13:57,953 [INFO] === Current State ===
+2025-06-05 11:13:57,964 [INFO] self.tIndex: 13
+2025-06-05 11:13:57,964 [INFO] utc_time: [1744251180]
+2025-06-05 11:13:57,964 [INFO] freq_lgs_leo: [19.0, 8.0, 3.0, 17.0, 14.0, 2.0, 11.0, 4.0, 7.0, 9.0]
+2025-06-05 11:13:57,965 [INFO] === Next Observation === {'utc_time': array([1744251180], dtype=int64), 'freq_lgs_leo': array([19.,  8.,  3., 17., 14.,  2., 11.,  4.,  7.,  9.])}
+2025-06-05 11:13:57,967 [INFO] === Reward === 379.0785600907835
+2025-06-05 11:13:57,977 [INFO] === Step Started ===
+2025-06-05 11:13:57,993 [INFO] === Action Taken === 22
+2025-06-05 11:13:57,993 [INFO] === Current LEO User ID === 6
+2025-06-05 11:13:57,994 [INFO] === Current Time Index === 13
+2025-06-05 11:13:57,994 [INFO] === Current LEO Satellite ID === 531
+2025-06-05 11:13:59,036 [INFO] === Current State ===
+2025-06-05 11:13:59,046 [INFO] self.tIndex: 13
+2025-06-05 11:13:59,046 [INFO] utc_time: [1744251180]
+2025-06-05 11:13:59,046 [INFO] freq_lgs_leo: [19.0, 8.0, 3.0, 17.0, 14.0, 2.0, 22.0, 4.0, 7.0, 9.0]
+2025-06-05 11:13:59,046 [INFO] === Next Observation === {'utc_time': array([1744251180], dtype=int64), 'freq_lgs_leo': array([19.,  8.,  3., 17., 14.,  2., 22.,  4.,  7.,  9.])}
+2025-06-05 11:13:59,049 [INFO] === Reward === 379.0785600907835
+2025-06-05 11:13:59,050 [INFO] === Step Started ===
+2025-06-05 11:13:59,064 [INFO] === Action Taken === 5
+2025-06-05 11:13:59,064 [INFO] === Current LEO User ID === 7
+2025-06-05 11:13:59,064 [INFO] === Current Time Index === 13
+2025-06-05 11:13:59,064 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:14:00,129 [INFO] === Current State ===
+2025-06-05 11:14:00,144 [INFO] self.tIndex: 13
+2025-06-05 11:14:00,144 [INFO] utc_time: [1744251180]
+2025-06-05 11:14:00,144 [INFO] freq_lgs_leo: [19.0, 8.0, 3.0, 17.0, 14.0, 2.0, 22.0, 5.0, 7.0, 9.0]
+2025-06-05 11:14:00,144 [INFO] === Next Observation === {'utc_time': array([1744251180], dtype=int64), 'freq_lgs_leo': array([19.,  8.,  3., 17., 14.,  2., 22.,  5.,  7.,  9.])}
+2025-06-05 11:14:00,146 [INFO] === Reward === 379.0785600907835
+2025-06-05 11:14:00,162 [INFO] === Step Started ===
+2025-06-05 11:14:00,177 [INFO] === Action Taken === 22
+2025-06-05 11:14:00,177 [INFO] === Current LEO User ID === 8
+2025-06-05 11:14:00,177 [INFO] === Current Time Index === 13
+2025-06-05 11:14:00,177 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:14:01,208 [INFO] === Current State ===
+2025-06-05 11:14:01,220 [INFO] self.tIndex: 13
+2025-06-05 11:14:01,221 [INFO] utc_time: [1744251180]
+2025-06-05 11:14:01,221 [INFO] freq_lgs_leo: [19.0, 8.0, 3.0, 17.0, 14.0, 2.0, 22.0, 5.0, 22.0, 9.0]
+2025-06-05 11:14:01,221 [INFO] === Next Observation === {'utc_time': array([1744251180], dtype=int64), 'freq_lgs_leo': array([19.,  8.,  3., 17., 14.,  2., 22.,  5., 22.,  9.])}
+2025-06-05 11:14:01,224 [INFO] === Reward === 379.0785600907835
+2025-06-05 11:14:01,225 [INFO] === Step Started ===
+2025-06-05 11:14:01,242 [INFO] === Action Taken === 13
+2025-06-05 11:14:01,242 [INFO] === Current LEO User ID === 9
+2025-06-05 11:14:01,242 [INFO] === Current Time Index === 13
+2025-06-05 11:14:01,242 [INFO] === Current LEO Satellite ID === 22
+2025-06-05 11:14:02,312 [INFO] === Current State ===
+2025-06-05 11:14:02,317 [INFO] self.tIndex: 13
+2025-06-05 11:14:02,317 [INFO] utc_time: [1744251180]
+2025-06-05 11:14:02,317 [INFO] freq_lgs_leo: [19.0, 8.0, 3.0, 17.0, 14.0, 2.0, 22.0, 5.0, 22.0, 13.0]
+2025-06-05 11:14:02,317 [INFO] === Next Observation === {'utc_time': array([1744251180], dtype=int64), 'freq_lgs_leo': array([19.,  8.,  3., 17., 14.,  2., 22.,  5., 22., 13.])}
+2025-06-05 11:14:02,321 [INFO] === Reward === 379.0785600907835
+2025-06-05 11:14:02,334 [INFO] === Step Started ===
+2025-06-05 11:14:02,346 [INFO] === Action Taken === 2
+2025-06-05 11:14:02,346 [INFO] === Current LEO User ID === 0
+2025-06-05 11:14:02,346 [INFO] === Current Time Index === 14
+2025-06-05 11:14:02,346 [INFO] === Current LEO Satellite ID === 576
+2025-06-05 11:14:03,396 [INFO] === Current State ===
+2025-06-05 11:14:03,403 [INFO] self.tIndex: 14
+2025-06-05 11:14:03,403 [INFO] utc_time: [1744251240]
+2025-06-05 11:14:03,403 [INFO] freq_lgs_leo: [2.0, 4.0, 13.0, 21.0, 22.0, 13.0, 24.0, 7.0, 7.0, 10.0]
+2025-06-05 11:14:03,403 [INFO] === Next Observation === {'utc_time': array([1744251240], dtype=int64), 'freq_lgs_leo': array([ 2.,  4., 13., 21., 22., 13., 24.,  7.,  7., 10.])}
+2025-06-05 11:14:03,405 [INFO] === Reward === 382.731487995047
+2025-06-05 11:14:03,406 [INFO] === Step Started ===
+2025-06-05 11:14:03,417 [INFO] === Action Taken === 4
+2025-06-05 11:14:03,417 [INFO] === Current LEO User ID === 1
+2025-06-05 11:14:03,417 [INFO] === Current Time Index === 14
+2025-06-05 11:14:03,417 [INFO] === Current LEO Satellite ID === 23
+2025-06-05 11:14:04,443 [INFO] === Current State ===
+2025-06-05 11:14:04,451 [INFO] self.tIndex: 14
+2025-06-05 11:14:04,451 [INFO] utc_time: [1744251240]
+2025-06-05 11:14:04,451 [INFO] freq_lgs_leo: [2.0, 4.0, 13.0, 21.0, 22.0, 13.0, 24.0, 7.0, 7.0, 10.0]
+2025-06-05 11:14:04,451 [INFO] === Next Observation === {'utc_time': array([1744251240], dtype=int64), 'freq_lgs_leo': array([ 2.,  4., 13., 21., 22., 13., 24.,  7.,  7., 10.])}
+2025-06-05 11:14:04,453 [INFO] === Reward === 382.731487995047
+2025-06-05 11:14:04,454 [INFO] === Step Started ===
+2025-06-05 11:14:04,464 [INFO] === Action Taken === 20
+2025-06-05 11:14:04,464 [INFO] === Current LEO User ID === 2
+2025-06-05 11:14:04,464 [INFO] === Current Time Index === 14
+2025-06-05 11:14:04,464 [INFO] === Current LEO Satellite ID === 22
+2025-06-05 11:14:05,486 [INFO] === Current State ===
+2025-06-05 11:14:05,492 [INFO] self.tIndex: 14
+2025-06-05 11:14:05,492 [INFO] utc_time: [1744251240]
+2025-06-05 11:14:05,492 [INFO] freq_lgs_leo: [2.0, 4.0, 20.0, 21.0, 22.0, 13.0, 24.0, 7.0, 7.0, 10.0]
+2025-06-05 11:14:05,493 [INFO] === Next Observation === {'utc_time': array([1744251240], dtype=int64), 'freq_lgs_leo': array([ 2.,  4., 20., 21., 22., 13., 24.,  7.,  7., 10.])}
+2025-06-05 11:14:05,494 [INFO] === Reward === 382.731487995047
+2025-06-05 11:14:05,496 [INFO] === Step Started ===
+2025-06-05 11:14:05,508 [INFO] === Action Taken === 0
+2025-06-05 11:14:05,508 [INFO] === Current LEO User ID === 3
+2025-06-05 11:14:05,508 [INFO] === Current Time Index === 14
+2025-06-05 11:14:05,508 [INFO] === Current LEO Satellite ID === 478
+2025-06-05 11:14:06,597 [INFO] === Current State ===
+2025-06-05 11:14:06,605 [INFO] self.tIndex: 14
+2025-06-05 11:14:06,605 [INFO] utc_time: [1744251240]
+2025-06-05 11:14:06,605 [INFO] freq_lgs_leo: [2.0, 4.0, 20.0, 0.0, 22.0, 13.0, 24.0, 7.0, 7.0, 10.0]
+2025-06-05 11:14:06,605 [INFO] === Next Observation === {'utc_time': array([1744251240], dtype=int64), 'freq_lgs_leo': array([ 2.,  4., 20.,  0., 22., 13., 24.,  7.,  7., 10.])}
+2025-06-05 11:14:06,607 [INFO] === Reward === 382.731487995047
+2025-06-05 11:14:06,615 [INFO] === Step Started ===
+2025-06-05 11:14:06,627 [INFO] === Action Taken === 3
+2025-06-05 11:14:06,627 [INFO] === Current LEO User ID === 4
+2025-06-05 11:14:06,627 [INFO] === Current Time Index === 14
+2025-06-05 11:14:06,627 [INFO] === Current LEO Satellite ID === 576
+2025-06-05 11:14:07,820 [INFO] === Current State ===
+2025-06-05 11:14:07,833 [INFO] self.tIndex: 14
+2025-06-05 11:14:07,833 [INFO] utc_time: [1744251240]
+2025-06-05 11:14:07,833 [INFO] freq_lgs_leo: [2.0, 4.0, 20.0, 0.0, 3.0, 13.0, 24.0, 7.0, 7.0, 10.0]
+2025-06-05 11:14:07,834 [INFO] === Next Observation === {'utc_time': array([1744251240], dtype=int64), 'freq_lgs_leo': array([ 2.,  4., 20.,  0.,  3., 13., 24.,  7.,  7., 10.])}
+2025-06-05 11:14:07,838 [INFO] === Reward === 382.731487995047
+2025-06-05 11:14:07,846 [INFO] === Step Started ===
+2025-06-05 11:14:07,864 [INFO] === Action Taken === 22
+2025-06-05 11:14:07,864 [INFO] === Current LEO User ID === 5
+2025-06-05 11:14:07,864 [INFO] === Current Time Index === 14
+2025-06-05 11:14:07,864 [INFO] === Current LEO Satellite ID === 576
+2025-06-05 11:14:09,384 [INFO] === Current State ===
+2025-06-05 11:14:09,397 [INFO] self.tIndex: 14
+2025-06-05 11:14:09,397 [INFO] utc_time: [1744251240]
+2025-06-05 11:14:09,397 [INFO] freq_lgs_leo: [2.0, 4.0, 20.0, 0.0, 3.0, 22.0, 24.0, 7.0, 7.0, 10.0]
+2025-06-05 11:14:09,397 [INFO] === Next Observation === {'utc_time': array([1744251240], dtype=int64), 'freq_lgs_leo': array([ 2.,  4., 20.,  0.,  3., 22., 24.,  7.,  7., 10.])}
+2025-06-05 11:14:09,401 [INFO] === Reward === 382.731487995047
+2025-06-05 11:14:09,403 [INFO] === Step Started ===
+2025-06-05 11:14:09,430 [INFO] === Action Taken === 15
+2025-06-05 11:14:09,430 [INFO] === Current LEO User ID === 6
+2025-06-05 11:14:09,431 [INFO] === Current Time Index === 14
+2025-06-05 11:14:09,431 [INFO] === Current LEO Satellite ID === 530
+2025-06-05 11:14:10,716 [INFO] === Current State ===
+2025-06-05 11:14:10,724 [INFO] self.tIndex: 14
+2025-06-05 11:14:10,724 [INFO] utc_time: [1744251240]
+2025-06-05 11:14:10,724 [INFO] freq_lgs_leo: [2.0, 4.0, 20.0, 0.0, 3.0, 22.0, 15.0, 7.0, 7.0, 10.0]
+2025-06-05 11:14:10,724 [INFO] === Next Observation === {'utc_time': array([1744251240], dtype=int64), 'freq_lgs_leo': array([ 2.,  4., 20.,  0.,  3., 22., 15.,  7.,  7., 10.])}
+2025-06-05 11:14:10,726 [INFO] === Reward === 382.731487995047
+2025-06-05 11:14:10,728 [INFO] === Step Started ===
+2025-06-05 11:14:10,748 [INFO] === Action Taken === 15
+2025-06-05 11:14:10,748 [INFO] === Current LEO User ID === 7
+2025-06-05 11:14:10,748 [INFO] === Current Time Index === 14
+2025-06-05 11:14:10,748 [INFO] === Current LEO Satellite ID === 23
+2025-06-05 11:14:11,888 [INFO] === Current State ===
+2025-06-05 11:14:11,895 [INFO] self.tIndex: 14
+2025-06-05 11:14:11,895 [INFO] utc_time: [1744251240]
+2025-06-05 11:14:11,895 [INFO] freq_lgs_leo: [2.0, 4.0, 20.0, 0.0, 3.0, 22.0, 15.0, 15.0, 7.0, 10.0]
+2025-06-05 11:14:11,896 [INFO] === Next Observation === {'utc_time': array([1744251240], dtype=int64), 'freq_lgs_leo': array([ 2.,  4., 20.,  0.,  3., 22., 15., 15.,  7., 10.])}
+2025-06-05 11:14:11,898 [INFO] === Reward === 382.731487995047
+2025-06-05 11:14:11,909 [INFO] === Step Started ===
+2025-06-05 11:14:11,924 [INFO] === Action Taken === 4
+2025-06-05 11:14:11,924 [INFO] === Current LEO User ID === 8
+2025-06-05 11:14:11,924 [INFO] === Current Time Index === 14
+2025-06-05 11:14:11,924 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:14:13,039 [INFO] === Current State ===
+2025-06-05 11:14:13,045 [INFO] self.tIndex: 14
+2025-06-05 11:14:13,045 [INFO] utc_time: [1744251240]
+2025-06-05 11:14:13,045 [INFO] freq_lgs_leo: [2.0, 4.0, 20.0, 0.0, 3.0, 22.0, 15.0, 15.0, 4.0, 10.0]
+2025-06-05 11:14:13,045 [INFO] === Next Observation === {'utc_time': array([1744251240], dtype=int64), 'freq_lgs_leo': array([ 2.,  4., 20.,  0.,  3., 22., 15., 15.,  4., 10.])}
+2025-06-05 11:14:13,047 [INFO] === Reward === 382.731487995047
+2025-06-05 11:14:13,048 [INFO] === Step Started ===
+2025-06-05 11:14:13,063 [INFO] === Action Taken === 19
+2025-06-05 11:14:13,063 [INFO] === Current LEO User ID === 9
+2025-06-05 11:14:13,063 [INFO] === Current Time Index === 14
+2025-06-05 11:14:13,063 [INFO] === Current LEO Satellite ID === 23
+2025-06-05 11:14:14,246 [INFO] === Current State ===
+2025-06-05 11:14:14,253 [INFO] self.tIndex: 14
+2025-06-05 11:14:14,253 [INFO] utc_time: [1744251240]
+2025-06-05 11:14:14,253 [INFO] freq_lgs_leo: [2.0, 4.0, 20.0, 0.0, 3.0, 22.0, 15.0, 15.0, 4.0, 19.0]
+2025-06-05 11:14:14,254 [INFO] === Next Observation === {'utc_time': array([1744251240], dtype=int64), 'freq_lgs_leo': array([ 2.,  4., 20.,  0.,  3., 22., 15., 15.,  4., 19.])}
+2025-06-05 11:14:14,255 [INFO] === Reward === 382.731487995047
+2025-06-05 11:14:14,257 [INFO] === Step Started ===
+2025-06-05 11:14:14,270 [INFO] === Action Taken === 6
+2025-06-05 11:14:14,270 [INFO] === Current LEO User ID === 0
+2025-06-05 11:14:14,270 [INFO] === Current Time Index === 15
+2025-06-05 11:14:14,270 [INFO] === Current LEO Satellite ID === 22
+2025-06-05 11:14:15,344 [INFO] === Current State ===
+2025-06-05 11:14:15,350 [INFO] self.tIndex: 15
+2025-06-05 11:14:15,350 [INFO] utc_time: [1744251300]
+2025-06-05 11:14:15,350 [INFO] freq_lgs_leo: [6.0, 10.0, 10.0, 7.0, 11.0, 24.0, 13.0, 24.0, 20.0, 8.0]
+2025-06-05 11:14:15,350 [INFO] === Next Observation === {'utc_time': array([1744251300], dtype=int64), 'freq_lgs_leo': array([ 6., 10., 10.,  7., 11., 24., 13., 24., 20.,  8.])}
+2025-06-05 11:14:15,352 [INFO] === Reward === 371.37980166449535
+2025-06-05 11:14:15,354 [INFO] === Step Started ===
+2025-06-05 11:14:15,369 [INFO] === Action Taken === 9
+2025-06-05 11:14:15,369 [INFO] === Current LEO User ID === 1
+2025-06-05 11:14:15,370 [INFO] === Current Time Index === 15
+2025-06-05 11:14:15,370 [INFO] === Current LEO Satellite ID === 576
+2025-06-05 11:14:16,401 [INFO] === Current State ===
+2025-06-05 11:14:16,408 [INFO] self.tIndex: 15
+2025-06-05 11:14:16,408 [INFO] utc_time: [1744251300]
+2025-06-05 11:14:16,408 [INFO] freq_lgs_leo: [6.0, 9.0, 10.0, 7.0, 11.0, 24.0, 13.0, 24.0, 20.0, 8.0]
+2025-06-05 11:14:16,408 [INFO] === Next Observation === {'utc_time': array([1744251300], dtype=int64), 'freq_lgs_leo': array([ 6.,  9., 10.,  7., 11., 24., 13., 24., 20.,  8.])}
+2025-06-05 11:14:16,410 [INFO] === Reward === 371.37980166449535
+2025-06-05 11:14:16,421 [INFO] === Step Started ===
+2025-06-05 11:14:16,432 [INFO] === Action Taken === 13
+2025-06-05 11:14:16,432 [INFO] === Current LEO User ID === 2
+2025-06-05 11:14:16,432 [INFO] === Current Time Index === 15
+2025-06-05 11:14:16,432 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:14:17,446 [INFO] === Current State ===
+2025-06-05 11:14:17,452 [INFO] self.tIndex: 15
+2025-06-05 11:14:17,452 [INFO] utc_time: [1744251300]
+2025-06-05 11:14:17,452 [INFO] freq_lgs_leo: [6.0, 9.0, 13.0, 7.0, 11.0, 24.0, 13.0, 24.0, 20.0, 8.0]
+2025-06-05 11:14:17,452 [INFO] === Next Observation === {'utc_time': array([1744251300], dtype=int64), 'freq_lgs_leo': array([ 6.,  9., 13.,  7., 11., 24., 13., 24., 20.,  8.])}
+2025-06-05 11:14:17,454 [INFO] === Reward === 371.37980166449535
+2025-06-05 11:14:17,455 [INFO] === Step Started ===
+2025-06-05 11:14:17,468 [INFO] === Action Taken === 11
+2025-06-05 11:14:17,469 [INFO] === Current LEO User ID === 3
+2025-06-05 11:14:17,469 [INFO] === Current Time Index === 15
+2025-06-05 11:14:17,469 [INFO] === Current LEO Satellite ID === 477
+2025-06-05 11:14:18,515 [INFO] === Current State ===
+2025-06-05 11:14:18,521 [INFO] self.tIndex: 15
+2025-06-05 11:14:18,521 [INFO] utc_time: [1744251300]
+2025-06-05 11:14:18,521 [INFO] freq_lgs_leo: [6.0, 9.0, 13.0, 11.0, 11.0, 24.0, 13.0, 24.0, 20.0, 8.0]
+2025-06-05 11:14:18,521 [INFO] === Next Observation === {'utc_time': array([1744251300], dtype=int64), 'freq_lgs_leo': array([ 6.,  9., 13., 11., 11., 24., 13., 24., 20.,  8.])}
+2025-06-05 11:14:18,523 [INFO] === Reward === 371.37980166449535
+2025-06-05 11:14:18,524 [INFO] === Step Started ===
+2025-06-05 11:14:18,534 [INFO] === Action Taken === 0
+2025-06-05 11:14:18,534 [INFO] === Current LEO User ID === 4
+2025-06-05 11:14:18,535 [INFO] === Current Time Index === 15
+2025-06-05 11:14:18,535 [INFO] === Current LEO Satellite ID === 576
+2025-06-05 11:14:19,668 [INFO] === Current State ===
+2025-06-05 11:14:19,675 [INFO] self.tIndex: 15
+2025-06-05 11:14:19,675 [INFO] utc_time: [1744251300]
+2025-06-05 11:14:19,675 [INFO] freq_lgs_leo: [6.0, 9.0, 13.0, 11.0, 0.0, 24.0, 13.0, 24.0, 20.0, 8.0]
+2025-06-05 11:14:19,676 [INFO] === Next Observation === {'utc_time': array([1744251300], dtype=int64), 'freq_lgs_leo': array([ 6.,  9., 13., 11.,  0., 24., 13., 24., 20.,  8.])}
+2025-06-05 11:14:19,678 [INFO] === Reward === 371.37980166449535
+2025-06-05 11:14:19,679 [INFO] === Step Started ===
+2025-06-05 11:14:19,692 [INFO] === Action Taken === 16
+2025-06-05 11:14:19,692 [INFO] === Current LEO User ID === 5
+2025-06-05 11:14:19,692 [INFO] === Current Time Index === 15
+2025-06-05 11:14:19,692 [INFO] === Current LEO Satellite ID === 24
+2025-06-05 11:14:20,844 [INFO] === Current State ===
+2025-06-05 11:14:20,850 [INFO] self.tIndex: 15
+2025-06-05 11:14:20,850 [INFO] utc_time: [1744251300]
+2025-06-05 11:14:20,850 [INFO] freq_lgs_leo: [6.0, 9.0, 13.0, 11.0, 0.0, 16.0, 13.0, 24.0, 20.0, 8.0]
+2025-06-05 11:14:20,850 [INFO] === Next Observation === {'utc_time': array([1744251300], dtype=int64), 'freq_lgs_leo': array([ 6.,  9., 13., 11.,  0., 16., 13., 24., 20.,  8.])}
+2025-06-05 11:14:20,853 [INFO] === Reward === 371.37980166449535
+2025-06-05 11:14:20,873 [INFO] === Step Started ===
+2025-06-05 11:14:20,886 [INFO] === Action Taken === 13
+2025-06-05 11:14:20,886 [INFO] === Current LEO User ID === 6
+2025-06-05 11:14:20,886 [INFO] === Current Time Index === 15
+2025-06-05 11:14:20,886 [INFO] === Current LEO Satellite ID === 530
+2025-06-05 11:14:21,957 [INFO] === Current State ===
+2025-06-05 11:14:21,964 [INFO] self.tIndex: 15
+2025-06-05 11:14:21,964 [INFO] utc_time: [1744251300]
+2025-06-05 11:14:21,964 [INFO] freq_lgs_leo: [6.0, 9.0, 13.0, 11.0, 0.0, 16.0, 13.0, 24.0, 20.0, 8.0]
+2025-06-05 11:14:21,964 [INFO] === Next Observation === {'utc_time': array([1744251300], dtype=int64), 'freq_lgs_leo': array([ 6.,  9., 13., 11.,  0., 16., 13., 24., 20.,  8.])}
+2025-06-05 11:14:21,967 [INFO] === Reward === 371.37980166449535
+2025-06-05 11:14:21,967 [INFO] === Step Started ===
+2025-06-05 11:14:21,979 [INFO] === Action Taken === 22
+2025-06-05 11:14:21,979 [INFO] === Current LEO User ID === 7
+2025-06-05 11:14:21,979 [INFO] === Current Time Index === 15
+2025-06-05 11:14:21,979 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:14:23,018 [INFO] === Current State ===
+2025-06-05 11:14:23,024 [INFO] self.tIndex: 15
+2025-06-05 11:14:23,024 [INFO] utc_time: [1744251300]
+2025-06-05 11:14:23,024 [INFO] freq_lgs_leo: [6.0, 9.0, 13.0, 11.0, 0.0, 16.0, 13.0, 22.0, 20.0, 8.0]
+2025-06-05 11:14:23,025 [INFO] === Next Observation === {'utc_time': array([1744251300], dtype=int64), 'freq_lgs_leo': array([ 6.,  9., 13., 11.,  0., 16., 13., 22., 20.,  8.])}
+2025-06-05 11:14:23,026 [INFO] === Reward === 371.37980166449535
+2025-06-05 11:14:23,027 [INFO] === Step Started ===
+2025-06-05 11:14:23,037 [INFO] === Action Taken === 0
+2025-06-05 11:14:23,037 [INFO] === Current LEO User ID === 8
+2025-06-05 11:14:23,037 [INFO] === Current Time Index === 15
+2025-06-05 11:14:23,038 [INFO] === Current LEO Satellite ID === 578
+2025-06-05 11:14:24,032 [INFO] === Current State ===
+2025-06-05 11:14:24,038 [INFO] self.tIndex: 15
+2025-06-05 11:14:24,038 [INFO] utc_time: [1744251300]
+2025-06-05 11:14:24,039 [INFO] freq_lgs_leo: [6.0, 9.0, 13.0, 11.0, 0.0, 16.0, 13.0, 22.0, 0.0, 8.0]
+2025-06-05 11:14:24,039 [INFO] === Next Observation === {'utc_time': array([1744251300], dtype=int64), 'freq_lgs_leo': array([ 6.,  9., 13., 11.,  0., 16., 13., 22.,  0.,  8.])}
+2025-06-05 11:14:24,040 [INFO] === Reward === 371.37980166449535
+2025-06-05 11:14:24,041 [INFO] === Step Started ===
+2025-06-05 11:14:24,052 [INFO] === Action Taken === 2
+2025-06-05 11:14:24,052 [INFO] === Current LEO User ID === 9
+2025-06-05 11:14:24,052 [INFO] === Current Time Index === 15
+2025-06-05 11:14:24,052 [INFO] === Current LEO Satellite ID === 21
+2025-06-05 11:14:25,062 [INFO] === Current State ===
+2025-06-05 11:14:25,138 [INFO] self.tIndex: 15
+2025-06-05 11:14:25,138 [INFO] utc_time: [1744251300]
+2025-06-05 11:14:25,138 [INFO] freq_lgs_leo: [6.0, 9.0, 13.0, 11.0, 0.0, 16.0, 13.0, 22.0, 0.0, 2.0]
+2025-06-05 11:14:25,139 [INFO] === Next Observation === {'utc_time': array([1744251300], dtype=int64), 'freq_lgs_leo': array([ 6.,  9., 13., 11.,  0., 16., 13., 22.,  0.,  2.])}
+2025-06-05 11:14:25,141 [INFO] === Reward === 371.37980166449535
+2025-06-05 11:14:25,157 [INFO] === Step Started ===
+2025-06-05 11:14:25,166 [INFO] === Action Taken === 22
+2025-06-05 11:14:25,166 [INFO] === Current LEO User ID === 0
+2025-06-05 11:14:25,166 [INFO] === Current Time Index === 16
+2025-06-05 11:14:25,166 [INFO] === Current LEO Satellite ID === 22
+2025-06-05 11:14:26,164 [INFO] === Current State ===
+2025-06-05 11:14:26,171 [INFO] self.tIndex: 16
+2025-06-05 11:14:26,171 [INFO] utc_time: [1744251360]
+2025-06-05 11:14:26,171 [INFO] freq_lgs_leo: [22.0, 17.0, 11.0, 14.0, 15.0, 20.0, 8.0, 17.0, 15.0, 12.0]
+2025-06-05 11:14:26,172 [INFO] === Next Observation === {'utc_time': array([1744251360], dtype=int64), 'freq_lgs_leo': array([22., 17., 11., 14., 15., 20.,  8., 17., 15., 12.])}
+2025-06-05 11:14:26,173 [INFO] === Reward === 374.71516167127754
+2025-06-05 11:14:26,173 [INFO] === Step Started ===
+2025-06-05 11:14:26,184 [INFO] === Action Taken === 14
+2025-06-05 11:14:26,184 [INFO] === Current LEO User ID === 1
+2025-06-05 11:14:26,184 [INFO] === Current Time Index === 16
+2025-06-05 11:14:26,184 [INFO] === Current LEO Satellite ID === 575
+2025-06-05 11:14:27,245 [INFO] === Current State ===
+2025-06-05 11:14:27,250 [INFO] self.tIndex: 16
+2025-06-05 11:14:27,250 [INFO] utc_time: [1744251360]
+2025-06-05 11:14:27,251 [INFO] freq_lgs_leo: [22.0, 14.0, 11.0, 14.0, 15.0, 20.0, 8.0, 17.0, 15.0, 12.0]
+2025-06-05 11:14:27,251 [INFO] === Next Observation === {'utc_time': array([1744251360], dtype=int64), 'freq_lgs_leo': array([22., 14., 11., 14., 15., 20.,  8., 17., 15., 12.])}
+2025-06-05 11:14:27,252 [INFO] === Reward === 374.71516167127754
+2025-06-05 11:14:27,253 [INFO] === Step Started ===
+2025-06-05 11:14:27,268 [INFO] === Action Taken === 17
+2025-06-05 11:14:27,268 [INFO] === Current LEO User ID === 2
+2025-06-05 11:14:27,268 [INFO] === Current Time Index === 16
+2025-06-05 11:14:27,268 [INFO] === Current LEO Satellite ID === 576
+2025-06-05 11:14:28,287 [INFO] === Current State ===
+2025-06-05 11:14:28,293 [INFO] self.tIndex: 16
+2025-06-05 11:14:28,293 [INFO] utc_time: [1744251360]
+2025-06-05 11:14:28,293 [INFO] freq_lgs_leo: [22.0, 14.0, 17.0, 14.0, 15.0, 20.0, 8.0, 17.0, 15.0, 12.0]
+2025-06-05 11:14:28,294 [INFO] === Next Observation === {'utc_time': array([1744251360], dtype=int64), 'freq_lgs_leo': array([22., 14., 17., 14., 15., 20.,  8., 17., 15., 12.])}
+2025-06-05 11:14:28,295 [INFO] === Reward === 374.71516167127754
+2025-06-05 11:14:28,296 [INFO] === Step Started ===
+2025-06-05 11:14:28,305 [INFO] === Action Taken === 17
+2025-06-05 11:14:28,305 [INFO] === Current LEO User ID === 3
+2025-06-05 11:14:28,305 [INFO] === Current Time Index === 16
+2025-06-05 11:14:28,305 [INFO] === Current LEO Satellite ID === 479
+2025-06-05 11:14:29,378 [INFO] === Current State ===
+2025-06-05 11:14:29,384 [INFO] self.tIndex: 16
+2025-06-05 11:14:29,384 [INFO] utc_time: [1744251360]
+2025-06-05 11:14:29,384 [INFO] freq_lgs_leo: [22.0, 14.0, 17.0, 17.0, 15.0, 20.0, 8.0, 17.0, 15.0, 12.0]
+2025-06-05 11:14:29,385 [INFO] === Next Observation === {'utc_time': array([1744251360], dtype=int64), 'freq_lgs_leo': array([22., 14., 17., 17., 15., 20.,  8., 17., 15., 12.])}
+2025-06-05 11:14:29,387 [INFO] === Reward === 374.71516167127754
+2025-06-05 11:14:29,397 [INFO] === Step Started ===
+2025-06-05 11:14:29,408 [INFO] === Action Taken === 8
+2025-06-05 11:14:29,408 [INFO] === Current LEO User ID === 4
+2025-06-05 11:14:29,408 [INFO] === Current Time Index === 16
+2025-06-05 11:14:29,408 [INFO] === Current LEO Satellite ID === 575
+2025-06-05 11:14:30,430 [INFO] === Current State ===
+2025-06-05 11:14:30,436 [INFO] self.tIndex: 16
+2025-06-05 11:14:30,436 [INFO] utc_time: [1744251360]
+2025-06-05 11:14:30,436 [INFO] freq_lgs_leo: [22.0, 14.0, 17.0, 17.0, 8.0, 20.0, 8.0, 17.0, 15.0, 12.0]
+2025-06-05 11:14:30,436 [INFO] === Next Observation === {'utc_time': array([1744251360], dtype=int64), 'freq_lgs_leo': array([22., 14., 17., 17.,  8., 20.,  8., 17., 15., 12.])}
+2025-06-05 11:14:30,438 [INFO] === Reward === 374.71516167127754
+2025-06-05 11:14:30,439 [INFO] === Step Started ===
+2025-06-05 11:14:30,450 [INFO] === Action Taken === 9
+2025-06-05 11:14:30,450 [INFO] === Current LEO User ID === 5
+2025-06-05 11:14:30,450 [INFO] === Current Time Index === 16
+2025-06-05 11:14:30,450 [INFO] === Current LEO Satellite ID === 574
+2025-06-05 11:14:31,405 [INFO] === Current State ===
+2025-06-05 11:14:31,413 [INFO] self.tIndex: 16
+2025-06-05 11:14:31,413 [INFO] utc_time: [1744251360]
+2025-06-05 11:14:31,413 [INFO] freq_lgs_leo: [22.0, 14.0, 17.0, 17.0, 8.0, 9.0, 8.0, 17.0, 15.0, 12.0]
+2025-06-05 11:14:31,413 [INFO] === Next Observation === {'utc_time': array([1744251360], dtype=int64), 'freq_lgs_leo': array([22., 14., 17., 17.,  8.,  9.,  8., 17., 15., 12.])}
+2025-06-05 11:14:31,415 [INFO] === Reward === 374.71516167127754
+2025-06-05 11:14:31,416 [INFO] === Step Started ===
+2025-06-05 11:14:31,426 [INFO] === Action Taken === 1
+2025-06-05 11:14:31,426 [INFO] === Current LEO User ID === 6
+2025-06-05 11:14:31,426 [INFO] === Current Time Index === 16
+2025-06-05 11:14:31,426 [INFO] === Current LEO Satellite ID === 530
+2025-06-05 11:14:32,401 [INFO] === Current State ===
+2025-06-05 11:14:32,408 [INFO] self.tIndex: 16
+2025-06-05 11:14:32,408 [INFO] utc_time: [1744251360]
+2025-06-05 11:14:32,408 [INFO] freq_lgs_leo: [22.0, 14.0, 17.0, 17.0, 8.0, 9.0, 1.0, 17.0, 15.0, 12.0]
+2025-06-05 11:14:32,409 [INFO] === Next Observation === {'utc_time': array([1744251360], dtype=int64), 'freq_lgs_leo': array([22., 14., 17., 17.,  8.,  9.,  1., 17., 15., 12.])}
+2025-06-05 11:14:32,411 [INFO] === Reward === 374.71516167127754
+2025-06-05 11:14:32,412 [INFO] === Step Started ===
+2025-06-05 11:14:32,421 [INFO] === Action Taken === 3
+2025-06-05 11:14:32,421 [INFO] === Current LEO User ID === 7
+2025-06-05 11:14:32,423 [INFO] === Current Time Index === 16
+2025-06-05 11:14:32,423 [INFO] === Current LEO Satellite ID === 22
+2025-06-05 11:14:33,432 [INFO] === Current State ===
+2025-06-05 11:14:33,438 [INFO] self.tIndex: 16
+2025-06-05 11:14:33,438 [INFO] utc_time: [1744251360]
+2025-06-05 11:14:33,438 [INFO] freq_lgs_leo: [22.0, 14.0, 17.0, 17.0, 8.0, 9.0, 1.0, 3.0, 15.0, 12.0]
+2025-06-05 11:14:33,439 [INFO] === Next Observation === {'utc_time': array([1744251360], dtype=int64), 'freq_lgs_leo': array([22., 14., 17., 17.,  8.,  9.,  1.,  3., 15., 12.])}
+2025-06-05 11:14:33,442 [INFO] === Reward === 374.71516167127754
+2025-06-05 11:14:33,453 [INFO] === Step Started ===
+2025-06-05 11:14:33,465 [INFO] === Action Taken === 20
+2025-06-05 11:14:33,465 [INFO] === Current LEO User ID === 8
+2025-06-05 11:14:33,465 [INFO] === Current Time Index === 16
+2025-06-05 11:14:33,465 [INFO] === Current LEO Satellite ID === 579
+2025-06-05 11:14:34,560 [INFO] === Current State ===
+2025-06-05 11:14:34,566 [INFO] self.tIndex: 16
+2025-06-05 11:14:34,566 [INFO] utc_time: [1744251360]
+2025-06-05 11:14:34,566 [INFO] freq_lgs_leo: [22.0, 14.0, 17.0, 17.0, 8.0, 9.0, 1.0, 3.0, 20.0, 12.0]
+2025-06-05 11:14:34,566 [INFO] === Next Observation === {'utc_time': array([1744251360], dtype=int64), 'freq_lgs_leo': array([22., 14., 17., 17.,  8.,  9.,  1.,  3., 20., 12.])}
+2025-06-05 11:14:34,568 [INFO] === Reward === 374.71516167127754
+2025-06-05 11:14:34,569 [INFO] === Step Started ===
+2025-06-05 11:14:34,580 [INFO] === Action Taken === 20
+2025-06-05 11:14:34,580 [INFO] === Current LEO User ID === 9
+2025-06-05 11:14:34,580 [INFO] === Current Time Index === 16
+2025-06-05 11:14:34,580 [INFO] === Current LEO Satellite ID === 22
+2025-06-05 11:14:35,594 [INFO] === Current State ===
+2025-06-05 11:14:35,602 [INFO] self.tIndex: 16
+2025-06-05 11:14:35,602 [INFO] utc_time: [1744251360]
+2025-06-05 11:14:35,602 [INFO] freq_lgs_leo: [22.0, 14.0, 17.0, 17.0, 8.0, 9.0, 1.0, 3.0, 20.0, 20.0]
+2025-06-05 11:14:35,602 [INFO] === Next Observation === {'utc_time': array([1744251360], dtype=int64), 'freq_lgs_leo': array([22., 14., 17., 17.,  8.,  9.,  1.,  3., 20., 20.])}
+2025-06-05 11:14:35,604 [INFO] === Reward === 374.71516167127754
+2025-06-05 11:14:35,605 [INFO] === Step Started ===
+2025-06-05 11:14:35,616 [INFO] === Action Taken === 13
+2025-06-05 11:14:35,616 [INFO] === Current LEO User ID === 0
+2025-06-05 11:14:35,616 [INFO] === Current Time Index === 17
+2025-06-05 11:14:35,617 [INFO] === Current LEO Satellite ID === 22
+2025-06-05 11:14:36,612 [INFO] === Current State ===
+2025-06-05 11:14:36,619 [INFO] self.tIndex: 17
+2025-06-05 11:14:36,619 [INFO] utc_time: [1744251420]
+2025-06-05 11:14:36,619 [INFO] freq_lgs_leo: [13.0, 25.0, 20.0, 5.0, 23.0, 18.0, 24.0, 3.0, 19.0, 25.0]
+2025-06-05 11:14:36,620 [INFO] === Next Observation === {'utc_time': array([1744251420], dtype=int64), 'freq_lgs_leo': array([13., 25., 20.,  5., 23., 18., 24.,  3., 19., 25.])}
+2025-06-05 11:14:36,622 [INFO] === Reward === 373.76938785647894
+2025-06-05 11:14:36,622 [INFO] === Step Started ===
+2025-06-05 11:14:36,632 [INFO] === Action Taken === 9
+2025-06-05 11:14:36,632 [INFO] === Current LEO User ID === 1
+2025-06-05 11:14:36,632 [INFO] === Current Time Index === 17
+2025-06-05 11:14:36,632 [INFO] === Current LEO Satellite ID === 573
+2025-06-05 11:14:37,708 [INFO] === Current State ===
+2025-06-05 11:14:37,720 [INFO] self.tIndex: 17
+2025-06-05 11:14:37,720 [INFO] utc_time: [1744251420]
+2025-06-05 11:14:37,720 [INFO] freq_lgs_leo: [13.0, 9.0, 20.0, 5.0, 23.0, 18.0, 24.0, 3.0, 19.0, 25.0]
+2025-06-05 11:14:37,721 [INFO] === Next Observation === {'utc_time': array([1744251420], dtype=int64), 'freq_lgs_leo': array([13.,  9., 20.,  5., 23., 18., 24.,  3., 19., 25.])}
+2025-06-05 11:14:37,724 [INFO] === Reward === 373.76938785647894
+2025-06-05 11:14:37,740 [INFO] === Step Started ===
+2025-06-05 11:14:37,754 [INFO] === Action Taken === 23
+2025-06-05 11:14:37,754 [INFO] === Current LEO User ID === 2
+2025-06-05 11:14:37,754 [INFO] === Current Time Index === 17
+2025-06-05 11:14:37,754 [INFO] === Current LEO Satellite ID === 20
+2025-06-05 11:14:38,908 [INFO] === Current State ===
+2025-06-05 11:14:38,918 [INFO] self.tIndex: 17
+2025-06-05 11:14:38,918 [INFO] utc_time: [1744251420]
+2025-06-05 11:14:38,918 [INFO] freq_lgs_leo: [13.0, 9.0, 23.0, 5.0, 23.0, 18.0, 24.0, 3.0, 19.0, 25.0]
+2025-06-05 11:14:38,919 [INFO] === Next Observation === {'utc_time': array([1744251420], dtype=int64), 'freq_lgs_leo': array([13.,  9., 23.,  5., 23., 18., 24.,  3., 19., 25.])}
+2025-06-05 11:14:38,922 [INFO] === Reward === 373.76938785647894
+2025-06-05 11:14:38,923 [INFO] === Step Started ===
+2025-06-05 11:14:38,940 [INFO] === Action Taken === 6
+2025-06-05 11:14:38,940 [INFO] === Current LEO User ID === 3
+2025-06-05 11:14:38,940 [INFO] === Current Time Index === 17
+2025-06-05 11:14:38,940 [INFO] === Current LEO Satellite ID === 477
+2025-06-05 11:14:40,013 [INFO] === Current State ===
+2025-06-05 11:14:40,021 [INFO] self.tIndex: 17
+2025-06-05 11:14:40,021 [INFO] utc_time: [1744251420]
+2025-06-05 11:14:40,021 [INFO] freq_lgs_leo: [13.0, 9.0, 23.0, 6.0, 23.0, 18.0, 24.0, 3.0, 19.0, 25.0]
+2025-06-05 11:14:40,022 [INFO] === Next Observation === {'utc_time': array([1744251420], dtype=int64), 'freq_lgs_leo': array([13.,  9., 23.,  6., 23., 18., 24.,  3., 19., 25.])}
+2025-06-05 11:14:40,024 [INFO] === Reward === 373.76938785647894
+2025-06-05 11:14:40,026 [INFO] === Step Started ===
+2025-06-05 11:14:40,042 [INFO] === Action Taken === 23
+2025-06-05 11:14:40,042 [INFO] === Current LEO User ID === 4
+2025-06-05 11:14:40,042 [INFO] === Current Time Index === 17
+2025-06-05 11:14:40,043 [INFO] === Current LEO Satellite ID === 575
+2025-06-05 11:14:41,123 [INFO] === Current State ===
+2025-06-05 11:14:41,129 [INFO] self.tIndex: 17
+2025-06-05 11:14:41,129 [INFO] utc_time: [1744251420]
+2025-06-05 11:14:41,129 [INFO] freq_lgs_leo: [13.0, 9.0, 23.0, 6.0, 23.0, 18.0, 24.0, 3.0, 19.0, 25.0]
+2025-06-05 11:14:41,129 [INFO] === Next Observation === {'utc_time': array([1744251420], dtype=int64), 'freq_lgs_leo': array([13.,  9., 23.,  6., 23., 18., 24.,  3., 19., 25.])}
+2025-06-05 11:14:41,132 [INFO] === Reward === 373.76938785647894
+2025-06-05 11:14:41,133 [INFO] === Step Started ===
+2025-06-05 11:14:41,143 [INFO] === Action Taken === 6
+2025-06-05 11:14:41,143 [INFO] === Current LEO User ID === 5
+2025-06-05 11:14:41,143 [INFO] === Current Time Index === 17
+2025-06-05 11:14:41,143 [INFO] === Current LEO Satellite ID === 573
+2025-06-05 11:14:42,163 [INFO] === Current State ===
+2025-06-05 11:14:42,170 [INFO] self.tIndex: 17
+2025-06-05 11:14:42,170 [INFO] utc_time: [1744251420]
+2025-06-05 11:14:42,170 [INFO] freq_lgs_leo: [13.0, 9.0, 23.0, 6.0, 23.0, 6.0, 24.0, 3.0, 19.0, 25.0]
+2025-06-05 11:14:42,171 [INFO] === Next Observation === {'utc_time': array([1744251420], dtype=int64), 'freq_lgs_leo': array([13.,  9., 23.,  6., 23.,  6., 24.,  3., 19., 25.])}
+2025-06-05 11:14:42,174 [INFO] === Reward === 373.76938785647894
+2025-06-05 11:14:42,182 [INFO] === Step Started ===
+2025-06-05 11:14:42,195 [INFO] === Action Taken === 9
+2025-06-05 11:14:42,195 [INFO] === Current LEO User ID === 6
+2025-06-05 11:14:42,195 [INFO] === Current Time Index === 17
+2025-06-05 11:14:42,195 [INFO] === Current LEO Satellite ID === 529
+2025-06-05 11:14:43,312 [INFO] === Current State ===
+2025-06-05 11:14:43,322 [INFO] self.tIndex: 17
+2025-06-05 11:14:43,322 [INFO] utc_time: [1744251420]
+2025-06-05 11:14:43,322 [INFO] freq_lgs_leo: [13.0, 9.0, 23.0, 6.0, 23.0, 6.0, 9.0, 3.0, 19.0, 25.0]
+2025-06-05 11:14:43,323 [INFO] === Next Observation === {'utc_time': array([1744251420], dtype=int64), 'freq_lgs_leo': array([13.,  9., 23.,  6., 23.,  6.,  9.,  3., 19., 25.])}
+2025-06-05 11:14:43,326 [INFO] === Reward === 373.76938785647894
+2025-06-05 11:14:43,408 [INFO] === Step Started ===
+2025-06-05 11:14:43,425 [INFO] === Action Taken === 1
+2025-06-05 11:14:43,425 [INFO] === Current LEO User ID === 7
+2025-06-05 11:14:43,425 [INFO] === Current Time Index === 17
+2025-06-05 11:14:43,425 [INFO] === Current LEO Satellite ID === 576
+2025-06-05 11:14:44,428 [INFO] === Current State ===
+2025-06-05 11:14:44,435 [INFO] self.tIndex: 17
+2025-06-05 11:14:44,436 [INFO] utc_time: [1744251420]
+2025-06-05 11:14:44,436 [INFO] freq_lgs_leo: [13.0, 9.0, 23.0, 6.0, 23.0, 6.0, 9.0, 1.0, 19.0, 25.0]
+2025-06-05 11:14:44,436 [INFO] === Next Observation === {'utc_time': array([1744251420], dtype=int64), 'freq_lgs_leo': array([13.,  9., 23.,  6., 23.,  6.,  9.,  1., 19., 25.])}
+2025-06-05 11:14:44,438 [INFO] === Reward === 373.76938785647894
+2025-06-05 11:14:44,439 [INFO] === Step Started ===
+2025-06-05 11:14:44,451 [INFO] === Action Taken === 21
+2025-06-05 11:14:44,451 [INFO] === Current LEO User ID === 8
+2025-06-05 11:14:44,451 [INFO] === Current Time Index === 17
+2025-06-05 11:14:44,451 [INFO] === Current LEO Satellite ID === 577
+2025-06-05 11:14:45,557 [INFO] === Current State ===
+2025-06-05 11:14:45,569 [INFO] self.tIndex: 17
+2025-06-05 11:14:45,569 [INFO] utc_time: [1744251420]
+2025-06-05 11:14:45,569 [INFO] freq_lgs_leo: [13.0, 9.0, 23.0, 6.0, 23.0, 6.0, 9.0, 1.0, 21.0, 25.0]
+2025-06-05 11:14:45,569 [INFO] === Next Observation === {'utc_time': array([1744251420], dtype=int64), 'freq_lgs_leo': array([13.,  9., 23.,  6., 23.,  6.,  9.,  1., 21., 25.])}
+2025-06-05 11:14:45,573 [INFO] === Reward === 373.76938785647894
+2025-06-05 11:14:45,574 [INFO] === Step Started ===
+2025-06-05 11:14:45,591 [INFO] === Action Taken === 2
+2025-06-05 11:14:45,591 [INFO] === Current LEO User ID === 9
+2025-06-05 11:14:45,591 [INFO] === Current Time Index === 17
+2025-06-05 11:14:45,591 [INFO] === Current LEO Satellite ID === 21
+2025-06-05 11:14:46,718 [INFO] === Current State ===
+2025-06-05 11:14:46,726 [INFO] self.tIndex: 17
+2025-06-05 11:14:46,726 [INFO] utc_time: [1744251420]
+2025-06-05 11:14:46,726 [INFO] freq_lgs_leo: [13.0, 9.0, 23.0, 6.0, 23.0, 6.0, 9.0, 1.0, 21.0, 2.0]
+2025-06-05 11:14:46,726 [INFO] === Next Observation === {'utc_time': array([1744251420], dtype=int64), 'freq_lgs_leo': array([13.,  9., 23.,  6., 23.,  6.,  9.,  1., 21.,  2.])}
+2025-06-05 11:14:46,728 [INFO] === Reward === 373.76938785647894
+2025-06-05 11:14:46,748 [INFO] === Step Started ===
+2025-06-05 11:14:46,760 [INFO] === Action Taken === 8
+2025-06-05 11:14:46,761 [INFO] === Current LEO User ID === 0
+2025-06-05 11:14:46,761 [INFO] === Current Time Index === 18
+2025-06-05 11:14:46,761 [INFO] === Current LEO Satellite ID === 21
+2025-06-05 11:14:47,814 [INFO] === Current State ===
+2025-06-05 11:14:47,822 [INFO] self.tIndex: 18
+2025-06-05 11:14:47,822 [INFO] utc_time: [1744251480]
+2025-06-05 11:14:47,822 [INFO] freq_lgs_leo: [8.0, 2.0, 9.0, 4.0, 15.0, 10.0, 14.0, 16.0, 15.0, 22.0]
+2025-06-05 11:14:47,822 [INFO] === Next Observation === {'utc_time': array([1744251480], dtype=int64), 'freq_lgs_leo': array([ 8.,  2.,  9.,  4., 15., 10., 14., 16., 15., 22.])}
+2025-06-05 11:14:47,825 [INFO] === Reward === 378.67868634084493
+2025-06-05 11:14:47,825 [INFO] === Step Started ===
+2025-06-05 11:14:47,838 [INFO] === Action Taken === 16
+2025-06-05 11:14:47,839 [INFO] === Current LEO User ID === 1
+2025-06-05 11:14:47,839 [INFO] === Current Time Index === 18
+2025-06-05 11:14:47,839 [INFO] === Current LEO Satellite ID === 575
