@@ -25,6 +25,9 @@ class CogSatEnv(gymnasium.Env):
         super(CogSatEnv, self).__init__()
         if not hasattr(self, 'spec') or self.spec is None:
             self.spec = gymnasium.envs.registration.EnvSpec("CogSatEnv-v1")
+
+
+        self.episode_number = 0
             
  
         # Start MATLAB engine and set path
@@ -204,6 +207,9 @@ class CogSatEnv(gymnasium.Env):
         return next_observation, reward, terminated, truncated, info
  
     def reset(self, *, seed=None, options=None):
+        self.episode_number = self.episode_number + 1
+        print("Resetting environment for episode: ", self.episode_number)
+        logging.info("=== Resetting Environment for Episode %s ===", self.episode_number)
         super().reset(seed=seed) 
         # Reset the scenario
         self.eng.eval("resetScenario", nargout=0)
