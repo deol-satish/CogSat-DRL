@@ -14,10 +14,10 @@ ts = startTime:seconds(sampleTime):stopTime;
 fc = 11.5e9;                       % Base frequency in Ku-band (10.7-12.7 GHz)
 ChannelBW = 250e6;                 % Channel bandwidth of 250 MHz
 %% LEO Walker-Star Constellation Parameters
-walker.a = 1200e3 + earthRadius;   % Semi-major axis: 650 km altitude
+walker.a = 1200e3 + earthRadius;   % Semi-major axis
 walker.Inc = 87;                   % Inclination in degrees (typical for OneWeb)
-walker.NPlanes = 12;               % Number of orbital planes (original 12)
-walker.SatsPerPlane = 49;          % Number of satellites per plane (original 49)
+walker.NPlanes = 12;               % Number of orbital planes 
+walker.SatsPerPlane = 49;          % Number of satellites per plane 
 walker.PhaseOffset = 1;            % Phase offset for phasing between planes
 leoNum = walker.NPlanes * walker.SatsPerPlane;
 %% GEO Satellite Parameters
@@ -37,7 +37,7 @@ geoAntenna = 3.0;     % GEO satellite antenna diameter
 gsAntenna = 0.6;      % Ground station antenna diameter
 eff = 0.5;            % Antenna efficiency
 %% Atmospheric Loss Parameters
-Att.H = 2.0;            % Effective atmosphere thickness [km] (ITU‐R’s rule of thumb)
+Att.H = 2.0;            % Effective atmosphere thickness [km] (ITU‐R's rule of thumb)
 Att.M = 0.25;           % liquid‐water density [g/m³]
 Att.k_l = 0.08;         % From ITU-R P.840 tables k_l(11.5 GHz) ≈ 0.08 [dB/km/(g/m³)]
 Att.Hcloud = 1.0;       % Cloud layer thickness H_cloud [km] e.g. 1 km of liquid water layer

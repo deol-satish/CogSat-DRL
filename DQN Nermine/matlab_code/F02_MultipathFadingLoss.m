@@ -16,7 +16,7 @@ switch FadingModel
         K = 10.^(KdB / 10);
         s = sqrt(K ./ (K + 1));
         sigma = sqrt(1 ./ (2 * (K + 1)));
-        h = s + sigma .* (randn(size(Elev)) + 1j * randn(size(Elev)));
+        h = s + sigma .* (randn(size(Elev)) + 1j * randn(size(Elev))); % complex gain (amplitude and phase distortion)
         FadingLossdB = -20 * log10(abs(h));
         FadingLossdB = max(min(FadingLossdB, 10), -5);  % limit fading to [-5, +10] dB range
     otherwise

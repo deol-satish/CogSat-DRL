@@ -22,8 +22,8 @@ GsLocations = {
     'Townsville',   -19.2500, 146.8167;
     'Toowoomba',    -27.5667, 151.9500};
 
-NumGeoUser = size(GsLocations,1)/2; %  10 uesers each with seperate channel (10 Channels)
-NumLeoUser = size(GsLocations,1)/2; %  10 uesers each with seperate channel (10 Channels)
-NumGS = NumLeoUser + NumGeoUser;        % total ground stations
-GSLEOFilter = logical([ones(NumGeoUser,1); zeros(NumLeoUser,1) ]);
-GSGEOFilter = logical([zeros(NumGeoUser,1); ones(NumLeoUser,1) ]);
+NumLeoUser = size(GsLocations,1)/2;     % 10 uesers each with seperate channel (10 Channels)
+NumGeoUser = size(GsLocations,1)/2;     % 10 uesers each with seperate channel (10 Channels)
+NumGS = NumLeoUser + NumGeoUser;        % Total ground stations
+GSLEOFilter = logical([ones(NumLeoUser,1); zeros(NumGeoUser,1) ]);
+GSGEOFilter = logical([zeros(NumLeoUser,1); ones(NumGeoUser,1) ]);

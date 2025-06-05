@@ -67,14 +67,6 @@ class CogSatEnv(gymnasium.Env):
             "utc_time": Box(low=-np.inf, high=np.inf, shape=(1,), dtype=np.int64),
             "freq_lgs_leo": Box(low=-np.inf, high=np.inf, shape=(self.NumLeoUser,), dtype=np.float64),
         })
-
-    def get_matlab_datetime(self):
-        """
-        Get the MATLAB timestamp as a list of strings.
-        """
-        ts_str = self.eng.eval("cellstr(datestr(ts, 'yyyy-mm-ddTHH:MM:SS'))", nargout=1)
-        python_datetimes = [datetime.fromisoformat(s) for s in ts_str]
-        return python_datetimes
     
     
     def get_matlab_ts(self):
