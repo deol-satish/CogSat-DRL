@@ -182,7 +182,7 @@ class CogSatEnv(gymnasium.Env):
         if self.curLEO_User_id >= self.NumLeoUser:
             self.curLEO_User_id = 0
             self.tIndex += 1
-            if self.tIndex > self.timelength:
+            if self.tIndex >= self.timelength:
                 terminated = True
                 print("Episode finished after {} timesteps".format(self.tIndex))
                 logging.info("=== Episode finished after %s timesteps ===", self.tIndex)
