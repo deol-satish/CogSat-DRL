@@ -55,6 +55,7 @@ class CogSatEnv(gymnasium.Env):
         self.intial_obs = {
             "utc_time": np.array([0], dtype=np.int64),
             "freq_lgs_leo": np.random.uniform(20.0, 22.0, size=(self.NumLeoUser,)).astype(np.float64),
+            "freq_ggs_geo": np.random.uniform(20.0, 22.0, size=(self.NumGeoUser,)).astype(np.float64),
         }         
         
  
@@ -66,6 +67,7 @@ class CogSatEnv(gymnasium.Env):
         self.observation_space = Dict({
             "utc_time": Box(low=-np.inf, high=np.inf, shape=(1,), dtype=np.int64),
             "freq_lgs_leo": Box(low=-np.inf, high=np.inf, shape=(self.NumLeoUser,), dtype=np.float64),
+            "freq_ggs_geo": Box(low=-np.inf, high=np.inf, shape=(self.NumGeoUser,), dtype=np.float64),
         })
     
     
@@ -92,11 +94,13 @@ class CogSatEnv(gymnasium.Env):
 
         self.FreqAlloc = np.array(self.eng.workspace['FreqAlloc'])
         self.LEOFreqAlloc = self.FreqAlloc[:10,:]
+        self.GEOFreqAlloc = self.FreqAlloc[10:20,:]
 
         cur_obs = self.intial_obs.copy()
 
         cur_obs["utc_time"] = np.array([self.ts[self.tIndex]], dtype=np.int64)
         cur_obs["freq_lgs_leo"] = np.array(self.LEOFreqAlloc[:,self.tIndex], dtype=np.float64)
+        cur_obs["freq_ggs_geo"] = np.array(self.GEOFreqAlloc[:,self.tIndex], dtype=np.float64)
 
         logging.info("self.tIndex: %s",self.tIndex)
 
@@ -182,6 +186,7 @@ class CogSatEnv(gymnasium.Env):
                 terminated = True
                 print("Episode finished after {} timesteps".format(self.tIndex))
                 logging.info("=== Episode finished after %s timesteps ===", self.tIndex)
+                self.eng.eval("P07_Plotting", nargout=0)
 
         info = {}
 
@@ -214,6 +219,6 @@ class CogSatEnv(gymnasium.Env):
     def close(self):
         print("Saving MATLAB Data.")
         logging.info("=== Saving MATLAB Data ===")
-        self.eng.eval("SaveData", nargout=0)
+        self.eng.eval("P07_Plotting", nargout=0)
         self.eng.quit()
     
