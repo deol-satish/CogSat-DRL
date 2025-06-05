@@ -45,6 +45,7 @@ class CogSatEnv(gymnasium.Env):
         self.NumLeoUser = int(self.eng.workspace['NumLeoUser'])
         self.NumGeoUser = int(self.eng.workspace['NumGeoUser'])
         self.curLEO_User_id = 0
+        self.reward = -32.4115512468957
 
         self.LeoChannels = int(self.eng.workspace['numChannels'])
         self.GeoChannels = self.eng.workspace['NumGeoUser']
@@ -174,6 +175,7 @@ class CogSatEnv(gymnasium.Env):
         reward = -32.4115512468957
 
         reward = np.sum(SINR[:,self.tIndex])
+        self.reward = reward
         print("Reward: ", reward)
         logging.info("=== Reward === %s", reward)
 
@@ -196,8 +198,7 @@ class CogSatEnv(gymnasium.Env):
         return next_observation, reward, terminated, truncated, info
  
     def reset(self, *, seed=None, options=None):
-        super().reset(seed=seed)
- 
+        super().reset(seed=seed) 
         # Reset the scenario
         self.eng.eval("resetScenario", nargout=0)
 
@@ -219,6 +220,6 @@ class CogSatEnv(gymnasium.Env):
     def close(self):
         print("Saving MATLAB Data.")
         logging.info("=== Saving MATLAB Data ===")
-        self.eng.eval("P07_Plotting", nargout=0)
+        # self.eng.eval("P07_Plotting", nargout=0)
         self.eng.quit()
     
