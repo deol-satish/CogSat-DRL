@@ -11,7 +11,7 @@ env_name = "NermineCogSatEnv-v1"
 
 # Configure the logger
 logging.basicConfig(
-    filename='state_log.txt',
+    filename='train_log.txt',
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
     filemode='w'  # Overwrites the file each time
@@ -48,15 +48,15 @@ class CogSatEnv(gymnasium.Env):
         self.reward = -32.4115512468957
 
         self.LeoChannels = int(self.eng.workspace['numChannels'])
-        self.GeoChannels = self.eng.workspace['NumGeoUser']
+        self.GeoChannels = int(self.eng.workspace['NumGeoUser'])
 
         self.ChannelListLeo = self.eng.workspace['ChannelListLeo']
         self.ChannelListGeo = self.eng.workspace['ChannelListGeo']
 
         self.intial_obs = {
             "utc_time": np.array([0], dtype=np.int64),
-            "freq_lgs_leo": np.random.uniform(20.0, 22.0, size=(self.NumLeoUser,)).astype(np.float64),
-            "freq_ggs_geo": np.random.uniform(20.0, 22.0, size=(self.NumGeoUser,)).astype(np.float64),
+            "freq_lgs_leo": np.random.uniform(1.0, self.LeoChannels, size=(self.NumLeoUser,)).astype(np.int64),
+            "freq_ggs_geo": np.random.uniform(1.0, self.GeoChannels, size=(self.NumGeoUser,)).astype(np.int64),
         }         
         
  
@@ -67,8 +67,8 @@ class CogSatEnv(gymnasium.Env):
         # Observation space structure
         self.observation_space = Dict({
             "utc_time": Box(low=-np.inf, high=np.inf, shape=(1,), dtype=np.int64),
-            "freq_lgs_leo": Box(low=-np.inf, high=np.inf, shape=(self.NumLeoUser,), dtype=np.float64),
-            "freq_ggs_geo": Box(low=-np.inf, high=np.inf, shape=(self.NumGeoUser,), dtype=np.float64),
+            "freq_lgs_leo": Box(low=1, high=self.LeoChannels+1, shape=(self.NumLeoUser,), dtype=np.int64),
+            "freq_ggs_geo": Box(low=1, high=self.GeoChannels+1, shape=(self.NumGeoUser,), dtype=np.int64),
         })
     
     
@@ -100,8 +100,8 @@ class CogSatEnv(gymnasium.Env):
         cur_obs = self.intial_obs.copy()
 
         cur_obs["utc_time"] = np.array([self.ts[self.tIndex]], dtype=np.int64)
-        cur_obs["freq_lgs_leo"] = np.array(self.LEOFreqAlloc[:,self.tIndex], dtype=np.float64)
-        cur_obs["freq_ggs_geo"] = np.array(self.GEOFreqAlloc[:,self.tIndex], dtype=np.float64)
+        cur_obs["freq_lgs_leo"] = np.array(self.LEOFreqAlloc[:,self.tIndex], dtype=np.int64)
+        cur_obs["freq_ggs_geo"] = np.array(self.GEOFreqAlloc[:,self.tIndex], dtype=np.int64)
 
         logging.info("self.tIndex: %s",self.tIndex)
 
@@ -122,18 +122,18 @@ class CogSatEnv(gymnasium.Env):
         """
         Apply action and return (observation, reward, terminated, truncated, info)
         """
+
+
+
+
         print("*-"*50)
         print("Step Started")
         logging.info("=== Step Started ===")
         # Access the variable from MATLAB workspace
-        channel_list_leo = self.eng.workspace['ChannelListLeo']
-
         # Convert MATLAB array to NumPy array
-        channel_list_leo_np = np.array(channel_list_leo)
+        channel_list_leo = np.array(self.eng.workspace['ChannelListLeo'])
 
         Serv_idxLEO = np.array(self.eng.workspace['Serv_idxLEO'])
-        
-
         self.cur_leo_sat_id = int(Serv_idxLEO[self.curLEO_User_id, self.tIndex]) - 1
 
         self.tIndex = int(self.tIndex)
@@ -152,8 +152,14 @@ class CogSatEnv(gymnasium.Env):
         logging.info("=== Current LEO Satellite ID === %s", self.cur_leo_sat_id)
 
 
-        channel_list_leo_np[self.curLEO_User_id, self.cur_leo_sat_id, self.tIndex] = int(action)
-        self.eng.workspace['ChannelListLeo'] = matlab.double(channel_list_leo_np)
+        # Action start from 0 and ends before self.LeoChannels, that means it is not included
+        # For example, if self.LeoChannels is 5, action can be 0, 1, 2, 3, or 4.
+        # This is because MATLAB uses 1-based indexing, so we need to convert it to 0-based indexing for Python.
+        action = int(action) + 1 # Ensure action is an integer 
+
+
+        channel_list_leo[self.curLEO_User_id, self.cur_leo_sat_id, self.tIndex] = int(action)
+        self.eng.workspace['ChannelListLeo'] = matlab.double(channel_list_leo)
 
         print("Updated ChannelListLeo: ", np.array(self.eng.workspace['ChannelListLeo'])[self.curLEO_User_id, self.cur_leo_sat_id, self.tIndex])
 
